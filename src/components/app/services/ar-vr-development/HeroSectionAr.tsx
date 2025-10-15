@@ -1,0 +1,42 @@
+import Image from "next/image";
+import { BANNER_SECTION_AR } from "@/data/services/ar-vr.data";
+import { CTAButton2 } from "@/components/common/CTAButton2";
+
+export function HeroSectionAr() {
+  return (
+    <div className="mt-15 flex flex-col items-center justify-center px-5 py-10 md:px-20 md:py-20 lg:gap-8">
+      <div className="flex w-full flex-col items-center justify-around gap-10 lg:flex-row lg:gap-20">
+        {/* Text Section */}
+        <div className="flex w-full flex-col items-center gap-4 md:items-start lg:w-1/2 lg:gap-6">
+          <h1 className="text-center text-3xl leading-snug md:text-start md:text-5xl">
+            {BANNER_SECTION_AR.headingParts.map((part, i) => (
+              <span key={i} className={part.className}>
+                {part.text}{" "}
+              </span>
+            ))}
+          </h1>
+          <p className="text-center md:text-start md:text-lg">
+            {BANNER_SECTION_AR.content}
+          </p>
+
+          <CTAButton2
+            className="!text-xl"
+            href={BANNER_SECTION_AR.CTABtnLink}
+            label={BANNER_SECTION_AR.CTABtnText}
+          />
+        </div>
+
+        {/* Image Section */}
+        <div className="w-full max-w-md lg:w-1/2 lg:max-w-lg">
+          <Image
+            src="/mobile-app-UI.jpg"
+            width={500}
+            height={400}
+            alt="hero-section-img"
+            className="h-[300px] w-full object-contain md:h-[500px]"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
