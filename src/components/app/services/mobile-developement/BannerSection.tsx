@@ -6,13 +6,15 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { ECOMMERCE_HERO_SECTION } from "@/data/industries/ecom.data";
+import { scrollToId } from "@/lib/utils";
 
 export function BannerSection() {
   const { ref, inView } = useInView({ triggerOnce: true });
   return (
     <div
       className={
-        "mt-20 flex min-h-screen flex-col items-center justify-center px-5 py-10 md:mt-10 md:px-20 md:py-20 lg:gap-8"
+        "  mt-20 lg:mt-0  flex min-h-screen flex-col items-center justify-center px-5 py-10  md:px-20 md:py-20 lg:gap-8"
       }
     >
       <div
@@ -36,32 +38,36 @@ export function BannerSection() {
             {HERO_SECTION.content}
           </p>
 
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4">
-            {HERO_SECTION.stats.map((stat, index) => {
+          <div className="grid  gap-2 grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4">
+            {ECOMMERCE_HERO_SECTION.stats.map((stat, index) => {
               return (
                 <div
                   ref={ref}
                   key={index}
                   className="text-primary gap-5 font-bold transition-transform duration-300 hover:scale-110 md:p-0"
                 >
-                  <div className="bg-primary flex h-full max-w-56 flex-col items-center justify-center rounded-xl px-8 py-4 text-white hover:shadow-xl">
-                    <span className="text-3xl font-bold lg:text-4xl">
+                  <div className="bg-primary flex h-full max-w-56 flex-col items-center justify-center rounded-xl p-4 text-white hover:shadow-xl">
+                    <span className="text-2xl font-bold lg:text-3xl">
                       {inView ? (
                         <CountUp start={0} end={stat.stat} duration={3} />
                       ) : (
                         0
                       )}
-                      <span>{stat.symbol}</span>
+                      <span className={""}>{stat.symbol}</span>
                     </span>
 
-                    <span className="text-center font-medium">{stat.desc}</span>
+                    <span className="text-center text-xm font-medium">
+                      {stat.desc}
+                    </span>
                   </div>
                 </div>
               );
             })}
           </div>
           <CTAButton2
-            href={HERO_SECTION.CTABtnLink}
+            onClick={() => {
+              scrollToId();
+            }}
             className={"self-start"}
             label={HERO_SECTION.CTAButton}
           />

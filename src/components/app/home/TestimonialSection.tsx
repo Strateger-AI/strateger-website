@@ -36,13 +36,17 @@ export function TestimonialSection() {
               {TESTIMONIALS.map((testimonial, index) => (
                 <CarouselItem
                   key={index}
-                  className="p-2 py-4 md:basis-1/2 lg:basis-1/3"
+                  className="py-14 md:basis-1/2   lg:basis-1/3"
                 >
-                  <Card className={"m-0 h-full !rounded-xl !p-2 shadow-xl"}>
-                    <CardContent className="relative flex h-full flex-col">
+                  <Card
+                    className={
+                      "m-0 h-full !rounded-xl my-3 !p-2 border-2 shadow-xl"
+                    }
+                  >
+                    <CardContent className="relative !rounded-xl   flex h-full flex-col">
                       <div
                         className={
-                          "flex h-full w-full flex-col gap-4 border-2 !border-none p-6 text-black"
+                          "flex h-full w-full flex-col gap-4 !border-none p-6 text-black"
                         }
                       >
                         <div
@@ -51,16 +55,16 @@ export function TestimonialSection() {
                           }
                         >
                           <div className={"space-y-2"}>
-                            <h1 className={"text-lg font-bold md:text-xl"}>
+                            <h1 className={"text-lg font-bold md:text-2xl"}>
                               {testimonial.name}
                             </h1>
-                            <h1
-                              className={
-                                "md:text-md text-primary text-sm font-bold"
-                              }
-                            >
-                              {testimonial.designation}
-                            </h1>
+                            {/*<h1*/}
+                            {/*  className={*/}
+                            {/*    "md:text-md text-primary text-sm font-bold"*/}
+                            {/*  }*/}
+                            {/*>*/}
+                            {/*  {testimonial.designation}*/}
+                            {/*</h1>*/}
                           </div>
                           <CustomRating defaultValue={testimonial.rating} />
                         </div>

@@ -22,7 +22,7 @@ export function ServicesAchievementSection() {
             </span>
           ))}
         </h1>
-        <p className="text-base text-gray-600 md:w-3/5 md:text-lg">
+        <p className="text-black md:text-start text-center md:w-3/5 md:text-lg">
           {SERVICES_ACHIEVEMENT_SECTION_DATA.desc}
         </p>
       </div>

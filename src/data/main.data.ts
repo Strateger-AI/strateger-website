@@ -1,18 +1,42 @@
-import { CiMobile1 } from "react-icons/ci";
 import { IoGameController } from "react-icons/io5";
 import { BsHeadsetVr } from "react-icons/bs";
 import { MdOutlineSecurity } from "react-icons/md";
 import { IoIosSettings } from "react-icons/io";
-import { FaBusinessTime } from "react-icons/fa6";
+import { FaBusinessTime, FaMobile } from "react-icons/fa6";
 import { Clock, Star, TrendingUp, Smartphone } from "lucide-react";
 import {
   FaMobileAlt,
-  FaGamepad,
   FaVrCardboard,
   FaShieldAlt,
   FaBrain,
+  FaGraduationCap,
+  FaGamepad,
+  FaHeartbeat,
+  FaShoppingCart,
+  FaBuilding,
+  FaUniversity,
+  FaHome,
 } from "react-icons/fa";
 import { MdBusiness } from "react-icons/md";
+import FlutterIcon from "@/data/mobile/icons/FlutterIcon";
+import AndroidIcon from "@/data/mobile/icons/AndroidIcon";
+import ReactNativeIcon from "@/data/mobile/icons/ReactNativeIcon";
+import IonicIcon from "@/data/mobile/icons/IonicIcon";
+import UnrealIcon from "@/data/mobile/icons/UnrealIcon";
+import unityIcon from "@/data/mobile/icons/UnityIcon";
+import BlenderIcon from "@/assets/technologies/BlenderIcon";
+import AutodeskIcon from "@/assets/technologies/AutodeskIcon";
+import ZbrushIcon from "@/assets/technologies/ZbrushIcon";
+import Cinema4dIcon from "@/assets/technologies/Cinema4dIcon";
+import CrowdstrikeIcon from "@/assets/technologies/CrowdstrikeIcon";
+import splunkIcon from "@/assets/technologies/SplunkIcon";
+import opensslIcon from "@/assets/technologies/OpensslIcon";
+import TensorflowIcon from "@/assets/technologies/TensorflowIcon";
+import PytorchIcon from "@/assets/technologies/PytorchIcon";
+import KerasIcon from "@/assets/technologies/KerasIcon";
+import SapIcon from "@/assets/technologies/SapIcon";
+import OracelNetSuitIconIcon from "@/assets/technologies/OracelNetSuitIconIcon";
+import Appleicon from "@/data/mobile/icons/AppleIcon";
 
 // export const NAV_ITEMS = [
 //   {
@@ -208,6 +232,61 @@ export const NAV_ITEMS = [
     ],
   },
   {
+    title: "Industries",
+    href: "/industries",
+    heading: "We Serve",
+    categories: [
+      {
+        title: "Education & E-Learning",
+        href: "/industries/education-e-learning",
+        icon: FaGraduationCap,
+        subcategories: [],
+      },
+      {
+        title: "Entertainment",
+        href: "/industries/entertainment",
+        icon: FaGamepad,
+        subcategories: [],
+      },
+      {
+        title: "Healthcare & Life Sciences",
+        href: "/industries/healthcare-life-sciences",
+        icon: FaHeartbeat,
+        subcategories: [],
+      },
+      {
+        title: "E-Commerce",
+        href: "/industries/retail-ecommerce",
+        icon: FaShoppingCart,
+        subcategories: [],
+      },
+      {
+        title: "Enterprise & Corporate",
+        href: "/industries/enterprise-corporate",
+        icon: FaBuilding,
+        subcategories: [],
+      },
+      {
+        title: "Fintech",
+        href: "/industries/fintech",
+        icon: FaUniversity,
+        subcategories: [],
+      },
+      {
+        title: "Real Estate & Construction",
+        href: "/industries/real-estate-construction",
+        icon: FaHome,
+        subcategories: [],
+      },
+      // {
+      //   title: "Automotive & Manufacturing",
+      //   href: "/industries/automotive-manufacturing",
+      //   icon: FaCar,
+      //   subcategories: [],
+      // },
+    ],
+  },
+  {
     title: "About Us",
     href: "/about-us",
   },
@@ -222,44 +301,92 @@ export const NAV_ITEMS = [
 ];
 
 export const heroSection = {
-  heroContent: "Where Vision \n  Meets Innovation.",
-  ctaButton: "Explore Now ",
-  working: [
+  // heroContent: "Where Vision \n  Meets Innovation.",
+  heroContent: [
     {
-      heading: "Mobile App Development",
-      desc:
-        "\n" +
-        "We are a mobile app development company dedicated to delivering end-to-end mobile application development services tailored to your digital needs. From concept to launch, we build apps that combine innovation, performance, and user centric design to help your business grow.\n",
+      text: "Where ",
+      className: "text-white font-extrabold ",
     },
     {
-      heading: "Game Development Services\n",
-      desc:
-        "\n" +
-        "We provide game development services that blend creativity, technology, and storytelling turning your vision into engaging gameplay experiences players love.",
+      text: "Vision \n ",
+      className: "font-extrabold text-white",
     },
     {
-      heading: "Custom AR VR Development\n",
-      desc:
-        "\n" +
-        "At Strateger.ai, we bring your vision to life through advanced AR VR development services and AI-powered solutions. By blending creativity with technology, we design immersive experiences that transform the way people interact with digital worlds.",
+      text: "Meets Innovation.",
+      className: "text-white font-extrabold ",
+    },
+  ],
+
+  CTABtnText: "Explore Now ",
+  CTABtnLink: "/contact",
+  secondaryBtn: "Explore Our Services",
+  secondaryBtnLink: "/services",
+
+  // awards: [
+  //   "/main/awards/best-game-dev.png",
+  //   "/main/awards/bma.png",
+  //   "/main/awards/certificate-of-excellence.png",
+  //   "/main/awards/erp-dev-award.png",
+  // ],
+
+  // working: [
+  //   {
+  //     heading: "Mobile App Development",
+  //     desc:
+  //       "\n" +
+  //       "We are a mobile app development company dedicated to delivering end-to-end mobile application development services tailored to your digital needs. From concept to launch, we build apps that combine innovation, performance, and user centric design to help your business grow.\n",
+  //   },
+  //   {
+  //     heading: "Game Development Services\n",
+  //     desc:
+  //       "\n" +
+  //       "We provide game development services that blend creativity, technology, and storytelling turning your vision into engaging gameplay experiences players love.",
+  //   },
+  //   {
+  //     heading: "Custom AR VR Development\n",
+  //     desc:
+  //       "\n" +
+  //       "At Strateger.ai, we bring your vision to life through advanced AR VR development services and AI-powered solutions. By blending creativity with technology, we design immersive experiences that transform the way people interact with digital worlds.",
+  //   },
+  //   {
+  //     heading: "Cybersecurity Service\n",
+  //     desc:
+  //       "\n" +
+  //       "We are a trusted cyber security solutions provider, helping businesses safeguard their digital assets with innovative protection strategies. Our tailored cyber security solutions ensure resilience against evolving threats.",
+  //   },
+  //   {
+  //     heading: "Deep Learning Service\n",
+  //     desc:
+  //       "\n" +
+  //       "Through our deep learning development service, we harness the power of machine learning to solve real business challenges. From analyzing data to predicting outcomes, we deliver solutions that are practical, intelligent, and built for impact.",
+  //   },
+  //   {
+  //     heading: "ERP Implementation Services\n",
+  //     desc:
+  //       "\n" +
+  //       "Optimize your operations with our ERP implementation services. We make it easier to manage processes, reduce complexity, and drive business success.",
+  //   },
+  // ],
+  achievements: [
+    {
+      img: "/main/awards/best-game-dev.png",
+      title: "Best Mobile App",
+      rating: 4.8,
     },
     {
-      heading: "Cybersecurity Service\n",
-      desc:
-        "\n" +
-        "We are a trusted cyber security solutions provider, helping businesses safeguard their digital assets with innovative protection strategies. Our tailored cyber security solutions ensure resilience against evolving threats.",
+      img: "/main/awards/bma.png",
+      title: "Best Game development award",
+      rating: 4.9,
     },
     {
-      heading: "Deep Learning Service\n",
-      desc:
-        "\n" +
-        "Through our deep learning development service, we harness the power of machine learning to solve real business challenges. From analyzing data to predicting outcomes, we deliver solutions that are practical, intelligent, and built for impact.",
+      img: "/main/awards/certificate-of-excellence.png",
+      title: "Top 20 ERP APP development award",
+      rating: 4.7,
     },
     {
-      heading: "ERP Implementation Services\n",
-      desc:
-        "\n" +
-        "Optimize your operations with our ERP implementation services. We make it easier to manage processes, reduce complexity, and drive business success.",
+      img: "/main/awards/erp-dev-award.png",
+      title: "Certificate of Excellence",
+      rating: 4.9,
     },
   ],
 };
@@ -346,59 +473,32 @@ export const PORTFOLIO_SECTION = {
     "Strateger.ai partners with businesses to bring ideas to life, building digital products that are innovative, practical, and results-driven. Our focus is on creating solutions that make a real difference.",
 };
 
-export type PortfolioItem = {
-  companyName: string;
-  description: string;
-  platform: string;
-  industry: string;
-  image: string;
-  companyLogo?: string;
-};
-
-export const PORTFOLIO_SECTION_PRODUCTION: PortfolioItem[] = [
+export const PORTFOLIO_SECTION_PRODUCTION = [
   {
-    companyName: "Strateger",
-    image: "/img.webp",
+    companyName: "Galaxy Quest",
+    image: "/main/portfolio/galaxy-quest.webp", // Placeholder path — update as needed
     description:
-      "An ecommerce solution built with React Native, allowing seamless shopping experiences across platforms.",
-    platform: "React Native",
-    industry: "Ecommerce",
-    companyLogo: "/companyIcon.webp",
-  },
-  {
-    companyName: "Healthify",
-    image: "/img.webp",
-    description:
-      "A mobile healthcare tracking app that helps users monitor fitness, diet, and consultations.",
-    platform: "Flutter",
-    industry: "Healthcare",
-    companyLogo: "/companyIcon.webp",
-  },
-  {
-    companyName: "EduVerse",
-    image: "/img.webp",
-    description:
-      "An AI-powered learning management system that offers personalized learning paths.",
-    platform: "Next.js",
-    industry: "Education",
-    companyLogo: "/companyIcon.webp",
-  },
-  {
-    companyName: "FinTrack",
-    image: "/img.webp",
-    description:
-      "A secure finance management and analytics dashboard for small businesses.",
-    platform: "Angular",
-    industry: "Finance",
-    companyLogo: "/companyIcon.webp",
-  },
-  {
-    companyName: "GameOn",
-    image: "/img.webp",
-    description:
-      "A multiplayer online game platform with real-time chat and leaderboard features.",
-    platform: "Unity",
+      "An interstellar adventure game built to deliver stunning graphics and immersive gameplay. Galaxy Quest allows players to explore dynamic galaxies, complete missions, and battle AI-driven enemies in a richly designed 3D universe.",
+    platform: "Unity 3D",
     industry: "Gaming",
+    companyLogo: "/companyIcon.webp",
+  },
+  {
+    companyName: "VisionSpace AR",
+    image: "/main/portfolio/vision-space.webp",
+    description:
+      "VisionSpace AR redefines visualization with augmented reality experiences for real estate and architecture. It enables users to explore 3D property models, visualize interiors, and interact with designs in real time.",
+    platform: "Unreal Engine",
+    industry: "Real Estate / Architecture",
+    companyLogo: "/companyIcon.webp",
+  },
+  {
+    companyName: "SwiftCart",
+    image: "/main/portfolio/swiftcart.webp",
+    description:
+      "SwiftCart is a mobile shopping app designed to create a seamless retail experience. With real-time order tracking, secure payments, and smart product recommendations, it makes online shopping effortless and engaging for users.",
+    platform: "Custom Mobile",
+    industry: "Ecommerce",
     companyLogo: "/companyIcon.webp",
   },
 ];
@@ -450,7 +550,8 @@ export const TESTIMONIALS = [
 export const WHAT_WE_DO_DATA = [
   {
     service: "Mobile App Development",
-    serviceIcon: CiMobile1,
+    serviceIcon: FaMobile,
+    btnLink: "/services/mobile-app-development",
     mapping: {
       subDescription:
         "We are a mobile app development company dedicated to delivering end-to-end mobile application development services tailored to your digital needs. From concept to launch, we build apps that combine innovation, performance, and user centric design to help your business grow.",
@@ -462,28 +563,28 @@ export const WHAT_WE_DO_DATA = [
       // technologies: [CiMobile1, CiMobile1, CiMobile1, CiMobile1],
       technologies: [
         {
-          title: "Cross Platform",
-          description: "Build apps for iOS and Android with one codebase",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          technology: "Flutter",
+          icon: FlutterIcon,
         },
         {
-          title: "Performance",
-          description: "Optimized for speed and responsiveness",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          technology: "Apple",
+          icon: Appleicon,
         },
         {
-          title: "User Experience",
-          description: "Designed with modern UI/UX patterns",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          technology: "Android",
+          icon: AndroidIcon,
+        },
+        // {
+        //   technology: "Kotlin",
+        //   icon: KotlinIcon,
+        // },
+        {
+          technology: "ReactNative",
+          icon: ReactNativeIcon,
         },
         {
-          title: "Security",
-          description: "Enterprise-level app protection",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          technology: "Ionic",
+          icon: IonicIcon,
         },
       ],
       relatedPoints: [
@@ -497,6 +598,8 @@ export const WHAT_WE_DO_DATA = [
   {
     service: "Game Development Services",
     serviceIcon: IoGameController,
+    btnLink: "/services/game-development",
+
     mapping: {
       subDescription:
         "We provide game development services that blend creativity, technology, and storytelling turning your vision into engaging gameplay experiences players love.",
@@ -507,29 +610,18 @@ export const WHAT_WE_DO_DATA = [
       ],
       technologies: [
         {
-          title: "Cross Platform",
-          description: "Build apps for iOS and Android with one codebase",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          technology: "Unreal Engine",
+          icon: UnrealIcon, // or your SVG component / path
+          img: "/unreal-engine-1.webp",
+          desc: "We build games with Unreal Engine for clients with high-end graphic requirements and expansive enterprise-grade scopes. This game development framework empowers our team to deliver photoreal visuals and advanced rendering. Our clients include both B2C and B2B brands, and Unreal’s architecture scales as their needs grow. Moreover, Unreal underpins our NFT and VR game development services through its robust toolset and immersive capabilities.",
         },
         {
-          title: "Performance",
-          description: "Optimized for speed and responsiveness",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          technology: "Unity Engine",
+          icon: unityIcon,
+          img: "/unity-1-1.webp",
+          desc: "We utilize the Unity game development engine for its native plus cross-platform flexibility. Unity covers Android, iOS, consoles, and PCs with just about two codebases. Its rich Asset Store of plugins, tools, and APIs accelerates development, making it cost-effective without compromising power. Unity’s versatility makes it ideal for both 2D and 3D games, offering budget-friendly, scalable solutions for our clients.",
         },
-        {
-          title: "User Experience",
-          description: "Designed with modern UI/UX patterns",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
-        },
-        {
-          title: "Security",
-          description: "Enterprise-level app protection",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
-        },
+        // You can add more technologies similarly (e.g. Godot, Cocos, etc.)
       ],
       relatedPoints: [
         "Character & environment design",
@@ -542,6 +634,8 @@ export const WHAT_WE_DO_DATA = [
   {
     service: "Custom AR/VR Development",
     serviceIcon: BsHeadsetVr,
+    btnLink: "/services/ar-vr-development",
+
     mapping: {
       subDescription:
         "At Strateger.ai, we bring your vision to life through advanced AR VR development services and AI-powered solutions. By blending creativity with technology, we design immersive experiences that transform the way people interact with digital worlds.",
@@ -552,28 +646,16 @@ export const WHAT_WE_DO_DATA = [
       ],
       technologies: [
         {
-          title: "Cross Platform",
-          description: "Build apps for iOS and Android with one codebase",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: BlenderIcon,
         },
         {
-          title: "Performance",
-          description: "Optimized for speed and responsiveness",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: AutodeskIcon,
         },
         {
-          title: "User Experience",
-          description: "Designed with modern UI/UX patterns",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: ZbrushIcon,
         },
         {
-          title: "Security",
-          description: "Enterprise-level app protection",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: Cinema4dIcon,
         },
       ],
       relatedPoints: [
@@ -587,6 +669,8 @@ export const WHAT_WE_DO_DATA = [
   {
     service: "Cybersecurity Service",
     serviceIcon: MdOutlineSecurity,
+    btnLink: "/services/cybersecurity",
+
     mapping: {
       subDescription:
         "We are a trusted cyber security solutions provider, helping businesses safeguard their digital assets with innovative protection strategies. Our tailored cyber security solutions ensure resilience against evolving threats.",
@@ -597,28 +681,13 @@ export const WHAT_WE_DO_DATA = [
       ],
       technologies: [
         {
-          title: "Cross Platform",
-          description: "Build apps for iOS and Android with one codebase",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: CrowdstrikeIcon,
         },
         {
-          title: "Performance",
-          description: "Optimized for speed and responsiveness",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: splunkIcon,
         },
         {
-          title: "User Experience",
-          description: "Designed with modern UI/UX patterns",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
-        },
-        {
-          title: "Security",
-          description: "Enterprise-level app protection",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: opensslIcon,
         },
       ],
       relatedPoints: [
@@ -632,6 +701,8 @@ export const WHAT_WE_DO_DATA = [
   {
     service: "Deep Learning Service",
     serviceIcon: IoIosSettings,
+    btnLink: "/services/deep-learning",
+
     mapping: {
       subDescription:
         "We are a trusted cyber security solutions provider, helping businesses safeguard their digital assets with innovative protection strategies. Our tailored cyber security solutions ensure resilience against evolving threats.",
@@ -642,28 +713,13 @@ export const WHAT_WE_DO_DATA = [
       ],
       technologies: [
         {
-          title: "Cross Platform",
-          description: "Build apps for iOS and Android with one codebase",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: TensorflowIcon,
         },
         {
-          title: "Performance",
-          description: "Optimized for speed and responsiveness",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: PytorchIcon,
         },
         {
-          title: "User Experience",
-          description: "Designed with modern UI/UX patterns",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
-        },
-        {
-          title: "Security",
-          description: "Enterprise-level app protection",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: KerasIcon,
         },
       ],
       relatedPoints: [
@@ -676,6 +732,8 @@ export const WHAT_WE_DO_DATA = [
   },
   {
     service: "ERP Implementation Services",
+    btnLink: "/services/erp-implementation",
+
     serviceIcon: FaBusinessTime,
     mapping: {
       subDescription:
@@ -687,28 +745,10 @@ export const WHAT_WE_DO_DATA = [
       ],
       technologies: [
         {
-          title: "Cross Platform",
-          description: "Build apps for iOS and Android with one codebase",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: SapIcon,
         },
         {
-          title: "Performance",
-          description: "Optimized for speed and responsiveness",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
-        },
-        {
-          title: "User Experience",
-          description: "Designed with modern UI/UX patterns",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
-        },
-        {
-          title: "Security",
-          description: "Enterprise-level app protection",
-          icon: CiMobile1,
-          color: { light: "#000000", dark: "#ffffff" },
+          icon: OracelNetSuitIconIcon,
         },
       ],
       relatedPoints: [
@@ -721,60 +761,48 @@ export const WHAT_WE_DO_DATA = [
   },
 ];
 
-export type IndustryItem = {
-  industry: string;
-  description: string;
-  image: string; // image path or URL
-};
-
-export const INDUSTRY_DATA: IndustryItem[] = [
+export const INDUSTRY_DATA = [
   {
     industry: "Education & E-Learning",
     description:
       "Strateger.ai empowers the education sector with AI-driven e-learning platforms, personalized learning paths, and immersive AR/VR classroom experiences, making education more engaging and accessible.",
-    image: "/img.webp",
+    image: "/main/industries/education.webp",
   },
   {
-    industry: "Gaming & Entertainment",
+    industry: "Entertainment",
     description:
       "From AI-based game logic to real-time graphics and immersive AR/VR, Strateger.ai brings innovation to gaming and entertainment experiences across platforms.",
-    image: `/img.webp`,
+    image: "/main/industries/gaming.webp",
   },
   {
     industry: "Healthcare & Life Sciences",
     description:
       "Strateger.ai supports healthcare providers with deep learning diagnostics, patient data analytics, and AR-assisted training or surgeries, transforming patient care and operations.",
-    image: "/img.webp",
+    image: "/main/industries/healthcare.webp",
   },
   {
     industry: "Retail & E-Commerce",
     description:
       "We help retail and e-commerce brands personalize customer journeys, predict buying behavior, and optimize operations through AI insights and real-time dashboards.",
-    image: "/img.webp",
+    image: "/main/industries/ecom.webp",
   },
   {
     industry: "Enterprise & Corporate",
     description:
       "Strateger.ai streamlines enterprise workflows with ERP integration, process automation, intelligent dashboards, and custom AI tools for better decision-making.",
-    image: "/img.webp",
+    image: "/main/industries/enterprice.webp",
   },
   {
-    industry: "Finance & Banking",
+    industry: "Fintech",
     description:
       "We enable banks and fintech companies with fraud detection, automated document processing, and smart risk analysis solutions powered by machine learning.",
-    image: "/img.webp",
+    image: "/main/industries/fintech.webp",
   },
   {
     industry: "Real Estate & Construction",
     description:
       "From property analytics to AR-based virtual tours and project management automation, Strateger.ai transforms real estate and construction operations with tech.",
-    image: "/img.webp",
-  },
-  {
-    industry: "Automotive & Manufacturing",
-    description:
-      "Strateger.ai brings automation, predictive maintenance, and intelligent robotics to manufacturing and automotive industries, improving efficiency and safety.",
-    image: "/img.webp",
+    image: "/main/industries/real-estate.webp",
   },
 ];
 
@@ -782,23 +810,39 @@ export const PARTNERS_DATA = [
   {
     type: "customer",
     name: "Customer",
-    images: ["/img.webp", "/img.webp", "/img.webp"],
+    images: [
+      "/main/partners/Airbnb.png",
+      "/main/partners/Aivora.png",
+      "/main/partners/cyber-nexa-solution.png",
+      "/main/partners/Deepnex.png",
+      "/main/partners/Defensys.png",
+      "/main/partners/flowsync.png",
+      "/main/partners/Nextpath.png",
+      "/main/partners/Opticore.png",
+      "/main/partners/pixelforge.png",
+      "/main/partners/RealMotion-xr.png",
+      "/main/partners/ubisoft.png",
+      "/main/partners/VisionGrid.png",
+    ],
   },
-  {
-    type: "partner",
-    name: "Partner ",
-    images: ["/img.webp", "/img.webp", "/img.webp", "/img.webp", "/img.webp"],
-  },
+  // {
+  //   type: "partner",
+  //   name: "Partner ",
+  //   images: ["/img.webp", "/img.webp", "/img.webp", "/img.webp", "/img.webp"],
+  // },
   {
     type: "technologies",
     name: "Technology",
     images: [
-      "/img.webp",
-      "/img.webp",
-      "/img.webp",
-      "/img.webp",
-      "/img.webp",
-      "/img.webp",
+      "/main/partners/Airbnb.png",
+      "/main/partners/Aivora.png",
+      "/main/partners/cyber-nexa-solution.png",
+      "/main/partners/Deepnex.png",
+      "/main/partners/Defensys.png",
+
+      "/main/partners/RealMotion-xr.png",
+      "/main/partners/ubisoft.png",
+      "/main/partners/VisionGrid.png",
     ],
   },
 ];
@@ -834,7 +878,7 @@ export const BUSINESS_SECTION_DATA = {
     },
   ],
   CTABtnText: "Get Started",
-  CTABtnLink: "/",
+  CTABtnLink: "/contact",
 };
 
 export const QUESTION_SECTION_DATA = {
@@ -884,4 +928,12 @@ export const QUESTION_SECTION_DATA = {
 export const CTA_SECTION_DATA = {
   ctaText: " Partner With Us to Bring Your Vision to Reality.",
   ctaBtnText: "Lets Connect",
+  CTABtnLink: "/contact",
 };
+
+export const awards = [
+  "/main/awards/best-game-dev.png",
+  "/main/awards/bma.png",
+  "/main/awards/certificate-of-excellence.png",
+  "/main/awards/erp-dev-award.png",
+];

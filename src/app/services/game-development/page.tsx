@@ -1,5 +1,5 @@
 import { BannerSection } from "@/components/app/services/game-development/BannerSection";
-import { CompanyReviewsSection } from "@/components/app/services/game-development/CompanyReviewsSection";
+// import { CompanyReviewsSection } from "@/components/app/services/game-development/CompanyReviewsSection";
 import { TopTierSection } from "@/components/app/services/game-development/TopTierSection";
 import { GameDevelopmentServices } from "@/components/app/services/game-development/GameDevelopmentServices";
 import { CTASectionWithLogo } from "@/components/app/home/CTASection";
@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <>
       <BannerSection />
-      <CompanyReviewsSection />
+      {/*<CompanyReviewsSection />*/}
       <TopTierSection />
       <GameDevelopmentServices />
       <GamePlatformSolutionSection />

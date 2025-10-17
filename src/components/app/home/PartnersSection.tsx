@@ -47,7 +47,7 @@ export function PartnersSection() {
                       width={250}
                       height={1000}
                       objectFit={"fill"}
-                      className="h-25 w-50 object-cover"
+                      className="h-25 w-50 object-contain p-3"
                     />
                   </div>
                 ))}

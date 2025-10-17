@@ -16,9 +16,9 @@ export function ServicesBanner() {
       <div className="bg-primary absolute inset-0 z-0 opacity-70" />
 
       {/* Content Container */}
-      <div className="relative z-10 flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+      <div className="relative z-10 flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
         {/* Left: Text & Points */}
-        <div className="flex w-full flex-col gap-6 lg:w-3/5">
+        <div className="flex w-full flex-col gap-10 lg:w-3/5 justify-around  ">
           <h1 className="text-3xl font-bold whitespace-pre-line md:text-4xl xl:text-6xl">
             {SERVICES_BANNER_SECTION.heading}
           </h1>

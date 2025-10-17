@@ -106,7 +106,7 @@ export const GAME_PLATFORM_SOLUTIONS = {
     },
   ],
   ctaText: "Book A Demo",
-  CTaBtnLink: "/",
+  CTaBtnLink: "/contact",
 };
 
 export const GAME_DEV_TECHNOLOGIES = {
@@ -256,44 +256,35 @@ export const QUESTION_SECTION_DATA = {
   ],
   faqs: [
     {
-      question: "How Much Does It Cost to Build a Custom Mobile App?",
+      question: "What is game app development?",
       answer:
-        "The cost of building a mobile app varies based on factors such as complexity, platform (iOS, Android, or both), UI/UX design, backend services, and integrations. Features like real-time chat, GPS, or AI increase the budget. At Strateger.ai, we offer transparent cost estimates tailored to your business goals, ensuring you receive a secure, scalable, and high-performance app.",
+        "Game app development is the process of designing, coding, and launching interactive games for different platforms. It covers everything from concept creation and visuals to programming, testing, and publishing.",
     },
     {
-      question: "What’s the Average Timeline for Mobile App Development?",
+      question: "What are the stages of game development?",
       answer:
-        "Mobile app development typically takes 3–9 months depending on app scope, number of features, and review cycles. At Strateger.ai, we use agile methodologies to speed up development while maintaining code quality and robust testing, helping you launch your app on time and within budget.",
+        "The journey usually includes planning, concept design, prototyping, development, testing, release, and ongoing support, each step ensuring the final product is engaging and market-ready.",
     },
     {
-      question: "Why Should You Choose Strateger.ai for App Development?",
+      question: "How much does game development cost?",
       answer:
-        "Strateger.ai provides end-to-end mobile app development—from ideation and wireframing to development, QA, and deployment. Our solutions are custom-built to fit your business strategy and user expectations. We prioritize security, scalability, and speed, offering an unparalleled experience for startups and enterprises alike.",
+        "Costs depend on the type of game, its complexity, graphics quality, and chosen platform. A simple 2D project may require a modest budget, while 3D, multiplayer, or cross-platform titles demand higher investment.",
     },
     {
-      question: "How Do We Ensure Mobile App Success Post-Launch?",
+      question: "How long does it take to develop a mobile game app?",
       answer:
-        "We don’t stop at launch. Strateger.ai offers continuous monitoring, performance optimization, and support services. We gather real-time user feedback, run updates, and ensure your app evolves with your users' needs and tech trends.",
+        "Timelines vary with scope; basic mobile games may take a few weeks, while larger projects with advanced features can stretch over several months.",
     },
     {
-      question: "What Engagement Models Do You Offer for Development Projects?",
+      question:
+        "What factors should I consider before hiring a game development company?",
       answer:
-        "We provide flexible engagement models including fixed-price, hourly, and dedicated team structures. This allows businesses to scale up or down as needed and ensures cost control and timely delivery, regardless of project size.",
+        "It’s important to review their portfolio, technical expertise, and industry experience. Clear communication, project transparency, and proven results also play a key role in choosing the right partner.",
     },
     {
-      question: "Why Outsource Mobile App Development to Strateger.ai?",
+      question: "Why should I outsource mobile game development services?",
       answer:
-        "Outsourcing to Strateger.ai brings you cost savings, faster development cycles, and access to a global talent pool. Our team handles design, development, testing, and deployment, allowing you to focus on core business functions while we bring your app to life.",
-    },
-    {
-      question: "What Are the Benefits of Working With a Mobile App Agency?",
-      answer:
-        "Partnering with a dedicated mobile app agency like Strateger.ai gives you access to specialized talent, structured processes, and advanced tools. We bring strategic thinking, industry insights, and design thinking to ensure your app performs well and delights users.",
-    },
-    {
-      question: "Which Technologies Power Your Mobile App Projects?",
-      answer:
-        "We use cutting-edge tools and frameworks like React Native, Flutter, Swift, Kotlin, Node.js, Firebase, and AWS. For advanced features, we integrate AI/ML, AR/VR, and real-time analytics to ensure innovation, performance, and scalability in every project.",
+        "Outsourcing gives you access to skilled talent, advanced tools, and faster development cycles often at a lower cost than building an in-house team. It’s an efficient way to bring your game idea to life.",
     },
   ],
 };

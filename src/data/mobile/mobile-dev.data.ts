@@ -1,6 +1,6 @@
 import { BsDeviceSsd } from "react-icons/bs";
 import { MdWeb } from "react-icons/md";
-import { FaApple, FaMedal } from "react-icons/fa";
+import { FaApple, FaLaptopCode, FaMedal } from "react-icons/fa";
 import { ImAndroid } from "react-icons/im";
 import { SiBlockchaindotcom } from "react-icons/si";
 import FlutterIcon from "@/data/mobile/icons/FlutterIcon";
@@ -14,6 +14,7 @@ import oracleIcon from "@/data/mobile/icons/OracleIcon";
 import { Ri24HoursFill } from "react-icons/ri";
 import { FaHandHoldingDroplet } from "react-icons/fa6";
 import { FaIndustry } from "react-icons/fa6";
+import AwsIcon from "@/assets/technologies/AwsIcon";
 
 export const HERO_SECTION = {
   headingParts: [
@@ -59,7 +60,7 @@ export const HERO_SECTION = {
   clientSectionHeading:
     "Trusted by 1000+ Happy Clients, Including Enterprises & Fortune 500 Companies",
   clientsImages: [],
-  CTABtnLink: "/",
+  CTABtnLink: "#contact-form",
   CTAButton: "Let’s Create Your Next Big App",
   bannerImg: "/services/mobile/mobile.png",
 };
@@ -126,6 +127,11 @@ export const MOBILE_DEV_SERVICES_DATA = {
       heading: "Blockchain Development",
       desc: "Security and transparency are at the heart of our blockchain development services. We build decentralized applications that safeguard user data and streamline transactions. With the blockchain market expected to hit $163.83 billion by 2029, investing in this technology is a step toward the future.",
       icon: SiBlockchaindotcom, // Replace with your icon component or class
+    },
+    {
+      heading: "Cross Platform Apps",
+      desc: "At Strateger.ai, our cross-platform app development services empower you to launch on multiple platforms simultaneously, without compromising quality or performance. By leveraging a single, unified codebase, we help you cut development costs, accelerate time-to-market, and ensure your app delivers a seamless user experience across all devices.\n",
+      icon: FaLaptopCode,
     },
   ],
 };
@@ -196,7 +202,18 @@ export const CTA_SECTION_2 = {
   desc: "Turn your vision into a reality with our end-to-end mobile app development solutions. At Strateger.ai, we bring together skilled business analysts, expert mobile developers, and forward-thinking growth strategists to help businesses design, build, and scale apps that truly make an impact.",
   CTABtnText: "Schedule a consultation",
   img: "/common/cta-img.png",
-  CTABtnLink: "/",
+  CTABtnLink: "/contact",
+};
+
+export const TRUSTED_CUSTOMERS_SECTION = {
+  heading:
+    "  Trusted by 1000+ Happy Clients, Including Enterprises & Fortune 500 Companies",
+  partners: [
+    "/main/partners/Airbnb.png",
+    "/main/partners/Nextpath.png",
+    "/main/partners/cyber-nexa-solution.png",
+    "/main/partners/Deepnex.png",
+  ],
 };
 
 export const ACHIEVEMENT_SECTION_DATA = {
@@ -246,8 +263,7 @@ export const TECH_PARTNERSHIP_SECTION = {
   industries: [
     GoogleIcon,
     oracleIcon,
-    GoogleIcon,
-    oracleIcon,
+    AwsIcon,
 
     // Add or replace with your actual image paths
   ],

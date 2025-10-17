@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { scrollToId } from "@/lib/utils";
 
 type CTASectionWithLogoProps = {
   ctaText: string;
-  ctaLink?: string;
+  desc?: string;
+  CTABtnLink?: string;
   ctaBtnText: string;
 };
 
@@ -13,18 +16,23 @@ export function CTASectionWithLogo({
   data: CTASectionWithLogoProps;
 }) {
   return (
-    <div className="bg-primary relative mx-auto my-4 flex w-11/12 flex-col-reverse items-center justify-between overflow-hidden rounded-xl px-6 py-10 text-white shadow-xl md:flex-row md:px-10 lg:px-20">
+    <div className="bg-primary relative mx-auto flex w-full flex-col-reverse items-center justify-between overflow-hidden  px-6 py-10 text-white shadow-xl md:flex-row md:px-10 lg:px-20">
       {/* CTA Text + Button (left on md and up) */}
       <div className="z-10 flex w-full flex-col items-center space-y-6 text-center md:w-1/2 md:items-start md:text-left">
         <h1 className="text-4xl font-bold md:text-4xl lg:text-6xl">
           {data.ctaText}
         </h1>
 
+        {data.desc && <p className={""}>{data.desc}</p>}
+
         <div>
           <CTAButton2
             version={2}
             className={"text-2xl"}
-            href={"/"}
+            // href={data.CTABtnLink}
+            onClick={() => {
+              scrollToId();
+            }}
             label={data.ctaBtnText}
           />
         </div>

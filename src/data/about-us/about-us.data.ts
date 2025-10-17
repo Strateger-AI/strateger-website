@@ -2,17 +2,19 @@ export const BANNER_SECTION = {
   headingParts: [
     {
       text: "We Build \n Smarter Solutions \n Through Technology \n and Expertise",
-      className: "text-black font-extrabold",
+      className: "text-white font-extrabold",
     },
     {
       text: ".",
-      className: "text-primary font-extrabold",
+      className: "text-white font-extrabold",
     },
   ],
+  bannerImg: "/strateger-logo.svg",
+  backgroundImg: "/about-us/about-us-banner.webp",
   heading:
     "We Build \n Smarter Solutions Through Technology \n and Expertise .",
   CTABtnText: "Know Us Better",
-  CTABtnLink: "/",
+  CTABtnLink: "/contact",
 };
 
 export const MESSAGE_FROM_CEO_SECTION = {
@@ -27,13 +29,26 @@ export const MESSAGE_FROM_CEO_SECTION = {
       className: "text-primary font-extrabold",
     },
   ],
-  img: "/ceo.png",
-  message:
-    "In today’s fast-paced digital world, leadership means navigating complexity with clarity. Our mission is to remove barriers, simplify challenges, and empower you to lead with confidence. What drives us is not only your business success but also the positive impact we can create for society and the communities around us. Our vision extends beyond business outcomes — we strive to create meaningful impact on society and contribute positively to the communities we serve.",
-  from: {
-    designation: "CEO",
-    name: "Muhammad Atif ", // Replace with actual name
-  },
+  messages: [
+    {
+      img: "/ceo.png",
+      message:
+        "In today’s fast-paced digital world, leadership means navigating complexity with clarity. Our mission is to remove barriers, simplify challenges, and empower you to lead with confidence. What drives us is not only your business success but also the positive impact we can create for society and the communities around us. Our vision extends beyond business outcomes — we strive to create meaningful impact on society and contribute positively to the communities we serve.",
+      from: {
+        designation: "CEO",
+        name: "Muhammad Atif ", // Replace with actual name
+      },
+    },
+    {
+      img: "/ceo.png",
+      message:
+        "In today’s fast-paced digital world, leadership means navigating complexity with clarity. Our mission is to remove barriers, simplify challenges, and empower you to lead with confidence. What drives us is not only your business success but also the positive impact we can create for society and the communities around us. Our vision extends beyond business outcomes — we strive to create meaningful impact on society and contribute positively to the communities we serve.",
+      from: {
+        designation: "CEO",
+        name: "Muhammad Atif ", // Replace with actual name
+      },
+    },
+  ],
 };
 export const WHAT_WE_DO_SECTION = {
   headingParts: [

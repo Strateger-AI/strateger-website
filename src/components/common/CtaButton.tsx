@@ -3,11 +3,12 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import React, { ButtonHTMLAttributes } from "react";
 
-type CTAButtonProps = {
+type CTAButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   label?: string;
   href?: string;
-  onClick?: () => void;
+
   icon?: React.ReactNode;
   size?: "sm" | "md" | "lg";
   className?: string;
@@ -17,7 +18,6 @@ type CTAButtonProps = {
 export function CTAButton({
   label = "Get Started Now",
   href,
-  onClick,
   icon = <ArrowRight className="h-6 w-6 md:h-10 md:w-10" />,
   size = "md",
   className,
@@ -53,17 +53,11 @@ export function CTAButton({
 
   // If href is provided → use <Link>
   if (href) {
-    return (
-      <Link href={href} onClick={onClick}>
-        {buttonContent}
-      </Link>
-    );
+    return <Link href={href}>{buttonContent}</Link>;
   }
 
   // Otherwise, use <button>
   return (
-    <button onClick={onClick} className="border-none bg-transparent p-0">
-      {buttonContent}
-    </button>
+    <button className="border-none bg-transparent p-0">{buttonContent}</button>
   );
 }

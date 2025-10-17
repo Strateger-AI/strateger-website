@@ -15,7 +15,7 @@ export function HowToCollabSection() {
       </h1>
       <CTAButton2
         version={2}
-        className={"text-3xl text-white"}
+        className={"text-3xl "}
         label={HOW_TO_COLLAB_DATA.CTABtnText}
         href={HOW_TO_COLLAB_DATA.CTABtnLink}
       />

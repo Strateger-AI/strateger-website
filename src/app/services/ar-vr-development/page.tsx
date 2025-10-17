@@ -1,5 +1,5 @@
 import { HeroSectionAr } from "@/components/app/services/ar-vr-development/HeroSectionAr";
-import { CompanyReviewsSection } from "@/components/app/services/game-development/CompanyReviewsSection";
+// import { CompanyReviewsSection } from "@/components/app/services/game-development/CompanyReviewsSection";
 import { ArDevServicesSection } from "@/components/app/services/ar-vr-development/ARDevServicesSection";
 import { CTABusinessSection } from "@/components/app/services/ar-vr-development/CTABusinessSection";
 import {
@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <>
       <HeroSectionAr />
-      <CompanyReviewsSection />
+      {/*<CompanyReviewsSection />*/}
       <ArDevServicesSection />
       <CTABusinessSection data={CTA_BUSINESS_SECTION_AR} />
       <SolutionARDev />

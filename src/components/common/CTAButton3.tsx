@@ -1,0 +1,67 @@
+"use client";
+
+import React from "react";
+import { cn } from "@/lib/utils";
+import type { ButtonHTMLAttributes } from "react";
+import Link from "next/link";
+
+type PrimaryExploreButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  label?: string;
+  href: string;
+};
+
+export function CTAButton3({
+  className,
+  label = "Explore",
+
+  href = "/",
+}: PrimaryExploreButtonProps) {
+  return (
+    <div>
+      <Link
+        href={href as string}
+        className={cn(
+          "group relative z-10 mx-auto flex w-fit cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full border-1 px-4 py-2 pl-6 text-lg font-bold shadow-lg backdrop-blur-md transition-all",
+
+          "border-primary text-primary shadow-primary/20 bg-primary",
+          className,
+        )}
+      >
+        {/* Text */}
+        <span
+          className={cn(
+            "relative z-10 text-xl transition-colors duration-300 md:text-2xl",
+            "text-white ",
+            className,
+          )}
+        >
+          {label}
+        </span>
+
+        {/* Arrow Icon */}
+        <svg
+          className={cn(
+            "h-8 w-8 rotate-45 transform rounded-full border p-2 transition-all duration-300 ease-linear",
+            "border-white text-white group-hover:rotate-90 group-hover:bg-white ",
+          )}
+          viewBox="0 0 16 19"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+            className={cn("fill-white group-hover:fill-primary")}
+          />
+        </svg>
+
+        {/* Horizontal expanding background overlay */}
+
+        <span
+          className={cn(
+            "absolute inset-0 top-0 left-0 -z-10 h-full w-0 bg-gradient-to-r transition-all duration-700 ease-in-out group-hover:w-full",
+            "from-primary to-primary",
+          )}
+        />
+      </Link>
+    </div>
+  );
+}

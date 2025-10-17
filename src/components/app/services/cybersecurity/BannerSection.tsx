@@ -20,7 +20,7 @@ export function BannerSection() {
             "flex w-full flex-col items-center space-y-4 md:items-start lg:w-2/5 lg:space-y-8"
           }
         >
-          <h1 className="text-center text-3xl leading-snug md:text-start md:text-4xl">
+          <h1 className="text-center text-3xl leading-snug md:text-start md:text-4xl lg:text-6xl">
             {CYBERSECURITY_BANNER_SECTION.headingParts.map((part, i) => (
               <span key={i} className={part.className}>
                 {part.text}{" "}

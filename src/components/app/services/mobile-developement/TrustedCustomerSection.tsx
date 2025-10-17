@@ -1,11 +1,29 @@
+import { TRUSTED_CUSTOMERS_SECTION } from "@/data/mobile/mobile-dev.data";
+import Image from "next/image";
+
 export function TrustedCustomerSection() {
   return (
     <div className="bg-primary relative h-48 py-5 md:py-12">
       <h1 className="text-center font-bold text-white md:text-2xl">
-        Trusted by 1000+ Happy Clients, Including Enterprises & Fortune 500
-        Companies
+        {TRUSTED_CUSTOMERS_SECTION.heading}
       </h1>
-      <div className="bg-secondary absolute -bottom-15 left-1/2 h-40 w-4/5 -translate-x-1/2 rounded-2xl shadow-xl"></div>
+      <div className="bg-white  absolute -bottom-15 left-1/2 h-auto w-4/5 -translate-x-1/2  rounded-2xl shadow-xl px-4 py-6">
+        <div className="flex flex-wrap justify-around items-center  gap-5">
+          {TRUSTED_CUSTOMERS_SECTION.partners.map((src, index) => (
+            <div
+              key={index}
+              className="relative w-24 h-16  md::w-30 md:h-20 lg:w-40 lg:h-24"
+            >
+              <Image
+                src={src}
+                alt={`Showcase image ${index + 1}`}
+                fill
+                className="object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

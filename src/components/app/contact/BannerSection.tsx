@@ -4,7 +4,7 @@ import { CTAButton2 } from "@/components/common/CTAButton2";
 export function BannerSection() {
   return (
     <div
-      className="relative flex min-h-[80vh] flex-col items-start justify-center gap-10 px-5 text-white md:px-20"
+      className="relative flex min-h-[90vh] flex-col items-start justify-center gap-10 px-5 text-white md:px-20"
       style={{
         backgroundImage: `url(${BANNER_SECTION.bannerImg})`,
         backgroundSize: "cover",
@@ -16,7 +16,7 @@ export function BannerSection() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-start justify-center gap-10">
-        <h1 className="text-3xl font-bold whitespace-pre-line text-white md:text-4xl xl:text-6xl">
+        <h1 className="text-3xl font-bold whitespace-pre-line text-white md:text-4xl xl:text-7xl">
           {BANNER_SECTION.headingParts.map((part, i) => (
             <span key={i} className={part.className}>
               {part.text}{" "}

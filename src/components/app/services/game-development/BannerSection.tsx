@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { BANNER_SECTION } from "@/data/services/game-dev.data";
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { scrollToId } from "@/lib/utils";
 
 export function BannerSection() {
   return (
@@ -21,6 +22,9 @@ export function BannerSection() {
 
           <CTAButton2
             href={BANNER_SECTION.CTaBtnLink}
+            // onClick={() => {
+            //   scrollToId();
+            // }}
             label={BANNER_SECTION.CTABtnText}
           />
         </div>

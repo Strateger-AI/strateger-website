@@ -44,9 +44,9 @@ export function QuestionSection({
             <AccordionItem
               key={index}
               value={`faq-${index}`}
-              className="hover:bg-muted rounded-md py-5"
+              className=" rounded-md py-5"
             >
-              <AccordionTrigger className="hover:bg-muted w-full !border-none px-4 py-3 text-left font-medium md:text-lg">
+              <AccordionTrigger className="w-full !border-none px-4 py-3 text-left font-medium md:text-lg">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground w-full px-4 pb-4 text-sm md:text-lg">

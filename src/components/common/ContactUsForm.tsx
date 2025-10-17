@@ -10,7 +10,7 @@ export function ContactUsForm() {
       <Input placeholder="Phone No." className="!px-4 !py-6" />
       <Textarea
         placeholder="Write about your project..."
-        className="min-h-[250px] flex-1 !px-4 !py-6"
+        className="md:min-h-[150px] min-h-[150px] flex-1 !px-4 !py-6"
       />
       <Button className="w-full !px-4 !py-6 text-2xl font-bold">Submit</Button>
     </div>

@@ -66,14 +66,14 @@ export function WhatWeDoSection() {
   };
 
   return (
-    <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20">
+    <div className="space-y-5  px-5 py-5 md:space-y-10 md:px-20">
       <h1 className="text-center text-4xl font-bold md:text-7xl">
         {" "}
         <span className={"text-primary"}>What</span> We Do
       </h1>
-      <div className="flex h-full flex-col justify-evenly md:flex-row">
+      <div className="flex h-full flex-col lg:h-[60vh]  justify-evenly md:flex-row">
         {/*Left Side*/}
-        <div className="flex h-full flex-col items-center justify-around gap-4 md:w-4/12">
+        <div className="flex h-full flex-col  items-center justify-around gap-4 md:w-4/12">
           {WHAT_WE_DO_DATA.map((item, index) => {
             const IconComponent = item.serviceIcon;
             return (
@@ -82,10 +82,15 @@ export function WhatWeDoSection() {
                   onClick={() => handleClick(index)}
                   className={cn(
                     "text-md relative hidden h-18 w-full cursor-pointer items-center justify-start gap-2 overflow-hidden rounded-3xl border px-4 text-black shadow-md transition-transform duration-300 hover:scale-105 md:flex",
-                    currentIndex === index ? "text-white" : "text-black",
+                    currentIndex === index ? "text-white" : "text-primary",
                   )}
                 >
-                  <IconComponent className="text-primary md:text-2xl" />
+                  <IconComponent
+                    className={cn(
+                      "text-primary md:text-2xl",
+                      currentIndex === index ? "text-white" : "text-primary",
+                    )}
+                  />
                   <span className="text-md md:sm font-bold">
                     {item.service}
                   </span>
@@ -125,7 +130,7 @@ export function WhatWeDoSection() {
         {/*Right Side*/}
         <div
           className={
-            "hidden max-w-1/2 flex-1 flex-col items-start justify-around rounded-2xl text-sm md:flex md:space-y-4 md:p-5 md:text-xl lg:space-y-8 lg:p-8"
+            "hidden max-w-1/2 flex-1 flex-col transition-transform duration-300  items-start   justify-around b00 h-full rounded-2xl text-sm md:flex md:space-y-4 md:p-5 md:text-xl lg:space-y-8 lg:p-8"
           }
         >
           <h1
@@ -135,7 +140,7 @@ export function WhatWeDoSection() {
           >
             {selectedService.service}
           </h1>
-          <p className={"text-sm lg:text-xl"}>
+          <p className={"text-sm flex-1 lg:text-xl leading-normal"}>
             {selectedService.mapping.subDescription}
           </p>
           <div className={"md:px-2"}>
@@ -157,17 +162,20 @@ export function WhatWeDoSection() {
 
           <div className={"flex flex-wrap gap-2"}>
             {selectedService.mapping.technologies.map((tech, index) => {
-              const IconComponent = tech; // lookup
+              const Icon = tech.icon; // lookup
               return (
                 // <li key={index} className="font-bold text-white md:text-6xl">
-                <IconComponent.icon key={index} className="text-4xl" />
+                <Icon
+                  key={index}
+                  className="lg:w-20 lg:h-20 md:w-15 md:h-15   p-4   rounded-xl hover:shadow-md  "
+                />
                 // </li>
               );
             })}
           </div>
           <CTAButton2
-            href={"/services/"}
-            label={"Get Started"}
+            href={selectedService.btnLink}
+            label={"Explore More"}
             className={"self-start"}
           />
         </div>

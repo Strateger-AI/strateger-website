@@ -5,15 +5,18 @@ import { ContactUsForm } from "@/components/common/ContactUsForm";
 
 export function ContactSection() {
   return (
-    <div className="x flex items-center justify-center space-y-5 p-20">
-      <div className="relative flex w-full max-w-6xl flex-col rounded-xl shadow-xl lg:h-[80vh] lg:flex-row">
+    <div
+      id={"contact-form"}
+      className=" min-h-screen flex items-center justify-center space-y-5  bg py-10 p-10 g: "
+    >
+      <div className="relative flex w-full max-w-6xl flex-col rounded-xl shadow-xl lg:h-[80vh]  lg:flex-row">
         {/* Image Section */}
-        <div className="relative h-64 w-full overflow-hidden rounded-br-none sm:h-80 md:h-[400px] lg:absolute lg:bottom-0 lg:left-0 lg:h-[105%] lg:w-2/5">
+        <div className="relative h-72 w-full overflow-hidden rounded-br-none sm:h-80 md:h-[400px] lg:absolute lg:bottom-0 lg:left-0 lg:h-[105%] lg:w-2/5">
           <Image
             src={CONTACTS_SECTION.img}
             fill
             alt="contact-img"
-            className="rounded-md rounded-br-none object-cover"
+            className="rounded-md rounded-br-none object-cover object-top lg:object-center obj"
           />
         </div>
 
@@ -22,7 +25,7 @@ export function ContactSection() {
 
         {/* Form Section */}
         <div className="flex h-full flex-1 flex-col gap-5 p-5 lg:p-10">
-          <h1 className="text-start text-xl leading-normal font-bold md:text-4xl lg:text-5xl">
+          <h1 className=" text-center md:text-start text-xl leading-normal font-bold md:text-4xl lg:text-5xl">
             {CONTACTS_SECTION.headingParts.map((part, i) => (
               <span key={i} className={part.className}>
                 {part.text}{" "}

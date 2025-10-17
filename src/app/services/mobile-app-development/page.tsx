@@ -4,14 +4,15 @@ import { TransformingIdeasSection } from "@/components/app/services/mobile-devel
 import { MobileDevServices } from "@/components/app/services/mobile-developement/MobileDevServices";
 import { MobileDevCTASection } from "@/components/app/services/mobile-developement/MobileDevCTASection";
 import { MobileTechnologiesSection } from "@/components/app/services/mobile-developement/MobileTechnologiesSection";
-import { CTASection2 } from "@/components/app/services/mobile-developement/CTASection2";
-import { AcheivementSection } from "@/components/app/services/mobile-developement/AcheivementSection";
+import { CTASectionWithImage } from "@/components/common/CTASectionWithImage";
+// import { AcheivementSection } from "@/components/app/services/mobile-developement/AcheivementSection";
 import { TechPartnershipSection } from "@/components/app/services/mobile-developement/TechPartnershipSection";
 import { WhyTopChoiceSection } from "@/components/app/services/mobile-developement/WhyTopChoiceSection";
 import { ContactSection } from "@/components/app/services/mobile-developement/ContactSection";
 import { QuestionSection } from "@/components/app/home/QuestionSection";
 import { CTA_SECTION_DATA, QUESTION_SECTION_DATA } from "@/data/main.data";
 import { CTASectionWithLogo } from "@/components/app/home/CTASection";
+import { CTA_SECTION_2 } from "@/data/mobile/mobile-dev.data";
 
 export default function Page() {
   return (
@@ -22,8 +23,8 @@ export default function Page() {
       <MobileDevServices />
       <MobileDevCTASection />
       <MobileTechnologiesSection />
-      <CTASection2 />
-      <AcheivementSection />
+      <CTASectionWithImage data={CTA_SECTION_2} />
+      {/*<AcheivementSection />*/}
       <TechPartnershipSection />
       <WhyTopChoiceSection />
       <CTASectionWithLogo data={CTA_SECTION_DATA} />

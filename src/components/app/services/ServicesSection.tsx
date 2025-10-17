@@ -33,7 +33,7 @@ export default function ServiceSection() {
       <Accordion
         type="single"
         collapsible
-        className="w-full max-w-4/5 space-y-4"
+        className="w-full lg:max-w-4/5 space-y-4 "
       >
         {services.map((service, index) => {
           const Icon = service.icon;
@@ -43,9 +43,9 @@ export default function ServiceSection() {
               value={`item-${index}`}
               className="rounded-xl bg-white shadow-md"
             >
-              <AccordionTrigger className="px-6 py-6 text-left hover:no-underline">
+              <AccordionTrigger className="px-6 py-6 group text-left hover:no-underline">
                 <div className="text-primary flex items-center gap-10 text-3xl font-semibold">
-                  <Icon className="" />
+                  <Icon className="group-hover:scale-120 transition duration-300" />
                   <span className={""}>{service.title}</span>
                 </div>
               </AccordionTrigger>
@@ -59,7 +59,7 @@ export default function ServiceSection() {
 
       {/* CTA */}
       <CTAButton2
-        className={"!text-4xl"}
+        className={" !text-2xl lg:!text-4xl"}
         href={CTABtnLink}
         label={SERVICES_SECTION.CTABtnText}
       />

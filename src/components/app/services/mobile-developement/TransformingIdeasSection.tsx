@@ -4,7 +4,7 @@ import { CTAButton2 } from "@/components/common/CTAButton2";
 
 export function TransformingIdeasSection() {
   return (
-    <div className="mt-20 flex flex-col items-center justify-center gap-8 px-5 py-10 md:px-20 md:py-20 lg:mt-0">
+    <div className="mt-20 flex flex-col items-center justify-center gap-8 px-5 py-10  md:px-20 md:py-10 lg:mt-0">
       <div className="bg flex w-full flex-col-reverse items-center justify-around gap-10 lg:flex-row lg:gap-0">
         {/* Text Section */}
         <div className="flex w-full flex-col items-center justify-around space-y-6 text-center md:items-start lg:w-1/2 lg:space-y-8 lg:text-left">
@@ -27,13 +27,12 @@ export function TransformingIdeasSection() {
         </div>
 
         {/* Image Section */}
-        <div className="w-full max-w-xs md:max-w-sm">
+        <div className="w-full  h-[70vh] py-10 max-w-xs md:max-w-sm">
           <Image
             src={TRANSFORMING_IDEA_SECTION.img}
             alt="Transforming ideas"
-            width={600}
-            height={400}
-            className="h-auto w-full object-contain"
+            fill
+            className=" !relative w-full object-contain"
             priority
           />
         </div>

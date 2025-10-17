@@ -24,7 +24,7 @@ export function BusinessSection() {
             <div
               ref={ref}
               key={index}
-              className="from-primary via-primary to-primary/90 flex items-center gap-2 rounded-2xl bg-gradient-to-r px-4 py-5 text-white shadow-md"
+              className="from-primary via-primary to-primary/90 hover:scale-110 duration-500 flex items-center gap-2 rounded-2xl bg-gradient-to-r px-4 py-5 text-white shadow-md"
             >
               <div>
                 <Icon className="h-10 w-10" />

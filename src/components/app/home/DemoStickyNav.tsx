@@ -109,7 +109,7 @@ const DemoStickyNav = () => {
               return (
                 <div
                   key={index}
-                  className="group relative flex items-center gap-2"
+                  className="group relative flex text items-center gap-2"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -118,7 +118,7 @@ const DemoStickyNav = () => {
                   <Link
                     href={item.href ?? "#"}
                     className={cn(
-                      "text-md py-2 font-medium transition-colors",
+                      "text-[1rem] font-medium transition-colors",
                       "group-hover:text-secondary",
                       activeIndex === index && "text-secondary",
                     )}
@@ -194,14 +194,13 @@ const DemoStickyNav = () => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                       >
-                        <div className="from-primary via-primary to-primary/80 flex aspect-square w-[30%] flex-col justify-end rounded-md bg-gradient-to-b px-6 py-8 text-start text-white">
+                        <div className="from-primary to-primary flex aspect-square w-[30%] flex-col justify-end rounded-md bg-gradient-to-b px-6 py-8 text-start text-white">
                           <h1 className={"text-4xl font-extrabold"}>
                             {item.title}.
                           </h1>
                           <p className={"text-xl"}>{item.heading}</p>
                         </div>
-                        {/* Full-width grid layout for industries */}
-                        <div className="grid w-full grid-cols-2 grid-rows-2 gap-4">
+                        <div className="grid w-full grid-cols-2 ap-4">
                           {item.categories.map((category, idx) => {
                             const Icon = category.icon;
                             return (
