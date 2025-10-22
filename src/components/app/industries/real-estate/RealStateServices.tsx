@@ -1,5 +1,7 @@
+"use client";
 import { CTAButton2 } from "@/components/common/CTAButton2";
 import { REAL_ESTATE_SERVICES_SECTION } from "@/data/industries/realstate.data";
+import { scrollToId } from "@/lib/utils";
 
 export function RealStateServices() {
   return (
@@ -22,7 +24,7 @@ export function RealStateServices() {
         {" "}
         {REAL_ESTATE_SERVICES_SECTION.description}
       </p>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-20">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:px-10">
         {REAL_ESTATE_SERVICES_SECTION.services.map((service, index: number) => {
           const Icon = service.icon;
           return (
@@ -46,7 +48,10 @@ export function RealStateServices() {
         })}
       </div>
       <CTAButton2
-        href={REAL_ESTATE_SERVICES_SECTION.CTABtnLink}
+        // href={REAL_ESTATE_SERVICES_SECTION.CTABtnLink}
+        onClick={() => {
+          scrollToId();
+        }}
         label={REAL_ESTATE_SERVICES_SECTION.CTABtnText}
       />
     </div>

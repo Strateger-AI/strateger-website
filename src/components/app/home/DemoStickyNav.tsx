@@ -54,7 +54,7 @@ const DemoStickyNav = () => {
             "fixed top-0 z-50 mx-2 flex h-20 w-screen items-center justify-between self-center px-5 text-xl transition-all duration-500 ease-in-out md:my-5 md:rounded-full md:px-10 lg:justify-evenly",
 
             // ✅ No animation if isHome is true
-            !isHome && "bg-primary text-white md:w-4/5",
+            !isHome && "bg-primary text-white md:w-9/12",
 
             // ✅ Animation logic only if isHome is false
             isHome && "transition-all duration-500 ease-in-out",
@@ -93,7 +93,7 @@ const DemoStickyNav = () => {
           </Link>
 
           {/* ======= DESKTOP NAV ======= */}
-          <div className="relative hidden flex-1 items-center justify-center md:gap-3 lg:flex xl:gap-10">
+          <div className="relative hidden flex-1    items-center justify-center  gap-4 lg:gap-8 xl:gap-14 md:flex  ">
             {NAV_ITEMS.map((item, index) => {
               let closeTimeout: NodeJS.Timeout;
 
@@ -118,7 +118,7 @@ const DemoStickyNav = () => {
                   <Link
                     href={item.href ?? "#"}
                     className={cn(
-                      "text-[1rem] font-medium transition-colors",
+                      "  text-[0.8rem] lg:text-[1rem] font-medium transition-colors",
                       "group-hover:text-secondary",
                       activeIndex === index && "text-secondary",
                     )}
@@ -190,35 +190,40 @@ const DemoStickyNav = () => {
                       {/*{item.title === "Industries" ? (*/}
                       {/*// 🌟 Custom layout for Industries dropdown*/}
                       <div
-                        className="fixed top-24 left-1/2 z-40 mt-3 flex min-w-3/5 -translate-x-1/2 gap-4 rounded-xl bg-white p-3 shadow-xl"
+                        className="fixed top-24 md:left-1/2 z-40 mt-3 bg-white flex md:min-w-4/5 lg:min-w-3/5 md:-translate-x-1/2 gap-4 rounded-xl  p-3 shadow-xl"
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                       >
-                        <div className="from-primary to-primary flex aspect-square w-[30%] flex-col justify-end rounded-md bg-gradient-to-b px-6 py-8 text-start text-white">
+                        <div className="from-primary hidden xl:flex  to-primary   w-[30%] flex-col justify-end rounded-md bg-gradient-to-b px-6 py-8 text-start text-white">
                           <h1 className={"text-4xl font-extrabold"}>
                             {item.title}.
                           </h1>
                           <p className={"text-xl"}>{item.heading}</p>
                         </div>
-                        <div className="grid w-full grid-cols-2 ap-4">
+                        <div className="grid w-full md:grid-row-3  grid-cols-2 ap-4">
                           {item.categories.map((category, idx) => {
                             const Icon = category.icon;
                             return (
                               <Link
                                 key={idx}
                                 href={category.href ?? "#"}
-                                className="group hover:bg-secondary/20 flex items-center gap-4 rounded-md p-4 text-center text-2xl text-black"
+                                className="group hover:bg-secondary/20 flex flex-col lg:flex-row  md:items-start  lg:items-center gap-4 rounded-md p-4 text-center text-2xl text-black"
                               >
                                 <span
                                   className={
-                                    "bg-secondary/20 group-hover:bg-primary flex items-center justify-center rounded-xl p-4 transition-colors duration-300"
+                                    "bg-secondary/20 group-hover:bg-primary flex justify-center items-center  rounded-xl p-4 transition-colors duration-300"
                                   }
                                 >
                                   <Icon className="text-primary text-2xl group-hover:text-white" />
                                 </span>
-                                <span className="flex text-center text-lg font-semibold text-nowrap">
-                                  {category.title}
-                                </span>
+                                <div className={"flex flex-col gap-1 "}>
+                                  <span className="flex text-lg xl:text-lg font-semibold text-start">
+                                    {category.title}
+                                  </span>
+                                  <span className="flex text-sm text-gray-500 text-start">
+                                    {category.desc}
+                                  </span>
+                                </div>
                               </Link>
                             );
                           })}
@@ -283,34 +288,39 @@ const DemoStickyNav = () => {
           </div>
 
           {/* CTA Button */}
-          <Button
-            className={cn(
-              "hidden transition-colors duration-300 lg:flex",
+          <Link href={"/contact"}>
+            <Button
+              className={cn(
+                "hidden transition-colors duration-300 md:flex",
 
-              // Default style
-              "text-primary bg-white hover:text-white",
+                // Default style
+                "text-primary bg-white hover:text-white",
 
-              // When navbar turns white (text-primary + bg-white)
-              isHome &&
-                hero80InView &&
-                !hero10InView &&
-                "bg-primary text-white",
+                // When navbar turns white (text-primary + bg-white)
+                isHome &&
+                  hero80InView &&
+                  !hero10InView &&
+                  "bg-primary text-white",
 
-              !hero80InView &&
-                !hero10InView &&
-                "text-primary hover:text-primary bg-white hover:bg-white",
+                !hero80InView &&
+                  !hero10InView &&
+                  "bg-white text-primary hover:border-1 hover:border-white",
 
-              // When not home (nav is bg-primary), set button to bg-white text-primary
-              !isHome && "text-primary bg-white",
-            )}
-          >
-            Let’s talk
-          </Button>
+                // When not home (nav is bg-primary), set button to bg-white text-primary
+                !isHome && "text-primary bg-white",
+
+                !isHome &&
+                  "bg-white text-primary hover:border-1 hover:border-white",
+              )}
+            >
+              Let’s talk
+            </Button>
+          </Link>
 
           {/* Hamburger button */}
           <Button
             onClick={() => setHambergerOn((prev) => !prev)}
-            className="lg:hidden"
+            className="md:hidden"
           >
             <Menu />
           </Button>

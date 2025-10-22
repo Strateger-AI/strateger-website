@@ -35,7 +35,7 @@ export const REAL_ESTATE_HERO_SECTION = {
     },
   ],
 
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
   CTAButton: "Get Started",
   bannerImg: "/services/mobile/mobile.png",
 };
@@ -177,7 +177,7 @@ export const REAL_ESTATE_BROKERS_INVESTMENT_SECTION = {
 export const CTA_SECTION_REALSTATE = {
   heading: "Over 90% of Financial Institutions Have Already Gone Digital",
   desc: "Stay ahead of the curve with Stratger.ai’s custom fintech app solutions, designed to deliver measurable growth and 100% ROI. We help you innovate faster, engage smarter, and position your business as a true leader in the digital finance landscape.",
-  CTABtnText: "Let’s Build Your Fintech Future →",
+  CTABtnText: "Let’s Build Your Fintech Future",
   img: "/common/cta-img.png",
   CTABtnLink: "/",
 };

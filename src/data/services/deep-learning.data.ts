@@ -7,12 +7,11 @@ export const DEEP_LEARNING_BANNER_SECTION = {
       className: "text-primary font-extrabold",
     },
   ],
-  content:
-    "Unlock growth with our cutting-edge deep learning solutions tailored to meet your unique business challenges. Our team of AI experts builds sophisticated neural networks that analyze massive data sets, generate precise predictions, and uncover actionable insights.From handling unstructured data to driving intelligent automation, our services are designed to enhance decision-making, optimize operations, and transform customer experiences. No matter your industry, we deliver scalable deep learning strategies that keep your business innovative and competitive in a digital-first world.Partner with us to stay ahead of the curve and harness the full potential of AI-powered intelligence.",
+  desc: "Unlock growth with our cutting-edge deep learning solutions tailored to meet your unique business challenges. Our team of AI experts builds sophisticated neural networks that analyze massive data sets, generate precise predictions, and uncover actionable insights. \n From handling unstructured data to driving intelligent automation, our services are designed to enhance decision-making, optimize operations, and transform customer experiences. No matter your industry, we deliver scalable deep learning strategies that keep your business innovative and competitive in a digital-first world.\n Partner with us to stay ahead of the curve and harness the full potential of AI-powered intelligence.",
   CTABtnText: "Request a Demo",
-  bannerImg: "", // add image path when available
+  bannerImg: "/services/game/game-banner.png",
   img: "",
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
 };
 export const DEEP_LEARNING_SERVICES = {
   headingParts: [

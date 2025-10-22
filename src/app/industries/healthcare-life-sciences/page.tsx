@@ -1,4 +1,3 @@
-import { BannerSection } from "@/components/app/industries/health/BannerSection";
 import { HealthCareServices } from "@/components/app/industries/health/HealthCareServices";
 import { CTASectionWithLogo } from "@/components/app/home/CTASection";
 import {
@@ -11,11 +10,13 @@ import { HealthCareTechnology } from "@/components/app/industries/health/HealthC
 import { CTABusinessSection } from "@/components/app/services/ar-vr-development/CTABusinessSection";
 import { ContactSection } from "@/components/app/services/mobile-developement/ContactSection";
 import { QuestionSection } from "@/components/app/home/QuestionSection";
+import { CustomBannerSectionWithStats } from "@/components/common/CustomBannerSectionWithStats";
+import { FINTECH_HERO_SECTION } from "@/data/industries/fintech.data";
 
 export default function Page() {
   return (
     <>
-      <BannerSection />
+      <CustomBannerSectionWithStats data={FINTECH_HERO_SECTION} />
       <HealthCareServices />
       <CTASectionWithLogo data={HEALTHCARE_CTA_SECTION} />
       <WhyHealthCareProfessionals />

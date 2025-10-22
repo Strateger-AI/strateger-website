@@ -40,7 +40,7 @@ export const ECOMMERCE_HERO_SECTION = {
     },
   ],
 
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
   CTAButton: "Let's Discuss Your Idea",
   bannerImg: "/services/mobile/mobile.png", // You can change this to your actual eCommerce image path
 };

@@ -15,7 +15,7 @@ export function EComServices() {
         {" "}
         {ECOMMERCE_SERVICES_SECTION.description}
       </p>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:px-10 xl:px-20">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:px-10">
         {ECOMMERCE_SERVICES_SECTION.services.map((service, index: number) => {
           const Icon = service.icon;
           return (

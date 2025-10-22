@@ -3,6 +3,11 @@
 
 /*@custom-variant dark (&:is(.dark *));*/
 
+:root {
+    --font-geist-sans: ui-sans-serif, system-ui, sans-serif;
+    --font-geist-mono: ui-monospace, monospace;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -177,6 +182,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 
 
 @layer base {

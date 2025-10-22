@@ -45,7 +45,7 @@ export const HEALTHCARE_HERO_SECTION = {
   clientsImages: [],
 
   CTABtnLink: "/",
-  CTAButton: "Get Started",
+  // CTAButton: "Get Started",
   bannerImg: "/services/mobile/mobile.png", // Same image as original
 };
 
@@ -91,8 +91,8 @@ export const HEALTHCARE_SERVICES_SECTION = {
     },
     {
       icon: FaMobileAlt,
-      title: "Custom mHealth App Development",
-      desc: "Our expert healthcare app developers create mHealth apps that support health tracking, virtual consultations, and chronic care management with seamless user experiences.",
+      title: "Custom Health App Development",
+      desc: "Our expert healthcare app developers create Health apps that support health tracking, virtual consultations, and chronic care management with seamless user experiences.",
     },
     {
       icon: GiHealthNormal,
@@ -269,7 +269,7 @@ export const CTA_BUSINESS_SECTION_AR = {
     },
   ],
   CTABtnText: "Let's Connect",
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
 };
 
 export const HEALTHCARE_FAQ_SECTION = {

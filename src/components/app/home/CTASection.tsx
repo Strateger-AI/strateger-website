@@ -16,7 +16,7 @@ export function CTASectionWithLogo({
   data: CTASectionWithLogoProps;
 }) {
   return (
-    <div className="bg-primary relative mx-auto flex w-full flex-col-reverse items-center justify-between overflow-hidden  px-6 py-10 text-white shadow-xl md:flex-row md:px-10 lg:px-20">
+    <div className="bg-primary relative mx-auto flex w-full  flex-col-reverse items-center justify-between overflow-hidden  px-6 py-15 text-white shadow-xl md:flex-row md:px-10 lg:px-20">
       {/* CTA Text + Button (left on md and up) */}
       <div className="z-10 flex w-full flex-col items-center space-y-6 text-center md:w-1/2 md:items-start md:text-left">
         <h1 className="text-4xl font-bold md:text-4xl lg:text-6xl">
@@ -26,15 +26,22 @@ export function CTASectionWithLogo({
         {data.desc && <p className={""}>{data.desc}</p>}
 
         <div>
-          <CTAButton2
-            version={2}
-            className={"text-2xl"}
-            // href={data.CTABtnLink}
-            onClick={() => {
-              scrollToId();
-            }}
-            label={data.ctaBtnText}
-          />
+          {data.CTABtnLink ? (
+            <CTAButton2
+              label={data.ctaBtnText}
+              version={2}
+              href={data.CTABtnLink as string}
+            />
+          ) : (
+            <CTAButton2
+              label={data.ctaBtnText}
+              version={2}
+              onClick={() => {
+                scrollToId();
+              }}
+              // href={data.CTABtnLink as string}
+            />
+          )}
         </div>
       </div>
 

@@ -18,21 +18,53 @@ export function Footer() {
           <div className="flex min-w-[150px] flex-col gap-2" key={index}>
             <h1 className="py-2 text-2xl font-bold">{item.heading}</h1>
 
-            {item.categories?.map((category, idx) =>
-              category.href ? (
-                <Link
-                  key={idx}
-                  href={category.href}
-                  className="hover:text-secondary text-white transition-colors"
-                >
-                  {category.title}
-                </Link>
-              ) : (
+            {/*{item.categories?.map((category, idx) =>*/}
+            {/*  category?.href ? (*/}
+            {/*    <Link*/}
+            {/*      key={idx}*/}
+            {/*      href={category.href}*/}
+            {/*      className="hover:text-secondary text-white transition-colors"*/}
+            {/*    >*/}
+            {/*      {category.title}*/}
+            {/*    </Link>*/}
+            {/*  ) : (*/}
+            {/*    <span key={idx} className="hover:text-secondary text-white">*/}
+            {/*      {category.title}*/}
+            {/*    </span>*/}
+            {/*  ),*/}
+            {/*)}*/}
+            {item.categories?.map((category, idx) => {
+              if ("href" in category) {
+                const isExternal = category.href.startsWith("http");
+
+                return isExternal ? (
+                  <a
+                    key={idx}
+                    href={category.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-secondary text-white transition-colors"
+                  >
+                    {category.title}
+                  </a>
+                ) : (
+                  <Link
+                    key={idx}
+                    href={category.href}
+                    className="hover:text-secondary text-white transition-colors"
+                  >
+                    {category.title}
+                  </Link>
+                );
+              }
+
+              // fallback if no href
+              return (
                 <span key={idx} className="hover:text-secondary text-white">
                   {category.title}
                 </span>
-              ),
-            )}
+              );
+            })}
           </div>
         ))}
       </div>
@@ -47,24 +79,28 @@ export function Footer() {
               </AccordionTrigger>
               <AccordionContent>
                 <div className="flex flex-col gap-2 py-2 pl-4">
-                  {item.categories?.map((category, idx) =>
-                    category.href ? (
-                      <Link
-                        key={idx}
-                        href={category.href}
-                        className="transition-colors hover:text-gray-300"
-                      >
-                        {category.title}
-                      </Link>
-                    ) : (
+                  {item.categories?.map((category, idx) => {
+                    if ("href" in category) {
+                      return (
+                        <Link
+                          key={idx}
+                          href={category.href}
+                          className="transition-colors hover:text-gray-300"
+                        >
+                          {category.title}
+                        </Link>
+                      );
+                    }
+
+                    return (
                       <span
                         key={idx}
                         className="transition-colors hover:text-gray-300"
                       >
                         {category.title}
                       </span>
-                    ),
-                  )}
+                    );
+                  })}
                 </div>
               </AccordionContent>
             </AccordionItem>

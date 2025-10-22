@@ -89,7 +89,7 @@ export const SERVICES_SECTION = {
   ],
 
   CTABtnText: "Get Started",
-  CTABtnLink: "/", // Update as needed
+  CTABtnLink: "/contact", // Update as needed
 };
 
 export const SERVICES_CTA_SECTION = {
@@ -139,3 +139,26 @@ export const SERVICES_ACHIEVEMENT_SECTION_DATA = {
     },
   ],
 };
+
+export const achievements = [
+  {
+    img: "/main/awards/best-game-dev.png",
+    title: "Best Mobile App",
+    rating: 4.8,
+  },
+  {
+    img: "/main/awards/bma.png",
+    title: "Best Game development award",
+    rating: 4.9,
+  },
+  {
+    img: "/main/awards/certificate-of-excellence.png",
+    title: "Top 20 ERP APP development award",
+    rating: 4.7,
+  },
+  {
+    img: "/main/awards/erp-dev-award.png",
+    title: "Certificate of Excellence",
+    rating: 4.9,
+  },
+];

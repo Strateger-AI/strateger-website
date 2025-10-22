@@ -1,15 +1,18 @@
-import { BannerSection } from "@/components/app/services/cybersecurity/BannerSection";
 import { CybersecurityServices } from "@/components/app/services/cybersecurity/CybersecurityServices";
 import { WhatMattersMostSection } from "@/components/app/services/cybersecurity/WhatMattersMostSection";
 import { ContactSection } from "@/components/app/services/mobile-developement/ContactSection";
 import { HowToCollabSection } from "@/components/app/services/cybersecurity/HowToCollabSection";
 import { QuestionSection } from "@/components/app/home/QuestionSection";
-import { QUESTION_SECTION_DATA } from "@/data/services/cybersecurity.data";
+import {
+  CYBERSECURITY_BANNER_SECTION,
+  QUESTION_SECTION_DATA,
+} from "@/data/services/cybersecurity.data";
+import { CustomBannerSection } from "@/components/common/CustomBannerSection";
 
 export default function Page() {
   return (
     <>
-      <BannerSection />
+      <CustomBannerSection data={CYBERSECURITY_BANNER_SECTION} />
       <CybersecurityServices />
       <WhatMattersMostSection />
       <ContactSection />

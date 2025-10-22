@@ -16,7 +16,7 @@ export function WhatWeDo() {
       >
         <div
           className={
-            "flex w-full flex-col items-start space-y-4 lg:w-2/5 lg:space-y-8"
+            "flex w-full flex-col items-center md:items-start space-y-4 lg:w-2/5 lg:space-y-8"
           }
         >
           <h1 className="text-center text-3xl leading-snug md:text-start md:text-7xl">

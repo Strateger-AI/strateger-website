@@ -89,7 +89,7 @@ export const CTA_BUSINESS_SECTION_ABOUT_US = {
     },
   ],
   CTABtnText: "Let's Connect",
-  CTABtnLink: "/",
+  CTABtnLink: "/contact",
 };
 
 export const WHY_STRATEGERAI_SECTION = {
@@ -142,5 +142,5 @@ export const WHY_STRATEGERAI_SECTION = {
 export const CTA_SECTION_DATA = {
   ctaText: "  From Vision to Execution, We’ve Got You Covered",
   ctaBtnText: "Let’s start",
-  ctaBtnLnk: "",
+  ctaBtnLnk: "/contact",
 };

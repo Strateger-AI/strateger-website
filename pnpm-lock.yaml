@@ -134,6 +134,9 @@ importers:
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.1.0)
+      react-international-phone:
+        specifier: ^4.6.0
+        version: 4.6.0(react@19.1.0)
       react-intersection-observer:
         specifier: ^9.16.0
         version: 9.16.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -2565,6 +2568,11 @@ packages:
     resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
     peerDependencies:
       react: '*'
+
+  react-international-phone@4.6.0:
+    resolution: {integrity: sha512-lzj5fLfACRKeaitggFIHWl6LM69aO2uivJbEVyVBjAe0+kkvZjToduqnK2/dm9Zu+l8XfVjd+Fn1ZAyG/t8XAg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   react-intersection-observer@9.16.0:
     resolution: {integrity: sha512-w9nJSEp+DrW9KmQmeWHQyfaP6b03v+TdXynaoA964Wxt7mdR3An11z4NNCQgL4gKSK7y1ver2Fq+JKH6CWEzUA==}
@@ -5366,6 +5374,10 @@ snapshots:
       react: 19.1.0
 
   react-icons@5.5.0(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+
+  react-international-phone@4.6.0(react@19.1.0):
     dependencies:
       react: 19.1.0
 

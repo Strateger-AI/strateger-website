@@ -33,7 +33,7 @@ export function BlogBannerSection() {
             Subscribe
           </button>
         </div>
-        <CTAButton2 href={"/"} version={2} label={"Contact Us"} />
+        <CTAButton2 href={"/contact"} version={2} label={"Contact Us"} />
       </div>
     </div>
   );

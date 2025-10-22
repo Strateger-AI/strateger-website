@@ -8,7 +8,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { SERVICES_ACHIEVEMENT_SECTION_DATA } from "@/data/services/serices.data";
+import {
+  achievements,
+  SERVICES_ACHIEVEMENT_SECTION_DATA,
+} from "@/data/services/serices.data";
 
 export function ServicesAchievementSection() {
   return (
@@ -30,39 +33,37 @@ export function ServicesAchievementSection() {
       {/* Carousel */}
       <Carousel className="w-full">
         <CarouselContent className={"p-2"}>
-          {SERVICES_ACHIEVEMENT_SECTION_DATA.achievements.map(
-            (achievement, i) => (
-              <CarouselItem
-                key={i}
-                className="w-full sm:basis-1/2 lg:basis-1/4"
-              >
-                <Card className="relative m-0 overflow-hidden rounded-xl border-0 bg-red-500 p-0 shadow-md">
-                  <CardContent className="relative h-[410px] w-full p-0">
-                    {/* ✅ Full-size Image */}
-                    <Image
-                      src={achievement.img}
-                      fill
-                      className="h-full w-full object-cover object-top"
-                      alt="achievement-image"
-                    />
+          {achievements.map((achievement, i) => (
+            <CarouselItem
+              key={i}
+              className="w-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+            >
+              <Card className="relative m-0 overflow-hidden rounded-xl border-0  p-0 shadow-md">
+                <CardContent className="relative h-[410px] w-full p-0">
+                  {/* ✅ Full-size Image */}
+                  <Image
+                    src={achievement.img}
+                    fill
+                    className="h-full w-full  p-5 object-top object-contain"
+                    alt="achievement-image"
+                  />
 
-                    {/* Overlay with rating and title */}
-                    <div className="absolute bottom-0 flex w-full items-center justify-center rounded-t-2xl bg-white py-10">
-                      <div className="absolute -top-5 left-1/2 flex -translate-x-1/2 transform items-center gap-2 rounded-xl bg-white px-4 py-2 shadow-xl">
-                        <span className="font-medium text-gray-500">
-                          {`${achievement.rating}/5.0`}
-                        </span>
-                        <CustomRating defaultValue={achievement.rating} />
-                      </div>
-                      <h2 className="text-center text-lg font-bold">
-                        {achievement.title}
-                      </h2>
+                  {/* Overlay with rating and title */}
+                  <div className="absolute bottom-0 flex w-full items-center justify-center rounded-t-2xl bg-white py-10">
+                    <div className="absolute -top-5 left-1/2 flex -translate-x-1/2 transform items-center gap-2 rounded-xl bg-white px-4 py-2 shadow-xl">
+                      <span className="font-medium text-gray-500">
+                        {`${achievement.rating}/5.0`}
+                      </span>
+                      <CustomRating defaultValue={achievement.rating} />
                     </div>
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            ),
-          )}
+                    <h2 className="text-center text-lg font-bold">
+                      {achievement.title}
+                    </h2>
+                  </div>
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          ))}
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />

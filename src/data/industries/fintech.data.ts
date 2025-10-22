@@ -40,7 +40,7 @@ export const FINTECH_HERO_SECTION = {
     },
   ],
 
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
   CTAButton: "Get Free Consultation",
   bannerImg: "/services/mobile/mobile.png", // Update this path to your actual fintech banner
 };

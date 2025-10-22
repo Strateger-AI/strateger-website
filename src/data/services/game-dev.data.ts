@@ -11,12 +11,12 @@ export const BANNER_SECTION = {
     { text: "Game Development ", className: "font-extrabold text-primary" },
     { text: "Services", className: "font-bold " },
   ],
-  content:
-    "At Strateger.ai, we specialize in creating immersive and engaging experiences as a trusted game development agency. Our expert team crafts high-quality mobile games for both Android and iOS, combining stunning visuals, smooth gameplay mechanics, and captivating storylines that keep players coming back for more.",
+
+  desc: "At Strateger.ai, we specialize in creating immersive and engaging experiences as a trusted game development agency. Our expert team crafts high-quality mobile games for both Android and iOS, combining stunning visuals, smooth gameplay mechanics, and captivating storylines that keep players coming back for more.\n \n Level up your ideas with us, where creativity meets technology. From concept to launch, we bring your vision to life through innovative design, advanced development tools, and user-centric experiences. Partner with us to build games that engage, inspire, and deliver lasting entertainment across every platform. ",
   CTABtnText: "Get started",
 
-  bannerImg: "",
-  CTaBtnLink: "/",
+  bannerImg: "/services/game/game-banner.png",
+  CTaBtnLink: "/c",
 };
 
 export const COMPANY_REVIEWS = [
@@ -31,13 +31,10 @@ export const COMPANY_REVIEWS = [
 export const TOP_TIER_SECTION = {
   headingParts: [
     { text: "Top-Tier  ", className: "text-primary font-extrabold" },
-    { text: "Mobile Game Development Services", className: "" },
+    { text: "Mobile Game Development Services", className: "font-bold" },
   ],
-  desc:
-    "We turn innovative game development ideas into captivating and high-quality mobile experiences. As a leading video game development company, we combine the creative vision of our clients with the technical expertise of our skilled developers to craft games that entertain, engage, and retain players.\n \n" +
-    "Our comprehensive game development agency covers every stage of the process from concept and design to development, testing, and launch. Our team of strategists, UI/UX designers, developers, and QA specialists collaborates seamlessly to deliver games with stunning visuals, smooth gameplay, and immersive storylines.\n \n" +
-    "Excellence is our standard. We build games that not only delight players but also create lasting impact in the competitive mobile gaming market.",
-  img: "/img_1.png",
+  desc: "We turn innovative game development ideas into captivating and high-quality mobile experiences. As a leading video game development company, we combine the creative vision of our clients with the technical expertise of our skilled developers to craft games that entertain, engage, and retain players.\n \n Our comprehensive game development agency covers every stage of the process from concept and design to development, testing, and launch. Our team of strategists, UI/UX designers, developers, and QA specialists collaborates seamlessly to deliver games with stunning visuals, smooth gameplay, and immersive storyline.\n \m Excellence is our standard. We build games that not only delight players but also create lasting impact in the competitive mobile gaming market.",
+  img: "/services/game/game-banner-2.png",
   CTABtnText: "Get started",
   CTABtnLink: "/",
 };
@@ -89,7 +86,7 @@ export const GAME_PLATFORM_SOLUTIONS = {
     },
     { text: " for Every Platform", className: "" },
   ],
-  img: "/game-mobile.webp",
+  img: "/services/game/inovative-gaming-solutions(1).png",
   desc: "Creating games that capture attention starts with a strong idea—and we bring the expertise to make that idea a reality. With a dedicated team specializing in Android and iOS, we deliver gaming solutions that combine creativity, performance, and seamless user experiences.",
   solutions: [
     {
@@ -123,13 +120,13 @@ export const GAME_DEV_TECHNOLOGIES = {
     {
       name: "Unreal Engine",
       svg: UnrealIcon, // or your SVG component / path
-      img: "/unreal-engine-1.webp",
+      img: "/services/game/unreal.png",
       desc: "We build games with Unreal Engine for clients with high-end graphic requirements and expansive enterprise-grade scopes. This game development framework empowers our team to deliver photoreal visuals and advanced rendering. Our clients include both B2C and B2B brands, and Unreal’s architecture scales as their needs grow. Moreover, Unreal underpins our NFT and VR game development services through its robust toolset and immersive capabilities.",
     },
     {
       name: "Unity Engine",
       svg: unityIcon,
-      img: "/unity-1-1.webp",
+      img: "/services/game/unity.png",
       desc: "We utilize the Unity game development engine for its native plus cross-platform flexibility. Unity covers Android, iOS, consoles, and PCs with just about two codebases. Its rich Asset Store of plugins, tools, and APIs accelerates development, making it cost-effective without compromising power. Unity’s versatility makes it ideal for both 2D and 3D games, offering budget-friendly, scalable solutions for our clients.",
     },
     // You can add more technologies similarly (e.g. Godot, Cocos, etc.)

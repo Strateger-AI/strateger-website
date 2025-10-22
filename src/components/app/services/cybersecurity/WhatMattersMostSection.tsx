@@ -4,6 +4,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useRef } from "react";
 
@@ -102,6 +104,8 @@ export function WhatMattersMostSection() {
             );
           })}
         </CarouselContent>
+        <CarouselNext />
+        <CarouselPrevious />
       </Carousel>
 
       {/* Pagination Dots (non-clickable) */}

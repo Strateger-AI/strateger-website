@@ -66,14 +66,14 @@ export function WhatWeDoSection() {
   };
 
   return (
-    <div className="space-y-5  px-5 py-5 md:space-y-10 md:px-20">
+    <div className="space-y-5  px-5 py-5 md:space-y-10 lg:px-20">
       <h1 className="text-center text-4xl font-bold md:text-7xl">
         {" "}
         <span className={"text-primary"}>What</span> We Do
       </h1>
-      <div className="flex h-full flex-col lg:h-[60vh]  justify-evenly md:flex-row">
+      <div className="flex h-full flex-col lg:min-h-[60vh]  justify-evenly md:flex-row">
         {/*Left Side*/}
-        <div className="flex h-full flex-col  items-center justify-around gap-4 md:w-4/12">
+        <div className="flex h-full flex-col md:self-center  items-center justify-around gap-4 md:w-4/12">
           {WHAT_WE_DO_DATA.map((item, index) => {
             const IconComponent = item.serviceIcon;
             return (
@@ -130,7 +130,7 @@ export function WhatWeDoSection() {
         {/*Right Side*/}
         <div
           className={
-            "hidden max-w-1/2 flex-1 flex-col transition-transform duration-300  items-start   justify-around b00 h-full rounded-2xl text-sm md:flex md:space-y-4 md:p-5 md:text-xl lg:space-y-8 lg:p-8"
+            "hidden max-w-1/2 flex-1 flex-col transition-transform duration-300  items-start   justify-around  h-full rounded-2xl text-sm md:flex md:space-y-4 md:p-5 md:text-xl lg:space-y-8 lg:p-8"
           }
         >
           <h1
@@ -140,7 +140,7 @@ export function WhatWeDoSection() {
           >
             {selectedService.service}
           </h1>
-          <p className={"text-sm flex-1 lg:text-xl leading-normal"}>
+          <p className={"text-sm  lg:text-xl leading-normal"}>
             {selectedService.mapping.subDescription}
           </p>
           <div className={"md:px-2"}>
@@ -167,7 +167,7 @@ export function WhatWeDoSection() {
                 // <li key={index} className="font-bold text-white md:text-6xl">
                 <Icon
                   key={index}
-                  className="lg:w-20 lg:h-20 md:w-15 md:h-15   p-4   rounded-xl hover:shadow-md  "
+                  className="lg:w-20 lg:h-20 md:w-15 md:h-15   p-4   rounded-xl hover:scale-110  duration-300  "
                 />
                 // </li>
               );

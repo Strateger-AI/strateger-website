@@ -17,7 +17,7 @@ export function MobileDevCTASection() {
           "flex flex-col items-center space-y-4 md:items-start lg:w-1/2"
         }
       >
-        <p className={"text-white md:text-start lg:text-lg"}>
+        <p className={"text-white text-center md:text-start lg:text-lg"}>
           {MOBILE_DEV_CTA_DATA.desc}
         </p>
         <div>

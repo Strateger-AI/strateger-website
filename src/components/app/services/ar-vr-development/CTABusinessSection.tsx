@@ -2,14 +2,14 @@
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn, scrollToId } from "@/lib/utils";
 import { CTAButton2 } from "@/components/common/CTAButton2";
 
 type CTABusinessSectionProps = {
   heading: string;
   description?: string;
   CTABtnText: string;
-  CTABtnLink: string;
+  CTABtnLink?: string;
   bgImg?: string;
   stats?: {
     stat: number;
@@ -72,12 +72,22 @@ export function CTABusinessSection({
           ))}
         </div>
       )}
-
-      <CTAButton2
-        label={data.CTABtnText}
-        version={2}
-        href={data.CTABtnLink as string}
-      />
+      {data.CTABtnLink ? (
+        <CTAButton2
+          label={data.CTABtnText}
+          version={2}
+          href={data.CTABtnLink as string}
+        />
+      ) : (
+        <CTAButton2
+          label={data.CTABtnText}
+          version={2}
+          onClick={() => {
+            scrollToId();
+          }}
+          // href={data.CTABtnLink as string}
+        />
+      )}
     </div>
   );
 }

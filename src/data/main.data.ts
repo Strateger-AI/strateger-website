@@ -196,36 +196,42 @@ export const NAV_ITEMS = [
       {
         title: "Mobile App Development",
         href: "/services/mobile-app-development",
+        desc: "Build Apps That Power Success",
         icon: FaMobileAlt,
         subcategories: [],
       },
       {
         title: "Game Development Services",
         href: "/services/game-development",
+        desc: "Crafting Worlds That Engage",
         icon: FaGamepad,
         subcategories: [],
       },
       {
         title: "AR/VR Development",
         href: "/services/ar-vr-development",
+        desc: "Immersive Reality, Real Results",
         icon: FaVrCardboard,
         subcategories: [],
       },
       {
         title: "Cybersecurity Services",
         href: "/services/cybersecurity",
+        desc: "Defend. Detect. Secure Growth.",
         icon: FaShieldAlt,
         subcategories: [],
       },
       {
         title: "Deep Learning Services",
         href: "/services/deep-learning",
+        desc: "Smarter Systems. Deeper Insight.",
         icon: FaBrain,
         subcategories: [],
       },
       {
         title: "ERP Implementation Services",
         href: "/services/erp-implementation",
+        desc: "Streamline. Simplify. Scale Up.",
         icon: MdBusiness,
         subcategories: [],
       },
@@ -239,42 +245,49 @@ export const NAV_ITEMS = [
       {
         title: "Education & E-Learning",
         href: "/industries/education-e-learning",
+        desc: "Transform Learning with Tech",
         icon: FaGraduationCap,
         subcategories: [],
       },
       {
         title: "Entertainment",
         href: "/industries/entertainment",
+        desc: "Where Fun Meets Innovation",
         icon: FaGamepad,
         subcategories: [],
       },
       {
         title: "Healthcare & Life Sciences",
         href: "/industries/healthcare-life-sciences",
+        desc: "Tech That Cares for Lives",
         icon: FaHeartbeat,
         subcategories: [],
       },
       {
         title: "E-Commerce",
         href: "/industries/retail-ecommerce",
+        desc: "Empower Sales with Smart Tech",
         icon: FaShoppingCart,
         subcategories: [],
       },
       {
         title: "Enterprise & Corporate",
         href: "/industries/enterprise-corporate",
+        desc: "Drive Growth Through Digital",
         icon: FaBuilding,
         subcategories: [],
       },
       {
         title: "Fintech",
         href: "/industries/fintech",
+        desc: "Innovate Finance with Trust",
         icon: FaUniversity,
         subcategories: [],
       },
       {
         title: "Real Estate & Construction",
         href: "/industries/real-estate-construction",
+        desc: "Build Smarter, Sell Faster",
         icon: FaHome,
         subcategories: [],
       },
@@ -290,10 +303,10 @@ export const NAV_ITEMS = [
     title: "About Us",
     href: "/about-us",
   },
-  {
-    title: "Contact Us",
-    href: "/contact",
-  },
+  // {
+  //   title: "Contact Us",
+  //   href: "/contact",
+  // },
   {
     title: "Blog",
     href: "/blog",
@@ -391,18 +404,7 @@ export const heroSection = {
   ],
 };
 
-export type FooterCategory = {
-  title: string;
-  href?: string; // optional because "Location" has no link
-  icon?: string; // optional because only social links have it
-};
-
-export type FooterLinkGroup = {
-  heading: string;
-  categories: FooterCategory[];
-};
-
-export const FOOTER_LINKS: FooterLinkGroup[] = [
+export const FOOTER_LINKS = [
   {
     heading: "Services",
     categories: [
@@ -414,7 +416,10 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
         title: "Game Development services",
         href: "/services/game-development",
       },
-      { title: "Custom AR VR Development", href: "/services/ar-vr" },
+      {
+        title: "Custom AR VR Development",
+        href: "/services/ar-vr-development",
+      },
       { title: "Cybersecurity service", href: "/services/cybersecurity" },
       { title: "Deep Learning service", href: "/services/deep-learning" },
       {
@@ -426,14 +431,26 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
   {
     heading: "Industries",
     categories: [
-      { title: "Education & E-Learning", href: "/industries/education" },
-      { title: "Gaming & Entertainment", href: "/industries/gaming" },
-      { title: "Healthcare & Life Sciences", href: "/industries/healthcare" },
-      { title: "Retail & E-Commerce", href: "/industries/retail" },
-      { title: "Enterprise & Corporate", href: "/industries/enterprise" },
-      { title: "Finance & Banking", href: "/industries/finance" },
-      { title: "Real Estate & Construction", href: "/industries/real-estate" },
-      { title: "Automotive & Manufacturing", href: "/industries/automotive" },
+      {
+        title: "Education & E-Learning",
+        href: "/industries/education-e-learning",
+      },
+      { title: "Entertainment", href: "/industries/entertainment" },
+      {
+        title: "Healthcare & Life Sciences",
+        href: "/industries/healthcare-life-sciences",
+      },
+      { title: "Retail & E-Commerce", href: "/industries/retail-ecommerce" },
+      {
+        title: "Enterprise & Corporate",
+        href: "/industries/enterprise-corporate",
+      },
+      { title: "Fintech", href: "/industries/fintech" },
+      {
+        title: "Real Estate & Construction",
+        href: "/industries/real-estate-construction",
+      },
+      // { title: "Automotive & Manufacturing", href: "/industries/automotive" },
     ],
   },
   {
@@ -446,7 +463,7 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
     heading: "Quick Links",
     categories: [
       { title: "Home", href: "/" },
-      { title: "About Us", href: "/about" },
+      { title: "About Us", href: "/about-us" },
       { title: "Blog", href: "/blog" },
     ],
   },
@@ -460,10 +477,10 @@ export const FOOTER_LINKS: FooterLinkGroup[] = [
   {
     heading: "Connect With Us",
     categories: [
-      { title: "Facebook", href: "https://facebook.com", icon: "facebook" },
-      { title: "Twitter", href: "https://twitter.com", icon: "twitter" },
-      { title: "LinkedIn", href: "https://linkedin.com", icon: "linkedin" },
-      { title: "Instagram", href: "https://instagram.com", icon: "instagram" },
+      { title: "Facebook", href: "", icon: "facebook" },
+      { title: "Twitter", href: "", icon: "twitter" },
+      { title: "LinkedIn", href: "", icon: "linkedin" },
+      { title: "Instagram", href: "", icon: "instagram" },
     ],
   },
 ];
@@ -834,15 +851,28 @@ export const PARTNERS_DATA = [
     type: "technologies",
     name: "Technology",
     images: [
-      "/main/partners/Airbnb.png",
-      "/main/partners/Aivora.png",
-      "/main/partners/cyber-nexa-solution.png",
-      "/main/partners/Deepnex.png",
-      "/main/partners/Defensys.png",
-
-      "/main/partners/RealMotion-xr.png",
-      "/main/partners/ubisoft.png",
-      "/main/partners/VisionGrid.png",
+      "/main/technologies/img/android.webp",
+      "/main/technologies/img/autodesk-maya.webp",
+      "/main/technologies/img/backend-development.webp",
+      "/main/technologies/img/blender.webp",
+      "/main/technologies/img/cinema-4d.webp",
+      "/main/technologies/img/cisco-security.webp",
+      "/main/technologies/img/cross_platform.webp",
+      "/main/technologies/img/crowdstrike.webp",
+      "/main/technologies/img/deveops-&-deployment.webp",
+      "/main/technologies/img/emerging-technologies.webp",
+      "/main/technologies/img/infor-clodsuite.webp",
+      "/main/technologies/img/ios.webp",
+      "/main/technologies/img/keras.webp",
+      "/main/technologies/img/oracle-nersuite.webp",
+      "/main/technologies/img/pytorch.webp",
+      "/main/technologies/img/sap-s_4hana.webp",
+      "/main/technologies/img/splunk.webp",
+      "/main/technologies/img/tensorflow.webp",
+      "/main/technologies/img/ui&ux-design.webp",
+      "/main/technologies/img/unity-3d.webp",
+      "/main/technologies/img/unreal-engine.webp",
+      "/main/technologies/img/zbrush.webp",
     ],
   },
 ];

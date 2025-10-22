@@ -1,4 +1,3 @@
-import { BannerSection } from "@/components/app/industries/enterprise/BannerSection";
 import { EnterpriseService } from "@/components/app/industries/enterprise/EnterpriceService";
 import { CTABusinessSection } from "@/components/app/services/ar-vr-development/CTABusinessSection";
 import {
@@ -8,11 +7,13 @@ import {
 import { AppWeDevelope } from "@/components/app/industries/enterprise/AppWeDevelope";
 import { QuestionSection } from "@/components/app/home/QuestionSection";
 import { ContactSection } from "@/components/app/services/mobile-developement/ContactSection";
+import { ECOMMERCE_HERO_SECTION } from "@/data/industries/ecom.data";
+import { CustomBannerSectionWithStats } from "@/components/common/CustomBannerSectionWithStats";
 
 export default function Page() {
   return (
     <>
-      <BannerSection />
+      <CustomBannerSectionWithStats data={ECOMMERCE_HERO_SECTION} />
       <EnterpriseService />
       <CTABusinessSection data={CTA_ENTERPRISE_SECTION} />
       <AppWeDevelope />

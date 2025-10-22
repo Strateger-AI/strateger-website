@@ -1,5 +1,7 @@
+"use client";
 import { ECOMMERCE_TRUST_SECTION } from "@/data/industries/ecom.data";
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { scrollToId } from "@/lib/utils";
 
 export function TrustedSection() {
   return (
@@ -20,7 +22,10 @@ export function TrustedSection() {
       </p>
       <CTAButton2
         href={ECOMMERCE_TRUST_SECTION.CTABtnLink}
-        label={ECOMMERCE_TRUST_SECTION.CTABtnText}
+        // label={ECOMMERCE_TRUST_SECTION.CTABtnText}
+        onClick={() => {
+          scrollToId();
+        }}
       />
     </div>
   );

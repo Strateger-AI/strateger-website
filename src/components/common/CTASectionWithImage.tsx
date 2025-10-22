@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { scrollToId } from "@/lib/utils";
 
 type CTASection2withImageProps = {
   heading: string;
@@ -24,7 +26,10 @@ export function CTASectionWithImage({
         <p className="lg:text-md text-white">{data.desc}</p>
         <span>
           <CTAButton2
-            href={data.CTABtnLink}
+            // href={data.CTABtnLink}
+            onClick={() => {
+              scrollToId();
+            }}
             version={2}
             label={data.CTABtnText}
           />

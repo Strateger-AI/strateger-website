@@ -42,7 +42,7 @@ export const ENTERPRISE_HERO_SECTION = {
     },
   ],
 
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
   CTAButton: "Let’s Build Your Enterprise App",
   bannerImg: "/services/mobile/mobile.png", // You can replace this with an enterprise-specific banner if needed
 };
@@ -114,7 +114,7 @@ export const CTA_ENTERPRISE_SECTION = {
     "Transform your enterprise with intelligent, secure, and scalable app solutions.",
   description: "",
   CTABtnText: "Get free consultancy",
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
   stats: [
     {
       stat: 55,

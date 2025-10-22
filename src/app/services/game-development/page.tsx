@@ -1,5 +1,3 @@
-import { BannerSection } from "@/components/app/services/game-development/BannerSection";
-// import { CompanyReviewsSection } from "@/components/app/services/game-development/CompanyReviewsSection";
 import { TopTierSection } from "@/components/app/services/game-development/TopTierSection";
 import { GameDevelopmentServices } from "@/components/app/services/game-development/GameDevelopmentServices";
 import { CTASectionWithLogo } from "@/components/app/home/CTASection";
@@ -9,15 +7,17 @@ import { GameDevProcessSection } from "@/components/app/services/game-developmen
 import { WhyChoose } from "@/components/app/services/game-development/WhyChooseStrategerSection";
 import { QuestionSection } from "@/components/app/home/QuestionSection";
 import { ContactSection } from "@/components/app/services/mobile-developement/ContactSection";
+import { BANNER_SECTION } from "@/data/services/game-dev.data";
 import {
   CTA_SECTION_DATA_GAME,
   QUESTION_SECTION_DATA,
 } from "@/data/services/game-dev.data";
+import { CustomBannerSection } from "@/components/common/CustomBannerSection";
 
 export default function Page() {
   return (
     <>
-      <BannerSection />
+      <CustomBannerSection data={BANNER_SECTION} />
       {/*<CompanyReviewsSection />*/}
       <TopTierSection />
       <GameDevelopmentServices />

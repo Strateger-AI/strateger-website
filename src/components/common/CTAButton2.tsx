@@ -99,7 +99,7 @@ export function CTAButton2({
   const isVersion2 = version === 2;
 
   const commonClasses = cn(
-    "group relative max-w-fit hover:scale-[102%] duration-500 transition-transform bg-red-500 z-10 mx-auto flex w-fit cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full border-1 px-4 py-2 pl-6 text-lg font-bold shadow-lg backdrop-blur-md transition-all",
+    "group relative max-w-fit  hover:scale-[102%] duration-500 transition-transform bg-red-500 z-10 mx-auto flex w-fit cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full border-1 px-4 py-2 pl-6 text-lg font-bold shadow-lg backdrop-blur-md transition-all",
     isVersion2
       ? "border-white bg-white text-white shadow-white/20"
       : "border-primary text-primary shadow-primary/20 bg-gray-50",

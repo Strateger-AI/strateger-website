@@ -39,7 +39,7 @@ export const ENTERTAINMENT_HERO_SECTION = {
     "Trusted by Leading Entertainment Brands and Digital Innovators",
   clientsImages: [],
 
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
   CTAButton: "Get a free consultancy",
   bannerImg: "/services/mobile/mobile.png", // Reused image as per original
 };
@@ -87,7 +87,6 @@ export const ENTERTAINMENT_SERVICES_SECTION = {
 
 import { FaMoneyBillWave, FaBullhorn } from "react-icons/fa";
 import { AiOutlineInteraction } from "react-icons/ai";
-import { GiArtificialIntelligence } from "react-icons/gi";
 
 export const ENTERTAINMENT_TECHNOLOGIES_SECTION = {
   headingParts: [
@@ -118,11 +117,11 @@ export const ENTERTAINMENT_TECHNOLOGIES_SECTION = {
       title: "Expanded Brand Presence",
       desc: "With over 70% of users consuming digital media through mobile apps, having your own entertainment platform ensures greater visibility and brand recall. It’s the fastest route to building strong market recognition.",
     },
-    {
-      icon: GiArtificialIntelligence,
-      title: "Innovation That Sets You Apart",
-      desc: "Integrating modern technologies like AI, AR/VR, and real-time analytics gives your entertainment app a competitive advantage. These innovations create personalized, data-driven experiences that help your brand lead in a crowded marketplace.",
-    },
+    // {
+    //   icon: GiArtificialIntelligence,
+    //   title: "Innovation That Sets You Apart",
+    //   desc: "Integrating modern technologies like AI, AR/VR, and real-time analytics gives your entertainment app a competitive advantage. These innovations create personalized, data-driven experiences that help your brand lead in a crowded marketplace.",
+    // },
   ],
 };
 

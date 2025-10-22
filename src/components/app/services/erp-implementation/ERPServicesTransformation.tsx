@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { cn } from "@/lib/utils";
+import { cn, scrollToId } from "@/lib/utils";
 import { ERP_TRANSFORMATION_SECTION } from "@/data/services/erp-implementation.data";
 import { CTAButton2 } from "@/components/common/CTAButton2";
 
@@ -97,7 +97,10 @@ export function ERPServicesTransformation() {
       <CTAButton2
         className={"text-primary"}
         label={ERP_TRANSFORMATION_SECTION.CTABtnText}
-        href={ERP_TRANSFORMATION_SECTION.CTABtnLink}
+        onClick={() => {
+          scrollToId();
+        }}
+        // href={ERP_TRANSFORMATION_SECTION.CTABtnLink}
       />
     </div>
   );

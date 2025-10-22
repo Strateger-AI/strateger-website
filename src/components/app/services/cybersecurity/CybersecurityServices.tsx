@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn, scrollToId } from "@/lib/utils";
 import {
   Accordion,
   AccordionItem,
@@ -98,7 +98,10 @@ export function CybersecurityServices() {
       <CTAButton2
         className={"text-primary"}
         label={CYBERSECURITY_SERVICES_SECTION.CTABtnText}
-        href={CYBERSECURITY_SERVICES_SECTION.CTABtnLink}
+        onClick={() => {
+          scrollToId();
+        }}
+        // href={CYBERSECURITY_SERVICES_SECTION.CTABtnLink}
       />
     </div>
   );

@@ -11,7 +11,7 @@ import {
   FaUsersCog,
   FaTools,
 } from "react-icons/fa"; // Use this in the file where the object is used
-export const BANNER_SECTION = {
+export const BANNER_SECTION_ERP = {
   headingParts: [
     { text: "Optimize Your  with", className: "font-bold " },
     { text: "Operations", className: "text-primary font-extrabold" },
@@ -23,8 +23,8 @@ export const BANNER_SECTION = {
   ],
 
   CTABtnText: "Let's Connect",
-  CTABtnLink: "/",
-  bannerImg: "", // add image path when available
+  // CTABtnLink: "/",
+  bannerImg: "/services/game/game-banner.png",
   img: "",
 };
 
@@ -73,14 +73,18 @@ export const ERP_SOLUTIONS_SECTION = {
 export const ERP_CHALLENGES_SECTION = {
   headingParts: [
     {
-      text: "Struggling to Keep Your Business in Sync?\n",
+      text: "Struggling to Keep Your Business in Sync?",
       className: "text-primary font-extrabold",
     },
-    { text: "It’s Time for an ", className: "font-bold" },
-    { text: "ERP Upgrade", className: "text-primary font-extrabold" },
+    // { text: "It’s Time for an ", className: "font-bold" },
+    // { text: "ERP Upgrade", className: "text-primary font-extrabold" },
   ],
   description:
     "If your organization is experiencing two or more of these challenges, partnering with the right ERP solution provider can transform the way you operate:",
+
+  contentHeading: "Time For An Upgrade",
+  contentDesc:
+    "Are disconnected systems, slow workflows, and legacy tools holding your business back? Inefficient processes and poor integration reduce productivity, limit visibility, and slow decision-making. It’s time to unify your operations with modern, scalable solutions that drive efficiency and accelerate growth.",
   challenges: [
     "Disconnected systems and inefficient workflows slowing productivity and growth ?",
     "Limited real-time visibility into operations, making decision-making harder ?",

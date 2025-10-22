@@ -1,9 +1,11 @@
+"use client";
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { scrollToId } from "@/lib/utils";
 
 type SimpleCtaSectionProps = {
   heading: string;
   description?: string;
-  CTABtnLink: string;
+  CTABtnLink?: string;
   CTABtnText: string;
 };
 
@@ -20,8 +22,30 @@ export function SimpleCtaSection({ data }: { data: SimpleCtaSectionProps }) {
       {data.description && (
         <p className={"text-2xl tex text-white"}>{data.description}</p>
       )}
-
-      <CTAButton2 version={2} href={data.CTABtnLink} label={data.CTABtnText} />
+      {data.CTABtnLink ? (
+        <CTAButton2
+          version={2}
+          href={data.CTABtnLink}
+          label={data.CTABtnText}
+        />
+      ) : (
+        <CTAButton2
+          version={2}
+          // href={data.CTABtnLink}
+          onClick={() => {
+            scrollToId();
+          }}
+          label={data.CTABtnText}
+        />
+      )}
+      {/*<CTAButton2*/}
+      {/*  version={2}*/}
+      {/*  // href={data.CTABtnLink}*/}
+      {/*  onClick={() => {*/}
+      {/*    scrollToId();*/}
+      {/*  }}*/}
+      {/*  label={data.CTABtnText}*/}
+      {/*/>*/}
     </div>
   );
 }

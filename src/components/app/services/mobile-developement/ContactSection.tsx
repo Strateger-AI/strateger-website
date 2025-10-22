@@ -1,31 +1,30 @@
+"use client";
+
 import Image from "next/image";
 import { CONTACTS_SECTION } from "@/data/mobile/mobile-dev.data";
-
 import { ContactUsForm } from "@/components/common/ContactUsForm";
 
 export function ContactSection() {
   return (
     <div
-      id={"contact-form"}
-      className=" min-h-screen flex items-center justify-center space-y-5  bg py-10 p-10 g: "
+      id="contact-form"
+      className=" flex md:items-center  md:justify-center bg py-10 px-5 md:px-10"
     >
-      <div className="relative flex w-full max-w-6xl flex-col rounded-xl shadow-xl lg:h-[80vh]  lg:flex-row">
-        {/* Image Section */}
-        <div className="relative h-72 w-full overflow-hidden rounded-br-none sm:h-80 md:h-[400px] lg:absolute lg:bottom-0 lg:left-0 lg:h-[105%] lg:w-2/5">
+      <div className="relative flex w-full max-w-6xl flex-col  shadow-[0_0_15px_rgba(0,0,0,0.1)] p-6 bg-white  md:h-[80vh] overflow-hidden rounded-xl md:flex-row">
+        {/* ✅ Image Section — visible on md and up */}
+        <div className="relative hidden md:block w-full md:w-2/5 h-full">
           <Image
             src={CONTACTS_SECTION.img}
-            fill
             alt="contact-img"
-            className="rounded-md rounded-br-none object-cover object-top lg:object-center obj"
+            fill
+            className="object-cover object-center"
+            priority
           />
         </div>
 
-        {/* Empty spacer only for lg screens to offset absolute image */}
-        <div className="hidden w-2/5 lg:block" />
-
-        {/* Form Section */}
-        <div className="flex h-full flex-1 flex-col gap-5 p-5 lg:p-10">
-          <h1 className=" text-center md:text-start text-xl leading-normal font-bold md:text-4xl lg:text-5xl">
+        {/* ✅ Form Section */}
+        <div className="flex h-full flex-1 flex-col gap-5 px-5 md:px-10">
+          <h1 className="text-center md:text-start text-2xl leading-normal font-bold md:text-4xl lg:text-5xl">
             {CONTACTS_SECTION.headingParts.map((part, i) => (
               <span key={i} className={part.className}>
                 {part.text}{" "}

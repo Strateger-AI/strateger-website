@@ -1,8 +1,7 @@
-import { HeroSectionAr } from "@/components/app/services/ar-vr-development/HeroSectionAr";
-// import { CompanyReviewsSection } from "@/components/app/services/game-development/CompanyReviewsSection";
 import { ArDevServicesSection } from "@/components/app/services/ar-vr-development/ARDevServicesSection";
 import { CTABusinessSection } from "@/components/app/services/ar-vr-development/CTABusinessSection";
 import {
+  BANNER_SECTION_AR,
   CTA_BUSINESS_SECTION_AR,
   CTA_SECTION_DATA,
   QUESTION_SECTION_AR_DATA,
@@ -11,11 +10,12 @@ import { SolutionARDev } from "@/components/app/services/ar-vr-development/Solut
 import { ContactSection } from "@/components/app/services/mobile-developement/ContactSection";
 import { QuestionSection } from "@/components/app/home/QuestionSection";
 import { CTASectionWithLogo } from "@/components/app/home/CTASection";
+import { CustomBannerSection } from "@/components/common/CustomBannerSection";
 
 export default function Page() {
   return (
     <>
-      <HeroSectionAr />
+      <CustomBannerSection data={BANNER_SECTION_AR} />
       {/*<CompanyReviewsSection />*/}
       <ArDevServicesSection />
       <CTABusinessSection data={CTA_BUSINESS_SECTION_AR} />

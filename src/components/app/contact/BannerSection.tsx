@@ -1,5 +1,4 @@
 import { BANNER_SECTION } from "@/data/contact/contact.data";
-import { CTAButton2 } from "@/components/common/CTAButton2";
 
 export function BannerSection() {
   return (
@@ -24,11 +23,11 @@ export function BannerSection() {
           ))}
         </h1>
 
-        <CTAButton2
-          label={BANNER_SECTION.CTABtnText}
-          className={"!text-3xl"}
-          href={BANNER_SECTION.CTABtnLink}
-        />
+        {/*<CTAButton2*/}
+        {/*  label={BANNER_SECTION.CTABtnText}*/}
+        {/*  className={"!text-3xl"}*/}
+        {/*  href={BANNER_SECTION.CTABtnLink}*/}
+        {/*/>*/}
       </div>
     </div>
   );

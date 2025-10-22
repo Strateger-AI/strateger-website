@@ -32,36 +32,36 @@ export const HERO_SECTION = {
     },
   ],
 
-  content:
+  desc:
     "At Strateger.ai, we deliver quality-driven mobile app development services designed to help businesses of all sizes grow and scale. With decades of combined experience and a team of skilled developers, we’ve successfully built hundreds of apps across diverse industries. From iOS to Android, our custom mobile app development approach ensures every product is tailored to your vision and backed by strong technical expertise.\n" +
     "",
-  stats: [
-    {
-      stat: 20,
-      symbol: "+",
-      desc: "Years of Experience",
-    },
-    {
-      stat: 400,
-      symbol: "+",
-      desc: "Skilled App Developers",
-    },
-    {
-      stat: 39,
-      symbol: "+",
-      desc: "Industeries Catered",
-    },
-    {
-      stat: 20,
-      symbol: "+",
-      desc: "Project Delivered",
-    },
-  ],
+  // stats: [
+  //   {
+  //     stat: 20,
+  //     symbol: "+",
+  //     desc: "Years of Experience",
+  //   },
+  //   {
+  //     stat: 400,
+  //     symbol: "+",
+  //     desc: "Skilled App Developers",
+  //   },
+  //   {
+  //     stat: 39,
+  //     symbol: "+",
+  //     desc: "Industeries Catered",
+  //   },
+  //   {
+  //     stat: 20,
+  //     symbol: "+",
+  //     desc: "Project Delivered",
+  //   },
+  // ],
   clientSectionHeading:
     "Trusted by 1000+ Happy Clients, Including Enterprises & Fortune 500 Companies",
   clientsImages: [],
   CTABtnLink: "#contact-form",
-  CTAButton: "Let’s Create Your Next Big App",
+  CTABtnText: "Let’s Create Your Next Big App",
   bannerImg: "/services/mobile/mobile.png",
 };
 

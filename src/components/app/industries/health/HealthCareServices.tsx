@@ -1,5 +1,7 @@
+"use client";
 import { HEALTHCARE_SERVICES_SECTION } from "@/data/industries/health.data";
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { scrollToId } from "@/lib/utils";
 
 export function HealthCareServices() {
   return (
@@ -15,7 +17,7 @@ export function HealthCareServices() {
         {" "}
         {HEALTHCARE_SERVICES_SECTION.description}
       </p>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-20">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:px-10">
         {HEALTHCARE_SERVICES_SECTION.services.map((service, index: number) => {
           const Icon = service.icon;
           return (
@@ -39,8 +41,11 @@ export function HealthCareServices() {
         })}
       </div>
       <CTAButton2
-        href={HEALTHCARE_SERVICES_SECTION.CTABtnLink}
+        // href={HEALTHCARE_SERVICES_SECTION.CTABtnLink}
         label={HEALTHCARE_SERVICES_SECTION.CTABtnText}
+        onClick={() => {
+          scrollToId();
+        }}
       />
     </div>
   );

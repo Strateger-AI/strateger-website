@@ -1,7 +1,9 @@
+"use client";
 import { HOW_TO_COLLAB_DATA } from "@/data/services/cybersecurity.data";
 import { Card, CardContent } from "@/components/ui/card";
 
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { scrollToId } from "@/lib/utils";
 
 export function HowToCollabSection() {
   return (
@@ -17,7 +19,10 @@ export function HowToCollabSection() {
         version={2}
         className={"text-3xl "}
         label={HOW_TO_COLLAB_DATA.CTABtnText}
-        href={HOW_TO_COLLAB_DATA.CTABtnLink}
+        onClick={() => {
+          scrollToId();
+        }}
+        // href={HOW_TO_COLLAB_DATA.CTABtnLink}
       />
 
       {/* Responsive wrapper for model cards */}

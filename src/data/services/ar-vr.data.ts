@@ -6,12 +6,10 @@ export const BANNER_SECTION_AR = {
     { text: "Development", className: "text-primary font-extrabold" },
     { text: "Company in the USA", className: "font-bold" },
   ],
-  content:
-    "Step into the future of immersive technology with Strateger.ai! As a leading AR/VR development company in the USA, we create interactive experiences that not only engage your audience but also elevate your brand presence. From concept to deployment, our solutions turn innovative ideas into captivating realities that leave a lasting impact. Let’s bring your vision to life with cutting-edge AR and VR applications.",
+  desc: "Step into the future of immersive technology with Strateger.ai! As a leading AR/VR development company in the USA, we create interactive experiences that not only engage your audience but also elevate your brand presence. From concept to deployment, our solutions turn innovative ideas into captivating realities that leave a lasting impact. Let’s bring your vision to life with cutting-edge AR and VR applications.",
   CTABtnText: "Get started",
-  CTABtnLink: "/",
-
-  bannerImg: "", // You can add a path or URL here when you have a banner image
+  // CTABtnLink: "/",
+  bannerImg: "/services/game/game-banner.png",
 };
 
 export const AR_VR_SERVICES_SECTION = {
