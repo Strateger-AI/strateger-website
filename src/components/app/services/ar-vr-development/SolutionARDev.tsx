@@ -74,7 +74,7 @@ export function SolutionARDev() {
       </div>
 
       {/* Medium+ screens: Grid + Image */}
-      <div className="relative hidden gap-4 md:flex">
+      <div className="relative hidden h-full gap-4 md:flex items-center">
         <div className={"flex flex-1 flex-col gap-8"}>
           <div className="grid grid-cols-3 gap-4 py-5 md:px-10 lg:grid-cols-2 xl:grid-cols-3">
             {AR_VR_SOLUTIONS_SECTION.solutions.map((solution, i) => {
@@ -83,7 +83,7 @@ export function SolutionARDev() {
                 <button
                   onClick={() => setActiveIndex(i)}
                   className={cn(
-                    "shadow-primary/40 flex h-full flex-col items-center gap-2 rounded-xl border-2 border-dashed border-gray-400 px-3 py-4 text-xl font-bold transition-colors duration-300 lg:flex-row lg:px-6 lg:py-8",
+                    "shadow-primary/40 flex h-full flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-gray-400 px-3 py-4 text-xl font-bold transition-colors duration-300 lg:flex-row lg:px-6 lg:py-8",
                     activeIndex === i &&
                       "shadow-primary/40 bg-primary border-none text-white shadow-xl",
                   )}
@@ -104,21 +104,25 @@ export function SolutionARDev() {
             </p>
           </div>
         </div>
-        <div className={"hidden w-2/5 lg:flex"}>
-          <div className="] right-0 bottom-0 flex overflow-hidden rounded-xl md:h-[400px] lg:absolute lg:h-[700px]">
+        <div
+          className={
+            " w-2/5 h-full hidden  lg:flex  items-center justify-center     "
+          }
+        >
+          <div className=" overflow-hidden     h-full rounded-xl ">
             <Image
               src={AR_VR_SOLUTIONS_SECTION.solutions[activeIndex].img}
               alt="AR/VR Solution"
               width={500}
               height={600}
-              className="z-10 self-end object-contain"
+              className=" object-cover s"
               priority
             />
-            <div
-              className={
-                "bg-primary absolute -bottom-40 -z-10 hidden min-h-full w-full rounded-xl shadow-xl xl:block"
-              }
-            ></div>
+            {/*<div*/}
+            {/*  className={*/}
+            {/*    "bg-primary absolute -bottom-40 -z-10 hidden min-h-full w-full rounded-xl shadow-xl xl:block"*/}
+            {/*  }*/}
+            {/*></div>*/}
           </div>
         </div>
       </div>

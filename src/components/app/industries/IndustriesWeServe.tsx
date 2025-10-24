@@ -22,13 +22,13 @@ export function IndustriesWeServe() {
 
       <div
         className={
-          "grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 lg:px-30 gap-4  "
+          "grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 xl:px-30 gap-4  "
         }
       >
         {INDUSTRIES_SECTION.industries.map((industry, index) => (
           <div
             key={index}
-            className="relative h-[600px] group overflow-hidden rounded-xl shadow-xl bg-red-500"
+            className="relative h-[600px] group overflow-hidden rounded-xl shadow-xl "
           >
             <Image
               fill

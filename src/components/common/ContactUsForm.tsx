@@ -22,7 +22,7 @@ export function ContactUsForm() {
       />
       <Textarea
         placeholder="Write about your project..."
-        className=" flex-1 !px-4 !py-6"
+        className=" flex-1 min-h-[200px] !px-4 !py-6"
       />
       <Button className="w-full !px-4 !py-6 text-2xl font-bold">Submit</Button>
     </div>

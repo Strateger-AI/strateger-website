@@ -823,59 +823,65 @@ export const INDUSTRY_DATA = [
   },
 ];
 
-export const PARTNERS_DATA = [
-  {
-    type: "customer",
-    name: "Customer",
-    images: [
-      "/main/partners/Airbnb.png",
-      "/main/partners/Aivora.png",
-      "/main/partners/cyber-nexa-solution.png",
-      "/main/partners/Deepnex.png",
-      "/main/partners/Defensys.png",
-      "/main/partners/flowsync.png",
-      "/main/partners/Nextpath.png",
-      "/main/partners/Opticore.png",
-      "/main/partners/pixelforge.png",
-      "/main/partners/RealMotion-xr.png",
-      "/main/partners/ubisoft.png",
-      "/main/partners/VisionGrid.png",
-    ],
-  },
-  // {
-  //   type: "partner",
-  //   name: "Partner ",
-  //   images: ["/img.webp", "/img.webp", "/img.webp", "/img.webp", "/img.webp"],
-  // },
-  {
-    type: "technologies",
-    name: "Technology",
-    images: [
-      "/main/technologies/img/android.webp",
-      "/main/technologies/img/autodesk-maya.webp",
-      "/main/technologies/img/backend-development.webp",
-      "/main/technologies/img/blender.webp",
-      "/main/technologies/img/cinema-4d.webp",
-      "/main/technologies/img/cisco-security.webp",
-      "/main/technologies/img/cross_platform.webp",
-      "/main/technologies/img/crowdstrike.webp",
-      "/main/technologies/img/deveops-&-deployment.webp",
-      "/main/technologies/img/emerging-technologies.webp",
-      "/main/technologies/img/infor-clodsuite.webp",
-      "/main/technologies/img/ios.webp",
-      "/main/technologies/img/keras.webp",
-      "/main/technologies/img/oracle-nersuite.webp",
-      "/main/technologies/img/pytorch.webp",
-      "/main/technologies/img/sap-s_4hana.webp",
-      "/main/technologies/img/splunk.webp",
-      "/main/technologies/img/tensorflow.webp",
-      "/main/technologies/img/ui&ux-design.webp",
-      "/main/technologies/img/unity-3d.webp",
-      "/main/technologies/img/unreal-engine.webp",
-      "/main/technologies/img/zbrush.webp",
-    ],
-  },
-];
+export const PARTNERS_DATA = {
+  customers: [
+    { name: "Airbnb", src: "/main/partners/Airbnb.png" },
+    { name: "Aivora", src: "/main/partners/Aivora.png" },
+    {
+      name: "Cyber Nexa Solution",
+      src: "/main/partners/cyber-nexa-solution.png",
+    },
+    { name: "Deepnex", src: "/main/partners/Deepnex.png" },
+    { name: "Defensys", src: "/main/partners/Defensys.png" },
+    { name: "Flowsync", src: "/main/partners/flowsync.png" },
+    { name: "Nextpath", src: "/main/partners/Nextpath.png" },
+    { name: "Opticore", src: "/main/partners/Opticore.png" },
+    { name: "Pixelforge", src: "/main/partners/pixelforge.png" },
+    { name: "RealMotion XR", src: "/main/partners/RealMotion-xr.png" },
+    { name: "Ubisoft", src: "/main/partners/ubisoft.png" },
+    { name: "VisionGrid", src: "/main/partners/VisionGrid.png" },
+  ],
+
+  technologies: [
+    // { name: "Android", src: "/main/technologies/img/android.webp" },
+    { name: "Autodesk Maya", src: "/main/technologies/img/autodesk-maya.webp" },
+    // {
+    //   name: "Backend Development",
+    //   src: "/main/technologies/img/backend-development.webp",
+    // },
+    { name: "Blender", src: "/main/technologies/img/blender.webp" },
+    { name: "Cinema 4D", src: "/main/technologies/img/cinema-4d.webp" },
+    {
+      name: "Cisco Security",
+      src: "/main/technologies/img/cisco-security.webp",
+    },
+    // { name: "Cross Platform", src: "/main/technologies/img/cross_platform.webp" },
+    { name: "Crowdstrike", src: "/main/technologies/img/crowdstrike.webp" },
+    // { name: "DevOps & Deployment", src: "/main/technologies/img/deveops-&-deployment.webp" },
+    {
+      name: "Emerging Technologies",
+      src: "/main/technologies/img/emerging-technologies.webp",
+    },
+    {
+      name: "Infor CloudSuite",
+      src: "/main/technologies/img/infor-clodsuite.webp",
+    },
+    // { name: "iOS", src: "/main/technologies/img/ios.webp" },
+    { name: "Keras", src: "/main/technologies/img/keras.webp" },
+    {
+      name: "Oracle NetSuite",
+      src: "/main/technologies/img/oracle-nersuite.webp",
+    },
+    { name: "PyTorch", src: "/main/technologies/img/pytorch.webp" },
+    { name: "SAP S/4HANA", src: "/main/technologies/img/sap-s_4hana.webp" },
+    { name: "Splunk", src: "/main/technologies/img/splunk.webp" },
+    { name: "TensorFlow", src: "/main/technologies/img/tensorflow.webp" },
+    // { name: "UI & UX Design", src: "/main/technologies/img/ui&ux-design.webp" },
+    { name: "Unity 3D", src: "/main/technologies/img/unity-3d.webp" },
+    { name: "Unreal Engine", src: "/main/technologies/img/unreal-engine.webp" },
+    { name: "ZBrush", src: "/main/technologies/img/zbrush.webp" },
+  ],
+};
 
 export const BUSINESS_SECTION_DATA = {
   heading: " Helping Business Grow Beyond Limits",

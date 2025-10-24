@@ -26,9 +26,9 @@ export function IndustriesDeepLearning() {
           {INDUSTRIES_DEEP_LEARNING_DATA.industries.map((data, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
               <Card className="m-0 !border-none !bg-transparent p-0 !shadow-none">
-                <CardContent className="group relative flex min-h-[450px] flex-col overflow-hidden rounded-xl">
+                <CardContent className="group  relative flex min-h-[550px] flex-col overflow-hidden rounded-xl">
                   {/* Image wrapper */}
-                  <div className="relative flex-[0.8] items-center justify-center">
+                  <div className="relative flex-[0.9] group-hover:scale-110 duration-300 transition-transform items-center justify-center">
                     <Image
                       src={data.img || "/img.webp"}
                       alt="Industry-Image"
@@ -39,14 +39,14 @@ export function IndustriesDeepLearning() {
                   </div>
 
                   {/* Text wrapper */}
-                  <div className="flex flex-[0.2] items-center justify-center">
+                  <div className="flex flex-[0.1] items-center justify-center">
                     <p className="text-primary text-center text-2xl font-bold">
                       {data.title}
                     </p>
                   </div>
                   <div
                     className={
-                      "transform-transition bg-primary md:text- absolute top-0 left-0 h-full w-full space-y-5 p-10 text-white opacity-0 duration-500 group-hover:opacity-100"
+                      "transform-transition bg-primary flex items-start justify-center flex-col md:text- absolute top-0 left-0 h-full w-full space-y-5 p-10 text-white opacity-0 duration-500 group-hover:opacity-100"
                     }
                   >
                     <h1 className={"text-2xl font-extrabold"}>{data.title}</h1>

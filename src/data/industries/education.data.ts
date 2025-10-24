@@ -43,7 +43,7 @@ export const BANNER_SECTION = {
     "Educational software development services have revolutionized how learners and institutions experience education. By leveraging advanced education software development and cutting-edge education technology software development solutions, we enhance accessibility, engagement, and academic performance. With over 70% of colleges expected to introduce online programs in the coming years, the shift toward digital learning is accelerating.\n \nAs a trusted educational software development company, we help you design and build tailored education software solutions from scratch or scale your existing platforms to deliver modern, impactful learning experiences.",
   CTAButton: "Get free consultancy",
   // CTABtnLink: "/",
-  bannerImg: "/mobile.png", // Update path if needed
+  bannerImg: "/industries/education/education_hero_section.webp", // Update path if needed
 };
 
 import {
@@ -150,7 +150,7 @@ export const EDUCATION_SOLUTION_SECTIONS = [
       "Gamified modules to boost student engagement",
       "Advanced analytics to track student progress in real time",
     ],
-    img: "/services/education/innovation.png", // replace with actual path
+    img: "/industries/education/education_software.webp", // replace with actual path
   },
   {
     headingParts: [
@@ -172,7 +172,7 @@ export const EDUCATION_SOLUTION_SECTIONS = [
       "Alerts & Push Notifications",
       "Data Transfer & Synchronization",
     ],
-    img: "/services/education/features.png", // replace with actual path
+    img: "/industries/education/education_modern.webp", // replace with actual path
   },
 ];
 

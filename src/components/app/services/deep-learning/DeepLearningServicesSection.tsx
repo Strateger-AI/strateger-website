@@ -103,7 +103,7 @@ const DeepLearningServicesSection = () => {
                 <h3 className="text-primary mb-4 text-3xl font-extrabold lg:text-4xl">
                   {service.title}
                 </h3>
-                <p className="mb-6 text-black lg:text-xl">{service.desc}</p>
+                <p className="mb-6 text-black xl:text-xl">{service.desc}</p>
                 <ul className="text-primary grid w-full list-inside list-disc grid-cols-1 gap-5 space-y-2 font-bold lg:grid-cols-2">
                   {service.points.map((point, i) => (
                     <li

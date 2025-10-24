@@ -9,7 +9,7 @@ export const DEEP_LEARNING_BANNER_SECTION = {
   ],
   desc: "Unlock growth with our cutting-edge deep learning solutions tailored to meet your unique business challenges. Our team of AI experts builds sophisticated neural networks that analyze massive data sets, generate precise predictions, and uncover actionable insights. \n From handling unstructured data to driving intelligent automation, our services are designed to enhance decision-making, optimize operations, and transform customer experiences. No matter your industry, we deliver scalable deep learning strategies that keep your business innovative and competitive in a digital-first world.\n Partner with us to stay ahead of the curve and harness the full potential of AI-powered intelligence.",
   CTABtnText: "Request a Demo",
-  bannerImg: "/services/game/game-banner.png",
+  bannerImg: "/services/deep-learning/deep-learning-banner.webp",
   img: "",
   // CTABtnLink: "/",
 };
@@ -100,27 +100,27 @@ export const INDUSTRIES_DEEP_LEARNING_DATA = {
   industries: [
     {
       title: "Healthcare",
-      img: "", // replace with actual path
+      img: "/services/deep-learning/dl-healthcare.webp", // replace with actual path
       description:
         "We empower healthcare with AI-driven diagnostics, predictive analytics, and real-time video insights that reduce errors and improve patient outcomes. By minimizing background cancellation in medical imaging, our solutions detect subtle anomalies faster and with higher accuracy.",
     },
     {
       title: "Education",
-      img: "", // replace with actual path
+      img: "/services/deep-learning/dl-education.webp",
 
       description:
         "Our deep learning tools transform learning experiences with intelligent content recognition, adaptive assessments, and personalized learning paths. Through automated video tagging and activity recognition, we make online education more interactive and engaging.",
     },
     {
       title: "Real Estate",
-      img: "", // replace with actual path
+      img: "/services/deep-learning/dl-real-state.webp",
 
       description:
         "We enhance real estate with AI-powered property image analysis, automated tagging, and intelligent market predictions. By minimizing background cancellation in property visuals, buyers see clearer insights and more authentic representations of spaces.",
     },
     {
       title: "Fashion",
-      img: "", // replace with actual path
+      img: "/services/deep-learning/dl-fashion.webp",
       // replace with actual path
       description:
         "Our deep learning models empower fashion brands with trend forecasting, visual search, and intelligent product tagging. Through precise object recognition, we enable personalized recommendations while minimizing distractions in digital catalogues.",

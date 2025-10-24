@@ -16,22 +16,13 @@ export function IndustriesBanner() {
       <div className="bg-primary absolute inset-0 z-0 opacity-70" />
 
       {/* Content Container */}
-      <div className="relative z-10 flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
+      <div className="relative z-10 flex flex-col gap-10 lg:flex-row items-center lg:justify-between">
         {/* Left: Text & Points */}
         <div className="flex w-full flex-col gap-10 items-start lg:w-3/5 justify-around  ">
           <h1 className="text-3xl font-bold whitespace-pre-line md:text-4xl xl:text-6xl">
             {INDUSTRIES_BANNER_SECTION.heading}
           </h1>
           <p className={"text-lg"}>{INDUSTRIES_BANNER_SECTION.description}</p>
-
-          {/*<ul className="grid list-disc grid-cols-1 gap-6 pl-5 md:grid-cols-2">*/}
-          {/*  {INDUSTRIES_BANNER_SECTION.points.map((point, i) => (*/}
-          {/*    <li className={"space-y-2"} key={i}>*/}
-          {/*      <h2 className="text-2xl font-extrabold">{point.title}</h2>*/}
-          {/*      <p className="font-bold">{point.description}</p>*/}
-          {/*    </li>*/}
-          {/*  ))}*/}
-          {/*</ul>*/}
 
           <CTAButton2
             href={INDUSTRIES_BANNER_SECTION.CTABtnLink}
@@ -40,7 +31,7 @@ export function IndustriesBanner() {
         </div>
 
         {/* Right: Contact Form */}
-        <div className="w-full lg:w-2/5">
+        <div className=" max-w-2xl lg:w-2/5">
           <div className="flex flex-col gap-6 rounded-xl bg-white p-6 shadow-xl md:p-8">
             <h2 className="text-center text-4xl font-extrabold text-black">
               Book Free <span className="text-primary">Consultation</span>

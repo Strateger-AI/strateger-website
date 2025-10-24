@@ -4,11 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import { CTAButton2 } from "@/components/common/CTAButton2";
 import { scrollToId } from "@/lib/utils";
+import Image from "next/image";
 
 export function HowToCollabSection() {
   return (
-    <div className="bg-primary relative mb-20 flex flex-col items-center gap-2 py-5 md:py-12 lg:min-h-88 lg:pb-40">
-      <h1 className="text-center text-3xl leading-snug whitespace-pre-line text-white md:text-5xl">
+    <div className=" relative mb-20 flex flex-col items-center gap-2 py-5 md:py-12 lg:min-h-88 lg:pb-40">
+      <h1 className="text-center text-3xl z-10 leading-snug whitespace-pre-line text-white md:text-5xl">
         {HOW_TO_COLLAB_DATA.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}
@@ -27,7 +28,7 @@ export function HowToCollabSection() {
 
       {/* Responsive wrapper for model cards */}
       <div
-        className={`w-11/12 md:w-4/5 ${/* Absolute for lg+ only */ ""} h-full lg:absolute lg:-bottom-35 lg:left-1/2 lg:h-62 lg:min-h-40 lg:w-3/5 lg:-translate-x-1/2`}
+        className={`w-11/12 md:w-4/5 z-10 ${/* Absolute for lg+ only */ ""} h-full lg:absolute lg:-bottom-35 lg:left-1/2 lg:h-62 lg:min-h-40 lg:w-3/5 lg:-translate-x-1/2`}
       >
         <div
           className={`flex h-full w-full flex-col gap-6 md:h-4/5 md:flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-4`}
@@ -50,6 +51,13 @@ export function HowToCollabSection() {
           })}
         </div>
       </div>
+
+      <Image
+        src={HOW_TO_COLLAB_DATA.img}
+        alt={"cybersecurity-cta.webp"}
+        fill
+        className={"!absolute -z-10 object-cover object-bottom-right "}
+      />
     </div>
   );
 }

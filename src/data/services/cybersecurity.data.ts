@@ -20,7 +20,7 @@ export const CYBERSECURITY_BANNER_SECTION = {
   desc: "As a trusted cyber security solution provider, we help businesses safeguard their most valuable asset—data. Our team of certified experts delivers tailored cybersecurity IT services designed to protect you from evolving digital threats.\n\nNo matter where your business expands or who you collaborate with, we proactively identify vulnerabilities, deploy strategic defense mechanisms, and predict potential risks before they strike. From risk mitigation to asset protection, we ensure your operations remain secure, compliant, and uninterrupted.\n\nPartner with us to build resilience against cybercrime and grow with confidence in the digital age.",
   CTABtnText: "Let's Connect",
   // CTABtnLink: "/",
-  bannerImg: "/services/game/game-banner.png",
+  bannerImg: "/services/cybersecurity/cybersecurity-banner.webp",
   img: "",
 };
 
@@ -193,4 +193,5 @@ export const HOW_TO_COLLAB_DATA = {
   ],
   CTABtnLink: "/",
   CTABtnText: "Get Started",
+  img: "/services/cybersecurity/cybersecurity-cta.webp",
 };
