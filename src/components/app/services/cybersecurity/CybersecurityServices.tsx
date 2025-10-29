@@ -16,14 +16,14 @@ export function CybersecurityServices() {
 
   return (
     <div className="flex flex-col items-center space-y-5 px-5 py-5 md:space-y-15 md:px-20 md:py-10">
-      <h1 className="m-auto mx-20 text-center text-3xl leading-normal font-bold whitespace-pre-line md:text-5xl">
+      <h1 className="text-center text-2xl sm:text-3xl leading-snug font-bold whitespace-pre-line md:text-5xl">
         {CYBERSECURITY_SERVICES_SECTION.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}
           </span>
         ))}
       </h1>
-      <p className="pt-5 text-center text-xl">
+      <p className="pt-5 text-center text-sm md:text-xl">
         {CYBERSECURITY_SERVICES_SECTION.desc}
       </p>
 
@@ -96,7 +96,7 @@ export function CybersecurityServices() {
         </div>
       </div>
       <CTAButton2
-        className={"text-primary"}
+        className={"text-primary !text-sm "}
         label={CYBERSECURITY_SERVICES_SECTION.CTABtnText}
         onClick={() => {
           scrollToId();

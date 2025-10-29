@@ -9,7 +9,7 @@ export function PartnershipSection() {
   return (
     <section className="flex flex-col items-center space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
       {/* Heading */}
-      <h2 className="text-center text-3xl leading-normal font-bold md:text-5xl">
+      <h2 className="text-center  leading-normal text-2xl sm:text-3xl md:text-start md:text-5xl">
         {PARTNERSHIP_DATA.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}

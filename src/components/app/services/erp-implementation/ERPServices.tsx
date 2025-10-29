@@ -12,18 +12,18 @@ export function ERPServices() {
           </span>
         ))}
       </h1>
-      <p className={"text-center text-xl"}>
+      <p className={"text-center text-sm sm:text-xl"}>
         {" "}
         {ERP_SERVICES_SECTION.description}
       </p>
-      <div className="flex flex-col rounded-xl bg-white p-8 shadow-xl">
+      <div className="flex flex-col rounded-xl bg-white p-4 md:p-8 shadow-xl">
         {ERP_SERVICES_SECTION.factors.map((fact, i) => {
           const Icon = fact.icon;
           return (
             <div key={i}>
               <div
                 className={cn(
-                  "flex items-center py-8",
+                  "flex flex-col sm:flex-row gap-5 sm:gap-0  sm:items-center py-8",
                   i !== ERP_SERVICES_SECTION.factors.length - 1 &&
                     "border-b border-gray-200",
                 )}

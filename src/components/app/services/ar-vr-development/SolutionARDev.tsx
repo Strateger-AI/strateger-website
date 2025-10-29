@@ -17,14 +17,14 @@ export function SolutionARDev() {
 
   return (
     <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
-      <h1 className="m-auto mx-20 text-center text-3xl leading-normal font-bold whitespace-pre-line md:text-5xl">
+      <h1 className="text-center font-bold text-2xl sm:text-3xl leading-snug whitespace-pre-line md:text-5xl">
         {AR_VR_SOLUTIONS_SECTION.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}
           </span>
         ))}
       </h1>
-      <p className={"pt-5 text-center text-xl"}>
+      <p className={"pt-5 text-center text-sm md:text-xl"}>
         {AR_VR_SOLUTIONS_SECTION.desc}
       </p>
 
@@ -76,7 +76,7 @@ export function SolutionARDev() {
       {/* Medium+ screens: Grid + Image */}
       <div className="relative hidden h-full gap-4 md:flex items-center">
         <div className={"flex flex-1 flex-col gap-8"}>
-          <div className="grid grid-cols-3 gap-4 py-5 md:px-10 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-3 gap-4 py-5  lg:grid-cols-2 xl:grid-cols-3">
             {AR_VR_SOLUTIONS_SECTION.solutions.map((solution, i) => {
               const Icon = solution.icon;
               return (

@@ -10,7 +10,7 @@ export function TrustedSection() {
         "bg-muted px-20 py-10 items-center justify-center  flex flex-col gap-4 "
       }
     >
-      <h1 className="text-center text-3xl leading-snug whitespace-pre-line md:text-5xl">
+      <h1 className="text-center text-2xl sm:text-3xl leading-snug font-bold whitespace-pre-line md:text-5xl">
         {ECOMMERCE_TRUST_SECTION.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}

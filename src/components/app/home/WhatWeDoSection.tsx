@@ -116,7 +116,10 @@ export function WhatWeDoSection() {
 
                   <ul className="grid max-w-fit grid-cols-1 gap-2 text-center">
                     {item.mapping.subPoints.map((eachPoint, i) => (
-                      <li className="list-disc text-sm font-medium" key={i}>
+                      <li
+                        className="list-disc text-start text-sm font-medium"
+                        key={i}
+                      >
                         {eachPoint}
                       </li>
                     ))}

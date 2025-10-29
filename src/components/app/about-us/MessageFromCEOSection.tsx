@@ -34,7 +34,7 @@ export function MessageFromCEOSection() {
             <div className="flex w-full flex-1 items-center justify-center">
               <div className="flex flex-col gap-4 md:gap-5 lg:gap-7 xl:gap-10">
                 {/* Shared Heading */}
-                <h1 className="text-4xl font-bold whitespace-pre-line text-black lg:text-5xl xl:text-6xl">
+                <h1 className="text-center text-2xl sm:text-3xl font-bold leading-snug whitespace-pre-line md:text-5xl">
                   {MESSAGE_FROM_CEO_SECTION.headingParts.map((part, i) => (
                     <span key={i} className={part.className}>
                       {part.text}

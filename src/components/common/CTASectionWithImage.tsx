@@ -17,7 +17,7 @@ export function CTASectionWithImage({
   data: CTASection2withImageProps;
 }) {
   return (
-    <div className="bg-primary relative mt-20 flex flex-col shadow-xl justify-between items-center gap-5 px-10 pt-15 lg:py-20 lg:flex-row lg:pl-30">
+    <div className="bg-primary relative mt-20 flex flex-col shadow-xl justify-between items-center gap-5 px-10 py-15 lg:py-20 lg:flex-row lg:pl-30">
       {/* Text Section */}
       <div className="flex flex-col items-start space-y-4 xl:w-3/5 lg:w-2/5">
         <h1 className="text-start text-3xl font-bold text-white md:text-4xl">
@@ -37,7 +37,7 @@ export function CTASectionWithImage({
       </div>
 
       {/* Image Section (Responsive positioning) */}
-      <div className="relative h-[400px] w-full flex lg:absolute transition-transform duration-300 lg:right-0 lg:bottom-0 lg:h-[110%]  lg:w-3/5 xl:w-2/5">
+      <div className="relative h-[400px] hidden w-full md:flex lg:absolute transition-transform duration-300 lg:right-0 lg:bottom-0 lg:h-[110%]  lg:w-3/5 xl:w-2/5">
         <Image
           src={data?.img as string}
           fill

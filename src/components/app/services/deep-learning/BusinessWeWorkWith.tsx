@@ -9,7 +9,7 @@ const BusinessWeWorkWith = () => {
   return (
     <section className="flex flex-col items-center justify-center px-5 py-10 md:px-20">
       {/* Heading */}
-      <h2 className="text-center text-3xl font-bold md:text-5xl">
+      <h2 className="text-center text-2xl sm:text-3xl md:text-start md:text-5xl">
         {BUSINESSES_WE_SERVE.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}
@@ -18,7 +18,7 @@ const BusinessWeWorkWith = () => {
       </h2>
 
       {/* Description */}
-      <p className="mt-4 text-center text-xl text-black">
+      <p className="mt-4 text-center text-sm sm:text-xl text-black">
         {BUSINESSES_WE_SERVE.description}
       </p>
 

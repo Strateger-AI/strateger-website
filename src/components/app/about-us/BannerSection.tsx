@@ -5,7 +5,7 @@ import Image from "next/image";
 export function BannerSection() {
   return (
     <div
-      className="relative flex min-h-[90vh] flex-col-reverse items-center justify-center gap-10 px-5 text-white md:flex-row md:items-center md:justify-around md:px-20"
+      className="relative flex pt-30 md:pt-0 sm:min-h-[90vh] flex-col-reverse items-center justify-center md:gap-10 px-5 text-white md:flex-row md:items-center md:justify-around md:pb-10 pb-5 md:px-20"
       style={{
         backgroundImage: `url(${BANNER_SECTION.backgroundImg})`,
         backgroundSize: "cover",
@@ -17,7 +17,7 @@ export function BannerSection() {
 
       {/* Left Content */}
       <div className="z-10 flex flex-col md:text-start text-center md:items-start gap-5 md:w-1/2">
-        <h1 className="text-4xl font-bold whitespace-pre-line text-white md:text-6xl xl:text-7xl">
+        <h1 className="text-center md:text-start text-2xl sm:text-3xl font-bold leading-snug whitespace-pre-line md:text-4xl lg:text-5xl">
           {BANNER_SECTION.headingParts.map((part, i) => (
             <span key={i} className={part.className}>
               {part.text}{" "}

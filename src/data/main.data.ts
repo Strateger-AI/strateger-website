@@ -498,7 +498,7 @@ export const PORTFOLIO_SECTION_PRODUCTION = [
       "An interstellar adventure game built to deliver stunning graphics and immersive gameplay. Galaxy Quest allows players to explore dynamic galaxies, complete missions, and battle AI-driven enemies in a richly designed 3D universe.",
     platform: "Unity 3D",
     industry: "Gaming",
-    companyLogo: "/companyIcon.webp",
+    companyLogo: "/main/portfolio/galaxy-quest-logo.webp",
   },
   {
     companyName: "VisionSpace AR",
@@ -507,7 +507,7 @@ export const PORTFOLIO_SECTION_PRODUCTION = [
       "VisionSpace AR redefines visualization with augmented reality experiences for real estate and architecture. It enables users to explore 3D property models, visualize interiors, and interact with designs in real time.",
     platform: "Unreal Engine",
     industry: "Real Estate / Architecture",
-    companyLogo: "/companyIcon.webp",
+    companyLogo: "/main/portfolio/vision-space-logo.webp",
   },
   {
     companyName: "SwiftCart",
@@ -516,7 +516,7 @@ export const PORTFOLIO_SECTION_PRODUCTION = [
       "SwiftCart is a mobile shopping app designed to create a seamless retail experience. With real-time order tracking, secure payments, and smart product recommendations, it makes online shopping effortless and engaging for users.",
     platform: "Custom Mobile",
     industry: "Ecommerce",
-    companyLogo: "/companyIcon.webp",
+    companyLogo: "/main/portfolio/swiftcart-logo.webp",
   },
 ];
 

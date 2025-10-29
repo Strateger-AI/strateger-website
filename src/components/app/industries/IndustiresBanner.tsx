@@ -18,11 +18,13 @@ export function IndustriesBanner() {
       {/* Content Container */}
       <div className="relative z-10 flex flex-col gap-10 lg:flex-row items-center lg:justify-between">
         {/* Left: Text & Points */}
-        <div className="flex w-full flex-col gap-10 items-start lg:w-3/5 justify-around  ">
-          <h1 className="text-3xl font-bold whitespace-pre-line md:text-4xl xl:text-6xl">
+        <div className="flex w-full flex-col gap-5 md:gap-10 items-start lg:w-3/5 justify-around  ">
+          <h1 className=" text-2xl sm:text-3xl font-bold whitespace-pre-line md:text-4xl xl:text-6xl">
             {INDUSTRIES_BANNER_SECTION.heading}
           </h1>
-          <p className={"text-lg"}>{INDUSTRIES_BANNER_SECTION.description}</p>
+          <p className={" text-sm sm:text-lg"}>
+            {INDUSTRIES_BANNER_SECTION.description}
+          </p>
 
           <CTAButton2
             href={INDUSTRIES_BANNER_SECTION.CTABtnLink}

@@ -10,13 +10,13 @@ import React from "react";
 
 export function PartnersSection() {
   return (
-    <div className="space-y-5 py-5 md:space-y-10 d:py-10">
-      <h1 className="text-center text-3xl font-bold md:text-5xl">
+    <div className="flex flex-col gap-15  py-5   ">
+      <h1 className="text-center text-2xl sm:text-3xl font-extrabold md:text-5xl">
         Trusted <span className={"text-primary"}>Customers</span> and{" "}
         <span className={"text-primary"}>Technologies</span>
       </h1>
 
-      <div className={"space-y-8 py-10 "}>
+      <div className={" flex flex-col   gap-6 md:gap-12    "}>
         <Marquee>
           <MarqueeFade side="left" />
           <MarqueeFade side="right" />
@@ -28,6 +28,7 @@ export function PartnersSection() {
                   alt={customer.name}
                   width={180}
                   height={180}
+                  className={" p-2 sm:p-0 "}
                 />
               </MarqueeItem>
             ))}
@@ -44,6 +45,7 @@ export function PartnersSection() {
                   alt={technology.name}
                   width={180}
                   height={180}
+                  className={" p-2 sm:p-0 "}
                 />
               </MarqueeItem>
             ))}

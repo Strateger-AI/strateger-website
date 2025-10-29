@@ -23,7 +23,7 @@ export function ContactSection() {
         </div>
 
         {/* ✅ Form Section */}
-        <div className="flex h-full flex-1 flex-col gap-5 px-5 md:px-10">
+        <div className="flex h-full flex-1 flex-col gap-5  md:px-10">
           <h1 className="text-center md:text-start text-2xl leading-normal font-bold md:text-4xl lg:text-5xl">
             {CONTACTS_SECTION.headingParts.map((part, i) => (
               <span key={i} className={part.className}>

@@ -15,7 +15,7 @@ export default function Page() {
     <>
       <CustomBannerSection data={BANNER_SECTION_ERP} />
       <ERPSolutions />
-      <ERPChallengesSection />
+      {/*<ERPChallengesSection />*/}
       <ERPServices />
       <ERPServicesTransformation />
       <ContactSection />

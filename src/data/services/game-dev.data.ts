@@ -192,55 +192,54 @@ export const WHY_CHOOSE_STRATEGER_SECTION = {
     },
   ],
   desc: "As a trusted name in mobile gaming, we focus on building scalable, sustainable, and revenue-driven games. Here’s what makes us the preferred choice for game creators and enterprises.",
-
   reasons: [
     {
       title: "Modern Technology Stack",
       reason:
-        "We leverage the latest development frameworks and tools to ensure every game is future-ready. By building with robust technologies, we create titles that are not only sustainable today but also scalable for tomorrow’s challenges.",
-      icon: BsStack, // Replace with actual icon name or component string
+        "We use the latest frameworks and tools to build future-ready, scalable, and sustainable games.",
+      icon: BsStack,
     },
     {
       title: "Transparent Collaboration",
       reason:
-        "We believe in keeping clients involved at every stage. With real-time progress tracking and open communication, you’ll always know exactly where your game stands in the development lifecycle.",
-      icon: FaUsersLine, // Replace with actual icon
+        "Stay involved at every stage with real-time progress tracking and open communication.",
+      icon: FaUsersLine,
     },
     {
       title: "Industry-Specific Experience",
       reason:
-        "Having worked across multiple genres, our team understands the unique demands of different markets. This sector-driven knowledge allows us to deliver games that connect with the right audience.",
-      icon: FaMedal, // Replace with actual icon
+        "Our cross-genre experience helps us deliver games tailored to the unique demands of each market.",
+      icon: FaMedal,
     },
     {
       title: "Technical Expertise",
       reason:
-        "Our developers are skilled in leading technologies like Unity and Unreal Engine. This diverse expertise allows us to build visually stunning and technically sound games.",
-      icon: GrUserSettings, // Replace with actual icon
+        "Skilled in Unity, Unreal, and more—our team creates visually stunning and technically solid games.",
+      icon: GrUserSettings,
     },
     {
       title: "Full-Cycle Development Services",
       reason:
-        "From concept design to development, testing, and launch, we provide a complete range of game development services under one roof, ensuring efficiency and consistency throughout.",
-      icon: FaRecycle, // Replace with actual icon
+        "From concept to launch, we handle every stage of game development for consistency and efficiency.",
+      icon: FaRecycle,
     },
     {
       title: "Monetization Strategies That Work",
       reason:
-        "Beyond building games, we design monetization frameworks that help you maximize revenue. Whether through in-app purchases, ads, or premium features, we make sure your game achieves financial success.",
-      icon: FaHandHoldingUsd, // Replace with actual icon
+        "We design monetization systems—ads, in-app purchases, or premium features—that maximize revenue.",
+      icon: FaHandHoldingUsd,
     },
     {
       title: "Player-Focused User Experience",
       reason:
-        "We analyze user behavior, gather feedback, and create engaging gameplay loops that keep players hooked. With data-driven design, our games offer lasting entertainment and stronger retention.",
-      icon: SiNextui, // Replace with actual icon
+        "Data-driven design keeps players engaged through balanced gameplay and continuous feedback.",
+      icon: SiNextui,
     },
     {
       title: "Scalable Architecture",
       reason:
-        "Every game we develop is built with long-term growth in mind. Our scalable architectures ensure your title can evolve from a small launch into an enterprise-grade success.",
-      icon: FaHammer, // Replace with actual icon
+        "We build with growth in mind, ensuring your game scales smoothly from launch to enterprise level.",
+      icon: FaHammer,
     },
   ],
 };

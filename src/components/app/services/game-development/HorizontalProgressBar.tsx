@@ -172,7 +172,7 @@ export default function HorizontalProgressBar() {
       </div>
 
       {/* Content Section */}
-      <div className="w-4/5 space-y-5 transition-all duration-500 ease-in-out md:space-y-10">
+      <div className="sm:w-4/5 space-y-5 transition-all duration-500 ease-in-out md:space-y-10">
         <h3 className="text-primary text-3xl font-extrabold md:text-5xl">
           {steps[currentStep].heading}
         </h3>

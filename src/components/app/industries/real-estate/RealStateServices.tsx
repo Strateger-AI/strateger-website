@@ -13,7 +13,7 @@ export function RealStateServices() {
           </span>
         ))}
       </h1>
-      <h1 className="text-center text-3xl leading-snug whitespace-pre-line md:text-5xl">
+      <h1 className="text-center text-2xl sm:text-3xl leading-snug font-bold whitespace-pre-line md:text-5xl">
         {REAL_ESTATE_SERVICES_SECTION.headingParts2.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}

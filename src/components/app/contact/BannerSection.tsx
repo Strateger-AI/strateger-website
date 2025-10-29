@@ -15,7 +15,7 @@ export function BannerSection() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-start justify-center gap-10">
-        <h1 className="text-3xl font-bold whitespace-pre-line text-white md:text-4xl xl:text-7xl">
+        <h1 className="text-center text-2xl font-bold sm:text-3xl leading-snug whitespace-pre-line md:text-5xl">
           {BANNER_SECTION.headingParts.map((part, i) => (
             <span key={i} className={part.className}>
               {part.text}{" "}

@@ -3,7 +3,7 @@ import { EDUCATION_SERVICES_SECTION } from "@/data/industries/education.data";
 export function EducationServices() {
   return (
     <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
-      <h1 className="text-center text-3xl leading-snug whitespace-pre-line md:text-5xl">
+      <h1 className="text-center text-2xl sm:text-3xl leading-snug font-bold whitespace-pre-line md:text-5xl">
         {EDUCATION_SERVICES_SECTION.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}

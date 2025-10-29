@@ -8,7 +8,7 @@ export function TransformingIdeasSection() {
       <div className="bg flex w-full flex-col-reverse items-center justify-around gap-10 lg:flex-row lg:gap-0">
         {/* Text Section */}
         <div className="flex w-full flex-col items-center justify-around space-y-6 text-center md:items-start lg:w-1/2 lg:space-y-8 lg:text-left">
-          <h1 className="text-center text-3xl leading-snug md:text-start md:text-5xl">
+          <h1 className="text-center leading-snug  text-2xl sm:text-3xl md:text-start md:text-5xl">
             {TRANSFORMING_IDEA_SECTION.headingParts.map((part, i) => (
               <span key={i} className={part.className}>
                 {part.text}{" "}

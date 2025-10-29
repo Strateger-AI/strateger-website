@@ -98,13 +98,13 @@ const DeepLearningServicesSection = () => {
             )}
           >
             {/* Content */}
-            <div className={cn("flex w-full px-4 lg:w-3/5 lg:px-8")}>
-              <div className="flex flex-col items-start gap-5 rounded-xl p-6 lg:p-10">
+            <div className={cn("flex w-full lg:w-3/5 ")}>
+              <div className="flex flex-col items-start gap-3 md:gap-5 rounded-xl p-6 ">
                 <h3 className="text-primary mb-4 text-3xl font-extrabold lg:text-4xl">
                   {service.title}
                 </h3>
                 <p className="mb-6 text-black xl:text-xl">{service.desc}</p>
-                <ul className="text-primary grid w-full list-inside list-disc grid-cols-1 gap-5 space-y-2 font-bold lg:grid-cols-2">
+                <ul className="text-primary grid w-full list-inside list-disc grid-cols-1 gap-2 md:gap-5 space-y-2 font-bold lg:grid-cols-2">
                   {service.points.map((point, i) => (
                     <li
                       className={"lg:text-sm list-outside xl:text-lg"}
@@ -119,7 +119,7 @@ const DeepLearningServicesSection = () => {
             </div>
 
             {/* Image */}
-            <div className="flex h-[500px] w-full  justify-center px-4 lg:w-1/2">
+            <div className="flex h-[500px] w-full  justify-center lg:w-1/2">
               <div className="relative w-full">
                 <Image
                   src={service.img || "/mobile-app-UI.jpg"}

@@ -8,7 +8,7 @@ export function TopTierSection() {
   return (
     <div
       className={
-        "  mt-20  flex  flex-col  items-center justify-center px-5 py-10   md:px-20 md:py-20 lg:gap-8"
+        "  mt-20  flex  flex-col  items-center justify-center px-5 pb-10   md:px-20 md:py-20 lg:gap-8"
       }
     >
       <div
@@ -39,7 +39,7 @@ export function TopTierSection() {
           </h1>
           <p
             className={
-              "text-center whitespace-pre-line md:text-start md:text-lg"
+              "text-center  text-sm whitespace-pre-line md:text-start sm:text-xl"
             }
           >
             {TOP_TIER_SECTION.desc}

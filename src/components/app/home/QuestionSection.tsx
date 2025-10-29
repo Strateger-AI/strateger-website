@@ -29,7 +29,7 @@ export function QuestionSection({
 
       {/*  /!*<CustomSearchbar />*!/*/}
       {/*</div>*/}
-      <h1 className="m-auto mx-20 text-center text-3xl leading-normal font-bold md:text-5xl">
+      <h1 className=" text-center font-bold leading-normal text-2xl sm:text-3xl md:text-start md:text-5xl">
         {QUESTION_SECTION_DATA.headingParts.map((part, i: number) => (
           <span key={i} className={part.className}>
             {part.text}{" "}

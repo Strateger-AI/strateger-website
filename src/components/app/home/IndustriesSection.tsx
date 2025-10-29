@@ -12,7 +12,11 @@ import Image from "next/image";
 export function IndustriesSection() {
   return (
     <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
-      <h1 className={"text-primary text-center text-4xl font-bold md:text-5xl"}>
+      <h1
+        className={
+          "text-primary text-center text-2xl sm:text-4xl font-bold md:text-5xl"
+        }
+      >
         Industries We Transform
       </h1>
       <p className={"text-center md:text-2xl"}>

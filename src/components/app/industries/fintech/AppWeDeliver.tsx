@@ -15,7 +15,7 @@ export function AppWeDeliver() {
   const ICon2 = FINTECH_APPS_SECTION.apps[activeIndex].icon;
   return (
     <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
-      <h1 className="m-auto mx-20 text-center text-3xl leading-normal font-bold whitespace-pre-line md:text-5xl">
+      <h1 className="text-center text-2xl sm:text-3xl leading-snug font-bold whitespace-pre-line md:text-5xl">
         {FINTECH_APPS_SECTION.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}

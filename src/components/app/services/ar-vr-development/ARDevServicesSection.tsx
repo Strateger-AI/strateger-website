@@ -12,9 +12,12 @@ export function ArDevServicesSection() {
           </span>
         ))}
       </h1>
-      <p className={"text-center text-xl"}> {AR_VR_SERVICES_SECTION.desc}</p>
+      <p className={"text-center text-sm md:text-xl"}>
+        {" "}
+        {AR_VR_SERVICES_SECTION.desc}
+      </p>
 
-      <div className="lex-1 grid h-full max-w-full grid-cols-1 gap-5 px-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="lex-1 grid h-full max-w-full grid-cols-1 gap-5 md:px-10 md:grid-cols-2 lg:grid-cols-3">
         {AR_VR_SERVICES_SECTION.services.map((service, index) => {
           const Icon = service.icon;
           return (

@@ -22,7 +22,6 @@ const DemoStickyNav = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const pathname = usePathname();
   const isHome = pathname === "/";
-  console.log(isHome);
 
   // Hero observer: 10% visibility
   const { ref: hero10Ref, inView: hero10InView } = useInView({

@@ -19,15 +19,19 @@ export function ServicesBanner() {
       <div className="relative z-10 flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
         {/* Left: Text & Points */}
         <div className="flex w-full flex-col gap-10 lg:w-3/5 justify-around  ">
-          <h1 className="text-3xl font-bold whitespace-pre-line md:text-4xl xl:text-6xl">
+          <h1 className="text-center text-2xl sm:text-3xl leading-snug font-bold whitespace-pre-line md:text-5xl">
             {SERVICES_BANNER_SECTION.heading}
           </h1>
 
           <ul className="grid list-disc grid-cols-1 gap-6 pl-5 md:grid-cols-2">
             {SERVICES_BANNER_SECTION.points.map((point, i) => (
               <li className={"space-y-2"} key={i}>
-                <h2 className="text-2xl font-extrabold">{point.title}</h2>
-                <p className="font-bold">{point.description}</p>
+                <h2 className=" text-lg md:text-2xl font-extrabold">
+                  {point.title}
+                </h2>
+                <p className=" text-sm  md:text-lg font-medium md:font-bold">
+                  {point.description}
+                </p>
               </li>
             ))}
           </ul>

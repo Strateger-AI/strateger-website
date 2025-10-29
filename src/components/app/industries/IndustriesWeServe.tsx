@@ -5,7 +5,7 @@ export function IndustriesWeServe() {
   return (
     <div className="space-y-10 px-5 py-10 md:px-20">
       {/* Heading + Description */}
-      <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col gap-2 md:gap-6 md:flex-row md:items-center md:justify-between">
         <h1 className="text-3xl text-center md:text-start font-bold md:w-2/5 md:text-4xl lg:text-5xl p-10">
           {INDUSTRIES_SECTION.headingParts.map((part, i) => (
             <span key={i} className={part.className}>
@@ -13,7 +13,7 @@ export function IndustriesWeServe() {
             </span>
           ))}
         </h1>
-        <p className="text-base text-gray-600 md:w-3/5 md:text-lg">
+        <p className="text-base text-center md:text-start text-gray-600 md:w-3/5 md:text-lg">
           {INDUSTRIES_SECTION.description}
         </p>
       </div>
@@ -38,7 +38,7 @@ export function IndustriesWeServe() {
             />
 
             {/* Gradient Overlay */}
-            <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-t from-primary/90 to-primary/0 z-10" />
+            <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-t from-primary/60 to-primary/0 z-10" />
 
             {/* Content */}
             <div className="absolute top-0 left-0 z-20 flex h-full w-full flex-col items-start justify-end gap-4 p-8 text-xl text-white">

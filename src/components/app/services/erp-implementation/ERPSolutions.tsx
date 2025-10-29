@@ -14,7 +14,7 @@ export const ERPSolutions = () => {
           </span>
         ))}
       </h1>
-      <p className={"text-center text-xl"}>
+      <p className={"text-center text-sm sm:text-xl"}>
         {" "}
         {ERP_SOLUTIONS_SECTION.description}
       </p>

@@ -14,13 +14,13 @@ import Image from "next/image";
 
 export function PortfolioSection() {
   return (
-    <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
+    <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-5 ">
       <div
         className={
           "flex flex-col items-center gap-2 md:flex-row md:justify-between"
         }
       >
-        <h1 className={"text-4xl font-bold md:text-5xl"}>
+        <h1 className={" text-2xl sm:text-3xl font-bold md:text-5xl"}>
           Our <span className={"text-primary"}>Portfolio</span>
         </h1>
       </div>
@@ -38,10 +38,10 @@ export function PortfolioSection() {
                   }
                 >
                   {" "}
-                  <CardContent className="relative flex h-[540px]  group flex-col overflow-hidden !border-0 !p-0 py-2 md:min-h-[650px] md:p-0 ">
+                  <CardContent className="relative flex  h-[540px]  group flex-col overflow-hidden !border-0 !p-0 py-2 md:min-h-[650px] md:p-0 ">
                     {" "}
                     {/* Top Half - Image */}{" "}
-                    <div className=" overflow-hidden h-3/5 rounded-xl  w-full">
+                    <div className=" overflow-hidden sm:h-4/5 md:h-3/5 rounded-xl  w-full">
                       {" "}
                       <Image
                         src={product.image}
@@ -55,7 +55,7 @@ export function PortfolioSection() {
                       {" "}
                       <div
                         className={
-                          " absolute top-50 mx-auto flex w-11/12 lg:w-10/12 rounded-xl bg-white pt-10 text-black shadow-xl"
+                          " absolute  top-50 mx-auto flex w-11/12 lg:w-10/12 rounded-xl bg-white  pt-10 text-black shadow-xl"
                         }
                       >
                         {" "}
@@ -67,14 +67,14 @@ export function PortfolioSection() {
                           {" "}
                           <div
                             className={
-                              "absolute -top-25 h-25 w-25 rounded-full"
+                              "absolute -top-25 overflow-hidden  h-25 w-25 rounded-full"
                             }
                           >
                             {" "}
                             <Image
                               fill
                               src={product.companyLogo as string}
-                              alt={"company-icon "}
+                              alt={"company-icon object-cover object-center "}
                             />{" "}
                           </div>{" "}
                           <div className={"flex flex-col  gap-2"}>
@@ -87,7 +87,7 @@ export function PortfolioSection() {
                               {" "}
                               {product.companyName}{" "}
                             </h1>{" "}
-                            <p className={" text-lg"}>
+                            <p className={" text-xs  md:text-lg"}>
                               {" "}
                               {product.description}{" "}
                             </p>{" "}

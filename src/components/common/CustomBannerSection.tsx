@@ -21,7 +21,7 @@ export function CustomBannerSection({
   return (
     <div
       className={
-        " mt-20  lg:mt-10 relative   min-h-screen flex flex-col items-center justify-center px-5 py-10   md:px-20 md:py-20 lg:gap-8"
+        " mt-20  lg:mt-10 relative   sm:min-h-screen flex flex-col items-center md:justify-center px-5 py-5   md:px-20 md:py-20 lg:gap-8"
       }
     >
       <div
@@ -44,7 +44,7 @@ export function CustomBannerSection({
           {data.desc && (
             <p
               className={
-                "text-center whitespace-pre-line  md:text-start md:text-lg"
+                "text-center whitespace-pre-line text-sm  md:text-start md:text-lg"
               }
             >
               {data.desc}
@@ -63,7 +63,7 @@ export function CustomBannerSection({
                 onClick={() => {
                   scrollToId();
                 }}
-                className={"self-start "}
+                className={"self-start  text  "}
                 label={data.CTABtnText}
               />
             )}

@@ -15,7 +15,7 @@ type AlternatingGridProps = {
 
 const CustomAlternatingGrid: React.FC<AlternatingGridProps> = ({ items }) => {
   return (
-    <div className="grid grid-cols-1 gap-4 px-10 lg:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 md:px-10 lg:grid-cols-2">
       {items.map((item, i) => {
         const Icon = item.icon;
         const isLeft = i % 2 === 0;
@@ -36,7 +36,7 @@ const CustomAlternatingGrid: React.FC<AlternatingGridProps> = ({ items }) => {
             >
               <h1
                 className={cn(
-                  "w-1/2 text-[10px] text-gray-600 md:text-xs",
+                  "w-1/2 text-[10px] text-gray-600 md:text-xs  ",
                   isLeft ? "text-right" : "text-left",
                 )}
               >
@@ -44,7 +44,7 @@ const CustomAlternatingGrid: React.FC<AlternatingGridProps> = ({ items }) => {
               </h1>
               <h1
                 className={cn(
-                  "w-1/2 text-lg font-bold",
+                  "w-1/2 text-sm sm:text-lg font-bold",
                   isLeft ? "text-right" : "text-left",
                 )}
               >

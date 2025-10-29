@@ -3,14 +3,15 @@ import { MOBILE_DEV_SERVICES_DATA } from "@/data/mobile/mobile-dev.data";
 export function MobileDevServices() {
   return (
     <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
-      <h1 className="text-center text-3xl leading-snug whitespace-pre-line md:text-5xl">
+      <h1 className="text-center text-2xl sm:text-3xl leading-snug font-bold whitespace-pre-line md:text-5xl">
         {MOBILE_DEV_SERVICES_DATA.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}
           </span>
         ))}
       </h1>
-      <p className={"text-center text-lg"}>
+
+      <p className={"text-center text-sm sm:text-xl"}>
         {" "}
         {MOBILE_DEV_SERVICES_DATA.description}
       </p>

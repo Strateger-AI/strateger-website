@@ -13,7 +13,7 @@ import { INDUSTRIES_DEEP_LEARNING_DATA } from "@/data/services/deep-learning.dat
 export function IndustriesDeepLearning() {
   return (
     <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
-      <h2 className="text-center text-3xl leading-normal font-bold md:text-5xl">
+      <h2 className="text-center  leading-normal ftext-2xl sm:text-3xl md:text-start md:text-5xl">
         {INDUSTRIES_DEEP_LEARNING_DATA.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}

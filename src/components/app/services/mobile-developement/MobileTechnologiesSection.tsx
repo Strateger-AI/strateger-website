@@ -9,7 +9,7 @@ export function MobileTechnologiesSection() {
       <div className="flex w-full flex-col-reverse items-center justify-around gap-10 pt-10 lg:flex-row lg:gap-0">
         {/* Text Section */}
         <div className="flex w-full flex-col items-center space-y-6 text-center lg:w-1/2 lg:space-y-8 lg:text-left">
-          <h1 className="text-center text-3xl leading-snug md:text-start md:text-5xl">
+          <h1 className="text-center text-3xl font-bold leading-snug md:text-start md:text-5xl">
             {MOBILE_TECHNOLOGIES_DATA.headingParts.map((part, i) => (
               <span key={i} className={part.className}>
                 {part.text}{" "}
@@ -21,7 +21,7 @@ export function MobileTechnologiesSection() {
           </p>
           <div
             className={
-              "mx-auto flex flex-wrap items-center justify-center gap-4"
+              "mx-auto flex flex-wrap  items-center justify-center gap-2 md:gap-4"
             }
           >
             {MOBILE_TECHNOLOGIES_DATA.technologies.map((technology, index) => {
@@ -30,7 +30,7 @@ export function MobileTechnologiesSection() {
                 <Card className={"hover:shadow-xl"} key={index}>
                   <CardContent
                     className={
-                      "flex min-w-44 items-center justify-center gap-2"
+                      "flex w-33 sm:min-w-44 items-center justify-center gap-2"
                     }
                   >
                     <Icon className={"h-6 w-6"} />

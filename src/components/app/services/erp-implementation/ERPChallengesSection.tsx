@@ -9,7 +9,7 @@ export const ERPChallengesSection = () => {
   return (
     <section className="w-full px-6 py-16 md:px-20">
       {/* Heading */}
-      <h1 className="text-center text-3xl  font-bold whitespace-pre-line md:text-5xl">
+      <h1 className="text-center text-2xl sm:text-3xl leading-snug font-bold whitespace-pre-line md:text-5xl">
         {ERP_CHALLENGES_SECTION.headingParts.map((part, index) => (
           <span key={index} className={`${part.className} mr-1 inline-block`}>
             {part.text}

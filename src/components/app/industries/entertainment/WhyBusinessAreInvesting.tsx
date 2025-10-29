@@ -4,7 +4,7 @@ export function WhyBusinessAreInvesting() {
   return (
     <section className="flex flex-col items-center space-y-5 px-5 py-10 md:space-y-10 md:px-20">
       {/* Heading */}
-      <h2 className="text-center text-3xl whitespace-pre-line leading-normal font-bold md:text-5xl">
+      <h2 className="text-center  whitespace-pre-line leading-normal text-2xl sm:text-4xl font-bold md:text-5xl">
         {ENTERTAINMENT_TECHNOLOGIES_SECTION.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}

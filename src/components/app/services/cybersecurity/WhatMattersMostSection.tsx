@@ -57,7 +57,7 @@ export function WhatMattersMostSection() {
   return (
     <section className="flex flex-col items-center space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
       {/* Heading */}
-      <h2 className="text-center text-3xl leading-normal font-bold md:text-5xl">
+      <h2 className="text-center  leading-normal text-2xl sm:text-3xl md:text-start md:text-5xl">
         {WHAT_MATTER_MOST_SECTION.headingParts.map((part, i) => (
           <span key={i} className={part.className}>
             {part.text}{" "}
@@ -66,7 +66,7 @@ export function WhatMattersMostSection() {
       </h2>
 
       {/* Description */}
-      <p className="text-center text-lg text-black md:text-xl">
+      <p className="text-center text-sm text-black md:text-lg">
         {WHAT_MATTER_MOST_SECTION.desc}
       </p>
 
@@ -96,9 +96,7 @@ export function WhatMattersMostSection() {
                       {service.title}
                     </h3>
                   </div>
-                  <p className="text-muted-foreground text-base">
-                    {service.desc}
-                  </p>
+                  <p className="text-black text-base">{service.desc}</p>
                 </div>
               </CarouselItem>
             );

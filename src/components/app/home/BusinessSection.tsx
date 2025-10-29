@@ -9,7 +9,11 @@ export function BusinessSection() {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-10">
-      <h1 className={"text-primary text-center text-4xl font-bold md:text-5xl"}>
+      <h1
+        className={
+          "text-primary font-bold text-center text-2xl sm:text-3xl md:text-start md:text-5xl"
+        }
+      >
         {BUSINESS_SECTION_DATA.heading}
       </h1>
       <p className={"text-center text-black md:text-2xl"}>
