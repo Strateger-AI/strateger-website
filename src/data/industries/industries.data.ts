@@ -66,5 +66,5 @@ export const INDUSTRY_CTA_SECTION = {
   ctaText:
     "Let’s shape the future together with intelligent, scalable, and impactful solutions.",
   ctaBtnText: "Let’s Get Started",
-  ctaLink: "/", // You can update this to your desired route (e.g., "/contact" or "/start")
+  ctaLink: "/contact", // You can update this to your desired route (e.g., "/contact" or "/start")
 };

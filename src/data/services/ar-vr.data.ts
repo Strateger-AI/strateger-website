@@ -177,5 +177,5 @@ export const QUESTION_SECTION_AR_DATA = {
 export const CTA_SECTION_DATA = {
   ctaText: " Step Into the Future with AR/VR",
   ctaBtnText: "Lets Connect",
-  ctaLink: "/",
+  ctaLink: "/contact",
 };

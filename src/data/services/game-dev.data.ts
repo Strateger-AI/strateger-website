@@ -289,5 +289,5 @@ export const CTA_SECTION_DATA_GAME = {
   ctaText:
     " Turn your game idea into a playable reality let’s build it together.",
   ctaBtnText: " Get Started",
-  CtaLink: "/",
+  CtaLink: "/contact",
 };

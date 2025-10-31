@@ -52,36 +52,42 @@ export const SERVICES_SECTION = {
   services: [
     {
       title: "Mobile App Development",
+      link: "/services/mobile-app-development",
       icon: FaMobileAlt, // FontAwesome Icon (can be mapped later in component)
       description:
         "We design and develop mobile applications that are fast, scalable, and built to perform flawlessly across platforms. Our focus is on delivering intuitive user experiences that drive engagement and growth.",
     },
     {
       title: "Game Development Services",
+      link: "/services/game-development",
       icon: FaGamepad,
       description:
         "From concept to launch, we create immersive, high-quality games that blend creativity with technology. Our team ensures every game delivers engaging gameplay, rich visuals, and seamless performance.",
     },
     {
       title: "AR/VR Development",
+      link: "/services/ar-vr-development",
       icon: FaVrCardboard,
       description:
         "Bring ideas to life with immersive Augmented and Virtual Reality experiences. We craft interactive environments that captivate audiences and redefine how users connect with digital content.",
     },
     {
       title: "Cybersecurity Services",
+      link: "/services/cybesecurity",
       icon: FaShieldAlt,
       description:
         "Protect your digital assets with our advanced cybersecurity solutions. We provide robust defense strategies that safeguard your business from evolving cyber threats.",
     },
     {
       title: "Deep Learning Services",
+      link: "/services/deep-learning",
       icon: FaBrain,
       description:
         "Unlock the power of AI with our deep learning expertise. We build intelligent models that help automate processes, enhance decision-making, and drive business efficiency.",
     },
     {
       title: "ERP Implementation Services",
+      link: "/services/erp-implementation",
       icon: FaNetworkWired,
       description:
         "Streamline your operations with our end-to-end ERP implementation services. We design and integrate customized systems that improve visibility, collaboration, and productivity across your organization.",
