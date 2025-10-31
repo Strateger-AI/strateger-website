@@ -1,11 +1,11 @@
 export const BANNER_SECTION = {
   headingParts: [
     {
-      text: "We’d love to hear from you,\n our team is here to listen, support,\n and guide you  every step of the way",
+      text: "We’d love to hear from you,\n our team is here to listen, support,\n and guide you  every step of the way ",
       className: "text-white font-extrabold",
     },
     {
-      text: ".",
+      text: "",
       className: "text-primary font-extrabold",
     },
   ],
@@ -29,18 +29,19 @@ export const CONNECT_WITH_US_SECTION = {
   emails: [
     {
       title: "Info Queries",
-      mail: "info@trangotech.com",
+      mail: "info@strateger.ai",
     },
-    {
-      title: "Careers",
-      mail: "careers@trangotech.com",
-    },
+    // {
+    //   title: "Careers",
+    //   mail: "careers@trangotech.com",
+    // },
     {
       title: "Sales",
-      mail: "sales@trangotech.com",
+      mail: "sales@strateger.ai",
     },
   ],
 };
+
 export const WHERE_ARE_WE_LOCATED_SECTION = {
   headingParts: [
     {
@@ -55,19 +56,18 @@ export const WHERE_ARE_WE_LOCATED_SECTION = {
   locations: [
     {
       country: "USA",
-      address: "299 South Main Street Salt Lake City, Utah 84111",
-      tel: "+1 (866) 842-5679",
+      address: "30 N Gould Street STE Wyoming ",
+      tel: "+1 307 3939008",
     },
-    {
-      country: "UAE",
-      address: "Floor 21, Al Habtoor Business Tower, Dubai Marina, Dubai",
-      tel: "+97145813629",
-    },
+    // {
+    //   country: "UAE",
+    //   address: "Floor 21, Al Habtoor Business Tower, Dubai Marina, Dubai",
+    //   tel: "+97145813629",
+    // },
     {
       country: "PAKISTAN",
-      address:
-        "2nd Floor, City View Tower، 156 Shaheed-e-Millat Rd, Bahadurabad Delhi Mercantile Society, Karachi, Sindh",
-      tel: "+92 21 37131482",
+      address: "456 G3 Johar Town Lahore",
+      tel: "+92 313 9230882",
     },
   ],
 };

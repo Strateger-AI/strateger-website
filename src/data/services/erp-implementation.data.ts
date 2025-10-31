@@ -21,10 +21,11 @@ export const BANNER_SECTION_ERP = {
       className: "text-primary font-extrabold",
     },
   ],
+  desc: "Starting an ERP project can be overwhelming, but with Strateger.ai as your implementation partner, it becomes a streamlined path to business transformation. We don’t just deploy ERP systems; we design intelligent solutions that align with your strategy, enhance efficiency, and evolve with your growth. Our experts handle every phase,  from planning and configuration to integration and continuous optimization, ensuring your ERP investment delivers real, measurable value.",
 
   CTABtnText: "Let's Connect",
   // CTABtnLink: "/",
-  bannerImg: "/services/game/game-banner.png",
+  bannerImg: "/services/erp/erp-banner-img.webp",
   img: "",
 };
 

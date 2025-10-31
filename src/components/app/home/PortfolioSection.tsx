@@ -41,7 +41,7 @@ export function PortfolioSection() {
                   <CardContent className="relative flex  h-[540px]  group flex-col overflow-hidden !border-0 !p-0 py-2 md:min-h-[650px] md:p-0 ">
                     {" "}
                     {/* Top Half - Image */}{" "}
-                    <div className=" overflow-hidden sm:h-4/5 md:h-3/5 rounded-xl  w-full">
+                    <div className=" overflow-hidden b h-full sm:h-4/5 md:h-3/5 rounded-xl  w-full">
                       {" "}
                       <Image
                         src={product.image}

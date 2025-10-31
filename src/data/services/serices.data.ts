@@ -33,7 +33,7 @@ export const SERVICES_BANNER_SECTION = {
         "Empowering brands worldwide with reliable, scalable, and results-driven services.",
     },
   ],
-  backgroundImg: "/contact.webp",
+  backgroundImg: "/services/cybersecurity/cybersecurity-cta.webp",
 };
 export const SERVICES_SECTION = {
   headingParts: [

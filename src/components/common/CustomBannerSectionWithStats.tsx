@@ -35,7 +35,7 @@ export function CustomBannerSectionWithStats({
     >
       <div
         className={
-          "flex w-full flex-col items-center justify-around gap-4 xl:flex-row lg:gap-0"
+          "flex w-full flex-col-reverse items-center justify-around gap-4 xl:flex-row lg:gap-0"
         }
       >
         <div

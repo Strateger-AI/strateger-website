@@ -307,10 +307,10 @@ export const NAV_ITEMS = [
   //   title: "Contact Us",
   //   href: "/contact",
   // },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  // },
 ];
 
 export const heroSection = {

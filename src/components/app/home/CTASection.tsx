@@ -52,7 +52,7 @@ export function CTASectionWithLogo({
           width={400}
           height={400}
           alt="Strategerai logo"
-          className={`absolute top-1/2 left-1/2 mx-auto h-[200px] w-[200px] -translate-x-1/2 -translate-y-10 opacity-50 md:static md:h-[300px] md:w-[300px] md:translate-x-0 md:translate-y-0 md:opacity-100 lg:h-[400px] lg:w-[400px]`}
+          className={`absolute top-1/2 left-1/2 mx-auto h-[200px] w-[200px] -translate-x-1/2 -translate-y-10 opacity-30 md:static md:h-[300px] md:w-[300px] md:translate-x-0 md:translate-y-0 md:opacity-100 lg:h-[400px] lg:w-[400px]`}
         />
       </div>
     </div>

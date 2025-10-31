@@ -1,5 +1,4 @@
 import { ERPSolutions } from "@/components/app/services/erp-implementation/ERPSolutions";
-import { ERPChallengesSection } from "@/components/app/services/erp-implementation/ERPChallengesSection";
 import { ERPServices } from "@/components/app/services/erp-implementation/ERPServices";
 import { ERPServicesTransformation } from "@/components/app/services/erp-implementation/ERPServicesTransformation";
 import { QuestionSection } from "@/components/app/home/QuestionSection";
@@ -15,7 +14,6 @@ export default function Page() {
     <>
       <CustomBannerSection data={BANNER_SECTION_ERP} />
       <ERPSolutions />
-      {/*<ERPChallengesSection />*/}
       <ERPServices />
       <ERPServicesTransformation />
       <ContactSection />

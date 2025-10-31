@@ -37,7 +37,7 @@ export const REAL_ESTATE_HERO_SECTION = {
 
   // CTABtnLink: "/",
   CTAButton: "Get Started",
-  bannerImg: "/services/mobile/mobile.png",
+  bannerImg: "/industries/realstate/realstate.png",
 };
 
 import { FaUsers, FaChartLine, FaHandshake, FaBolt } from "react-icons/fa";

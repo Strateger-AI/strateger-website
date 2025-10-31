@@ -20,32 +20,32 @@ export const BANNER_SECTION = {
 export const MESSAGE_FROM_CEO_SECTION = {
   headingParts: [
     {
-      text: "From the desk of ",
+      text: "From the desk of  ",
       className: "text-black font-bold",
     },
 
     {
-      text: "CEO.",
+      text: "Co-Founder.",
       className: "text-primary font-extrabold",
     },
   ],
   messages: [
     {
-      img: "/ceo.png",
+      img: "/about-us/sir-atif-co-founder.webp",
       message:
         "In today’s fast-paced digital world, leadership means navigating complexity with clarity. Our mission is to remove barriers, simplify challenges, and empower you to lead with confidence. What drives us is not only your business success but also the positive impact we can create for society and the communities around us. Our vision extends beyond business outcomes — we strive to create meaningful impact on society and contribute positively to the communities we serve.",
       from: {
-        designation: "CEO",
-        name: "Muhammad Atif ", // Replace with actual name
+        designation: "Co-Founder",
+        name: "Muhammad Aatif ", // Replace with actual name
       },
     },
     {
-      img: "/ceo.png",
+      img: "/about-us/sir-saad-co-founder.webp",
       message:
         "In today’s fast-paced digital world, leadership means navigating complexity with clarity. Our mission is to remove barriers, simplify challenges, and empower you to lead with confidence. What drives us is not only your business success but also the positive impact we can create for society and the communities around us. Our vision extends beyond business outcomes — we strive to create meaningful impact on society and contribute positively to the communities we serve.",
       from: {
-        designation: "CEO",
-        name: "Muhammad Atif ", // Replace with actual name
+        designation: "Co-Founder",
+        name: "Saad Salman ", // Replace with actual name
       },
     },
   ],
@@ -135,8 +135,8 @@ export const WHY_STRATEGERAI_SECTION = {
         "Our solutions are designed to be outcome-driven, scalable, and future-ready. From AI and machine learning to automation and data-driven platforms, we provide the right tools to help businesses innovate with confidence and lead their industries forward.",
     },
   ],
-  img1: '/mobile-app-UI.jpg"',
-  img2: '/mobile-app-UI.jpg"',
+  img1: "/about-us/what-we-do2.webp",
+  img2: "/about-us/what-we-do.jpg",
 };
 
 export const CTA_SECTION_DATA = {

@@ -26,7 +26,7 @@ export function CustomBannerSection({
     >
       <div
         className={
-          "flex w-full flex-col items-center justify-around gap-4 lg:flex-row lg:gap-0"
+          "flex w-full flex-col-reverse items-center justify-around gap-4 lg:flex-row lg:gap-0"
         }
       >
         <div
@@ -34,7 +34,7 @@ export function CustomBannerSection({
             "flex w-full flex-col items-center md:items-start  justify-start  gap-5 lg:w-2/5 lg:gap-8"
           }
         >
-          <h1 className="text-center text-3xl  md:text-start md:text-5xl">
+          <h1 className="text-center text-3xl  md:text-start lg:text-4xl xl:text-5xl">
             {data.headingParts.map((part, i) => (
               <span key={i} className={part.className}>
                 {part.text}{" "}
@@ -44,7 +44,7 @@ export function CustomBannerSection({
           {data.desc && (
             <p
               className={
-                "text-center whitespace-pre-line text-sm  md:text-start md:text-lg"
+                "text-center whitespace-pre-line text-sm md:text-[1rem] md:text-start lg:text-lg"
               }
             >
               {data.desc}
@@ -69,7 +69,7 @@ export function CustomBannerSection({
             )}
           </div>
         </div>
-        <div className="w-full max-w-md md:p-10 g:w-2/5 lg:max-w-2/5">
+        <div className="w-full max-w-md  lg:w-2/5 lg:max-w-2/5">
           <Image
             src={data.bannerImg}
             height={200}

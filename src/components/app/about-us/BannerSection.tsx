@@ -16,8 +16,8 @@ export function BannerSection() {
       <div className="absolute inset-0 z-0 bg-primary opacity-70" />
 
       {/* Left Content */}
-      <div className="z-10 flex flex-col md:text-start text-center md:items-start gap-5 md:w-1/2">
-        <h1 className="text-center md:text-start text-2xl sm:text-3xl font-bold leading-snug whitespace-pre-line md:text-4xl lg:text-5xl">
+      <div className="z-10 flex w-full flex-col md:text-start text-center md:items-start gap-5 md:w-1/2">
+        <h1 className="text-center md:text-start text-2xl sm:text-3xl font-bold leading-snug md:whitespace-pre-line md:text-4xl lg:text-5xl">
           {BANNER_SECTION.headingParts.map((part, i) => (
             <span key={i} className={part.className}>
               {part.text}{" "}

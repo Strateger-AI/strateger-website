@@ -41,7 +41,7 @@ export const ENTERTAINMENT_HERO_SECTION = {
 
   // CTABtnLink: "/",
   CTAButton: "Get a free consultancy",
-  bannerImg: "/industries/entertainment/entertainment-banner.webp", // Reused image as per original
+  bannerImg: "/industries/entertainment/entertainment.webp", // Reused image as per original
 };
 import { FaFilm, FaLaptopCode, FaPaintBrush } from "react-icons/fa";
 

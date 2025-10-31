@@ -42,7 +42,7 @@ export const FINTECH_HERO_SECTION = {
 
   // CTABtnLink: "/",
   CTAButton: "Get Free Consultation",
-  bannerImg: "/services/mobile/mobile.png", // Update this path to your actual fintech banner
+  bannerImg: "/industries/fintech/fintech.webp", // Update this path to your actual fintech banner
 };
 
 import { FaWallet, FaExchangeAlt, FaShieldAlt } from "react-icons/fa";

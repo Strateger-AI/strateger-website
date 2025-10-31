@@ -42,7 +42,7 @@ export const ECOMMERCE_HERO_SECTION = {
 
   // CTABtnLink: "/",
   CTAButton: "Let's Discuss Your Idea",
-  bannerImg: "/services/mobile/mobile.png", // You can change this to your actual eCommerce image path
+  bannerImg: "/industries/ecom/ecom.webp", // You can change this to your actual eCommerce image path
 };
 
 import { FaShoppingCart, FaCogs } from "react-icons/fa";

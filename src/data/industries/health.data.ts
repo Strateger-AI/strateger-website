@@ -43,10 +43,9 @@ export const HEALTHCARE_HERO_SECTION = {
   clientSectionHeading:
     "Trusted by Global Health Brands, Hospitals, and HealthTech Innovators",
   clientsImages: [],
-
-  CTABtnLink: "/",
+  CTAButton: "Get Started",
   // CTAButton: "Get Started",
-  bannerImg: "/services/mobile/mobile.png", // Same image as original
+  bannerImg: "/industries/healthcare/healthcare.png", // Same image as original
 };
 
 import {

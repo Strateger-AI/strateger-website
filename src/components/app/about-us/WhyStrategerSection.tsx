@@ -6,7 +6,7 @@ export function WhyStrategerSection() {
     <div className="flex flex-col items-center justify-center px-5 py-10 md:px-20 md:py-20 lg:h-screen">
       <div className={"flex h-full flex-col lg:flex-row xl:w-4/5"}>
         {/*Left-side*/}
-        <div className={"flex h-full flex-col lg:w-2/5"}>
+        <div className={"flex h-full my-2 flex-col lg:w-2/5"}>
           {/*First colm*/}
           <div className={"space-y-2"}>
             <h1 className="text-center text-xl leading-snug md:text-start md:text-3xl">
@@ -27,15 +27,15 @@ export function WhyStrategerSection() {
           {/*Second clm Image*/}
           <div
             className={
-              "flex min-h-[600px] w-full flex-1 justify-around lg:p-10"
+              "flex min-h-[600px] w-full   flex-1 justify-around lg:p-10"
             }
           >
             <div className={"relative h-[400px] w-2/5 self-start lg:h-4/5"}>
               <Image
-                src={"/mobile-app-UI.jpg"}
+                src={WHY_STRATEGERAI_SECTION.img1}
                 alt={"img-1"}
                 fill
-                className={"self-start object-cover"}
+                className={"self-start  rounded-md object-center  object-cover"}
               />
             </div>
             <div
@@ -45,10 +45,10 @@ export function WhyStrategerSection() {
               }
             >
               <Image
-                src={"/mobile-app-UI.jpg"}
+                src={WHY_STRATEGERAI_SECTION.img2}
                 alt={"img-1"}
                 fill
-                className={"self-start object-cover"}
+                className={"self-start rounded-md object-center object-cover"}
               />
             </div>
           </div>
