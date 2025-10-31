@@ -99,7 +99,7 @@ export const FINTECH_CTA_SECTION = {
   ctaText: "Build the Future of Finance with Stratger.ai",
   desc: "At Stratger.ai, our fintech innovations have powered secure, high-value transactions for businesses worldwide, setting new benchmarks in reliability, scalability, and performance.\n\nPartner with our fintech app development experts today and start building the next big breakthrough in digital finance.",
   ctaBtnText: "Start Your Project ",
-  ctaLink: "/", // Update with actual route if needed
+  ctaLink: "/contact", // Update with actual route if needed
 };
 import { FaUniversity, FaPiggyBank, FaChartPie } from "react-icons/fa";
 

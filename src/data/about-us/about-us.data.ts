@@ -33,7 +33,7 @@ export const MESSAGE_FROM_CEO_SECTION = {
     {
       img: "/about-us/sir-atif-co-founder.webp",
       message:
-        "In today’s fast-paced digital world, leadership means navigating complexity with clarity. Our mission is to remove barriers, simplify challenges, and empower you to lead with confidence. What drives us is not only your business success but also the positive impact we can create for society and the communities around us. Our vision extends beyond business outcomes — we strive to create meaningful impact on society and contribute positively to the communities we serve.",
+        "In today’s fast-paced digital world, leadership means navigating complexity with clarity. Our mission is to remove barriers, simplify challenges, and empower you to lead with confidence. What drives us is not only your business success but also the positive impact we can create for society and the communities around us. Our vision extends beyond business outcomes .We strive to create meaningful impact on society and contribute positively to the communities we serve.",
       from: {
         designation: "Co-Founder",
         name: "Muhammad Aatif ", // Replace with actual name
@@ -42,7 +42,7 @@ export const MESSAGE_FROM_CEO_SECTION = {
     {
       img: "/about-us/sir-saad-co-founder.webp",
       message:
-        "In today’s fast-paced digital world, leadership means navigating complexity with clarity. Our mission is to remove barriers, simplify challenges, and empower you to lead with confidence. What drives us is not only your business success but also the positive impact we can create for society and the communities around us. Our vision extends beyond business outcomes — we strive to create meaningful impact on society and contribute positively to the communities we serve.",
+        "I am proud to lead a visionary team committed to excellence and innovation. Our organization specializes in game development, mobile app development, and advanced technology solutions. We strive to create impactful digital experiences that empower businesses, inspire users, and shape the future of interactive technology with creativity, precision, and integrity.",
       from: {
         designation: "Co-Founder",
         name: "Saad Salman ", // Replace with actual name
@@ -62,8 +62,8 @@ export const WHAT_WE_DO_SECTION = {
     },
   ],
   CTABtnText: "Connect with us",
-  CTABtnLink: "/",
-  img: "", // Add image URL if needed
+  CTABtnLink: "/contact",
+  img: "/services/mobile/mobile-transformation.png", // Add image URL if needed
   desc: `At Stratger.ai, we help businesses stay ahead in a world that’s changing faster than ever. Our focus is on making digital transformation simple, practical, and impactful — using the right mix of technology, AI, and human insight to create solutions that actually work for real business needs.\n
 We’re more than just a technology company. We’re a team that listens, understands challenges, and works alongside our clients to turn ideas into results. From mobile and web app development to game design, AI-driven solutions, and custom digital platforms, we help businesses bring their vision to life. Whether it’s streamlining operations, unlocking new opportunities, or building smarter digital experiences, we aim to make growth achievable and sustainable.\n
 What keeps us moving forward is our curiosity and drive to keep learning. We don’t just follow trends — we adapt them, test them, and make them useful for our clients. At Stratger.ai, every challenge is an opportunity, and every solution is built with one goal in mind: helping businesses grow with confidence.`,

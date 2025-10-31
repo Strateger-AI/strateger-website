@@ -479,7 +479,11 @@ export const FOOTER_LINKS = [
     categories: [
       { title: "Facebook", href: "", icon: "facebook" },
       { title: "Twitter", href: "", icon: "twitter" },
-      { title: "LinkedIn", href: "", icon: "linkedin" },
+      {
+        title: "LinkedIn",
+        href: "https://www.linkedin.com/company/strateger-ai",
+        icon: "linkedin",
+      },
       { title: "Instagram", href: "", icon: "instagram" },
     ],
   },

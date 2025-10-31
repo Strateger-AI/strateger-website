@@ -49,8 +49,13 @@ export default function ServiceSection() {
                   <span className={""}>{service.title}</span>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="px-12 pb-6 text-sm sm:text-xl md:leading-9">
-                {service.description}
+              <AccordionContent className="px-12 pb-6 flex flex-col items-start gap-2 ">
+                <span className={"text-sm sm:text-xl md:leading-9"}>
+                  {service.description}
+                </span>
+                <div>
+                  <CTAButton2 label={"Explore More"} href={service.link} />
+                </div>
               </AccordionContent>
             </AccordionItem>
           );

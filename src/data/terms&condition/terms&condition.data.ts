@@ -35,5 +35,5 @@ References to third-party services, products, or resources do not constitute end
 export const CTA_SECTION_DATA = {
   ctaText: "Let’s Build the Future of Your Vision Together",
   ctaBtnText: "Get started",
-  ctaLink: "/", // You can update this to your actual route
+  ctaLink: "/contact", // You can update this to your actual route
 };
