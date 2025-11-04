@@ -123,7 +123,7 @@ export const EDUCATION_SERVICES_SECTION = {
 export const EDUCATION_CTA_SECTION = {
   heading: "Empower Learning with Smart, \n Interactive E-Learning Solutions.",
   CTABtnText: "Get Started Today",
-  CTABtnLink: "/", // Replace with actual link if available
+  CTABtnLink: "/contact", // Replace with actual link if available
 };
 export const EDUCATION_SOLUTION_SECTIONS = [
   {

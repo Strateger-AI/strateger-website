@@ -14,10 +14,12 @@ export default function Home() {
     <>
       <HeroSection />
       <WhatWeDoSection />
+
       <PortfolioSection />
+      <PartnersSection />
+
       <TestimonialSection />
       <IndustriesSection />
-      <PartnersSection />
       <BusinessSection />
       <QuestionSection QUESTION_SECTION_DATA={QUESTION_SECTION_DATA} />
       <CTASectionWithLogo data={CTA_SECTION_DATA} />

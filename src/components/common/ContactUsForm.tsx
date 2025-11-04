@@ -136,7 +136,7 @@ export function ContactUsForm() {
                 <Textarea
                   {...field}
                   placeholder="Write about your project..."
-                  className="flex-1 min-h-[200px] !px-4 !py-6 resize-none overflow-auto"
+                  className="flex-1  !px-4 !py-6 resize-none overflow-auto"
                 />
               </FormControl>
               <FormMessage />
