@@ -45,26 +45,26 @@ export function PortfolioSection() {
                       className="block h-full w-full"
                     >
                       {/* Top Half - Image */}
-                      <div className="overflow-hidden h-full lg:h-3/5 rounded-xl w-full">
+                      <div className="overflow-hidden h-full rounded-xl w-full">
                         <Image
                           src={product.image}
                           alt="Portfolio image"
                           fill
-                          className="h-full !relative w-full object-cover object-top group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                          className="h-full  !relative w-full object-cover lg:object-bottom group-hover:scale-110 transition-transform duration-500 rounded-xl"
                         />
                       </div>
 
                       {/* Bottom Half - Content */}
                       <div className="group flex w-full justify-center">
-                        <div className="absolute bottom-20 md:top-50 mx-auto flex w-11/12 lg:w-10/12 rounded-xl bg-white pt-10 text-black shadow-xl">
-                          <div className="relative flex h-full w-full flex-col justify-around md:gap-6 p-5">
+                        <div className="absolute bottom-10 mx-auto h-fit flex w-11/12 lg:w-10/12 rounded-xl bg-white pt-10 text-black shadow-xl">
+                          <div className="relative flex h-fit  w-full flex-col md:gap-5 p-5">
                             {/* Company Logo */}
-                            <div className="absolute -top-25 overflow-hidden h-25 w-25 rounded-full">
+                            <div className="absolute border-4 -top-25 overflow-hidden h-25 w-25 rounded-full">
                               <Image
                                 fill
                                 src={product.companyLogo}
                                 alt="company-icon"
-                                className="object-cover object-center"
+                                className="object-cover  object-center"
                               />
                             </div>
 

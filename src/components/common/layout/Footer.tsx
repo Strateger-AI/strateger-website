@@ -121,7 +121,7 @@ export function Footer() {
   const locationData = FOOTER_LINKS.find((item) => item.heading === "Location");
 
   return (
-    <footer className="bg-primary text-background md:px-10 lg:px-4 py-10">
+    <footer className="bg-primary text-background px-5 md:px-10 lg:px-4 py-10">
       {/* === DESKTOP / TABLET VIEW === */}
       <div className="hidden lg:mx-auto space-y-10 lg:max-w-[90rem] px-4 md:flex md:flex-col itemsc">
         {/* === TOP SECTION === */}

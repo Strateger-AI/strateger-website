@@ -502,32 +502,32 @@ export const PORTFOLIO_SECTION = {
 export const PORTFOLIO_SECTION_PRODUCTION = [
   {
     companyName: "Wool Mania",
-    image: "/main/portfolio/woolmania.webp", // Placeholder path — update as needed
+    image: "/main/portfolio/wool-mania-logo.webp", // Placeholder path — update as needed
     description:
-      "Sort Puzzle 3D is a fun and relaxing sorting game where players untangle colorful wool threads and organize them by color. With soothing 3D visuals, simple mechanics, and satisfying gameplay, it’s the perfect blend of challenge and calm relaxation.",
+      "Sort Puzzle 3D is a fun and relaxing sorting game where players untangle colorful wool threads and organize them by color.\n",
     platform: "HTML 5",
     industry: "Gaming",
-    companyLogo: "/main/portfolio/galaxy-quest-logo.webp",
+    companyLogo: "/main/portfolio/woolmania.webp",
     link: "https://www.crazygames.com/game/wool-mania---sort-puzzle-3d",
   },
   {
     companyName: "Sniper Hunting Adventure",
     image: "/main/portfolio/sniper-hunting.webp",
     description:
-      "Sniper Hunting Adventure is an action-packed shooting game that tests your precision and focus. Step into the role of an elite sniper, hunt down targets in stunning 3D environments, and complete thrilling missions that push your shooting skills to the limit.",
+      "Step into the role of an elite sniper, hunt down targets in stunning 3D environments, and complete thrilling missions that push your shooting skills to the limit.",
     platform: "Unity",
     industry: "Gaming",
-    companyLogo: "/main/portfolio/vision-space-logo.webp",
+    companyLogo: "/main/portfolio/sniper-hunting-logo.webp",
     link: "https://apps.apple.com/fm/developer/minor-bugs/id1560977130",
   },
   {
     companyName: "Police Bus Simulator ",
     image: "/main/portfolio/police-bus.webp",
     description:
-      "Police Bus Simulator lets you experience life as a police transport driver. Navigate realistic city roads, pick up and drop off officers safely, and complete challenging missions. With detailed 3D graphics and smooth controls, it delivers an immersive driving simulation experience.",
+      "Police Bus Simulator lets you experience life as a police transport driver. Navigate realistic city roads, pick up and drop off officers safely, and complete challenging missions.",
     platform: "Unity",
     industry: "Gaming",
-    companyLogo: "/main/portfolio/swiftcart-logo.webp",
+    companyLogo: "/main/portfolio/police-bus-logo.webp",
     link: "https://play.google.com/store/apps/dev?id=7763204046331663699&hl=en&gl=US",
   },
 ];
