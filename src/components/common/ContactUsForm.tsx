@@ -79,10 +79,83 @@ export function ContactUsForm() {
   };
 
   return (
+    // <Form {...form}>
+    //   <form
+    //     onSubmit={form.handleSubmit(onSubmit)}
+    //     className="flex flex-col gap-5 md:gap-4 text-black h-full"
+    //   >
+    //     <FormField
+    //       control={form.control}
+    //       name="name"
+    //       render={({ field }) => (
+    //         <FormItem>
+    //           <FormControl>
+    //             <Input placeholder="Name" className="!px-4 !py-6" {...field} />
+    //           </FormControl>
+    //           <FormMessage />
+    //         </FormItem>
+    //       )}
+    //     />
+    //
+    //     <FormField
+    //       control={form.control}
+    //       name="email"
+    //       render={({ field }) => (
+    //         <FormItem>
+    //           <FormControl>
+    //             <Input placeholder="Email" className="!px-4 !py-6" {...field} />
+    //           </FormControl>
+    //           <FormMessage />
+    //         </FormItem>
+    //       )}
+    //     />
+    //
+    //     <FormField
+    //       control={form.control}
+    //       name="phone"
+    //       render={({ field }) => (
+    //         <FormItem>
+    //           <FormControl>
+    //             <PhoneInput
+    //               defaultCountry="us"
+    //               value={field.value}
+    //               onChange={field.onChange}
+    //             />
+    //           </FormControl>
+    //           <FormMessage />
+    //         </FormItem>
+    //       )}
+    //     />
+    //
+    //     <FormField
+    //       control={form.control}
+    //       name="message"
+    //       render={({ field }) => (
+    //         <FormItem className="flex-1 flex flex-col">
+    //           <FormControl className="flex-1 flex flex-col">
+    //             <Textarea
+    //               {...field}
+    //               placeholder="Write about your project..."
+    //               className="max-h-full overflow-y-scroll  !px-4 !py-6 resize-none "
+    //             />
+    //           </FormControl>
+    //           <FormMessage />
+    //         </FormItem>
+    //       )}
+    //     />
+    //
+    //     <Button
+    //       type="submit"
+    //       className="w-full !px-4 !py-6 text-2xl font-bold mt-auto"
+    //     >
+    //       Submit
+    //     </Button>
+    //   </form>
+    // </Form>
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-5 md:gap-4 text-black h-full"
+        className="flex flex-col gap-5 md:gap-4 text-black h-full min-h-0"
       >
         <FormField
           control={form.control}
@@ -131,12 +204,12 @@ export function ContactUsForm() {
           control={form.control}
           name="message"
           render={({ field }) => (
-            <FormItem className="flex-1 flex flex-col">
-              <FormControl className="flex-1 flex flex-col">
+            <FormItem className="flex-1 flex flex-col min-h-0">
+              <FormControl className="flex-1 flex flex-col min-h-0">
                 <Textarea
                   {...field}
                   placeholder="Write about your project..."
-                  className="flex-1  !px-4 !py-6 resize-none overflow-auto"
+                  className="flex-1 min-h-44 md:min-h-0  !px-4 !py-6 resize-none"
                 />
               </FormControl>
               <FormMessage />
@@ -146,7 +219,7 @@ export function ContactUsForm() {
 
         <Button
           type="submit"
-          className="w-full !px-4 !py-6 text-2xl font-bold mt-auto"
+          className="w-full !px-4 !py-6 text-2xl font-bold flex-shrink-0"
         >
           Submit
         </Button>
