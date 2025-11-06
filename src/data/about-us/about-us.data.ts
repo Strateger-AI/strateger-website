@@ -35,7 +35,7 @@ export const MESSAGE_FROM_CEO_SECTION = {
       message:
         "In today’s fast-paced digital world, leadership means navigating complexity with clarity. Our mission is to remove barriers, simplify challenges, and empower you to lead with confidence. What drives us is not only your business success but also the positive impact we can create for society and the communities around us. Our vision extends beyond business outcomes .We strive to create meaningful impact on society and contribute positively to the communities we serve.",
       from: {
-        designation: "Co-Founder",
+        designation: "MANAGING DIRECTOR",
         name: "Muhammad Aatif ", // Replace with actual name
       },
     },
@@ -44,7 +44,7 @@ export const MESSAGE_FROM_CEO_SECTION = {
       message:
         "I am proud to lead a visionary team committed to excellence and innovation. Our organization specializes in game development, mobile app development, and advanced technology solutions. We strive to create impactful digital experiences that empower businesses, inspire users, and shape the future of interactive technology with creativity, precision, and integrity.",
       from: {
-        designation: "Co-Founder",
+        designation: "CEO",
         name: "Saad Salman ", // Replace with actual name
       },
     },

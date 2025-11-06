@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import { TRANSFORMING_IDEA_SECTION } from "@/data/mobile/mobile-dev.data";
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { scrollToId } from "@/lib/utils";
 
 export function TransformingIdeasSection() {
   return (
@@ -21,7 +23,10 @@ export function TransformingIdeasSection() {
 
           <CTAButton2
             className=""
-            href={TRANSFORMING_IDEA_SECTION.CTABtnLink}
+            onClick={() => {
+              scrollToId();
+            }}
+            // href={TRANSFORMING_IDEA_SECTION.CTABtnLink}
             label={TRANSFORMING_IDEA_SECTION.CTAButtonText}
           />
         </div>

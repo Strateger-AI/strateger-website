@@ -252,7 +252,7 @@ export const NAV_ITEMS = [
       {
         title: "Entertainment",
         href: "/industries/entertainment",
-        desc: "Where Fun Meets Innovation",
+        desc: "Were Fun Meets Innovation",
         icon: FaGamepad,
         subcategories: [],
       },
@@ -403,6 +403,7 @@ export const heroSection = {
     },
   ],
 };
+import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export const FOOTER_LINKS = [
   {
@@ -413,15 +414,15 @@ export const FOOTER_LINKS = [
         href: "/services/mobile-app-development",
       },
       {
-        title: "Game Development services",
+        title: "Game Development Services",
         href: "/services/game-development",
       },
       {
         title: "Custom AR VR Development",
         href: "/services/ar-vr-development",
       },
-      { title: "Cybersecurity service", href: "/services/cybersecurity" },
-      { title: "Deep Learning service", href: "/services/deep-learning" },
+      { title: "Cybersecurity Service", href: "/services/cybersecurity" },
+      { title: "Deep Learning Service", href: "/services/deep-learning" },
       {
         title: "ERP Implementation Services",
         href: "/services/erp-implementation",
@@ -450,21 +451,13 @@ export const FOOTER_LINKS = [
         title: "Real Estate & Construction",
         href: "/industries/real-estate-construction",
       },
-      // { title: "Automotive & Manufacturing", href: "/industries/automotive" },
     ],
   },
   {
     heading: "Location",
     categories: [
-      { title: "Lahore, USA" }, // No link needed
-    ],
-  },
-  {
-    heading: "Quick Links",
-    categories: [
-      { title: "Home", href: "/" },
-      { title: "About Us", href: "/about-us" },
-      { title: "Blog", href: "/blog" },
+      { title: "Pakistan", address: "456 G3 Johar Town Lahore" },
+      { title: "USA", address: "30 N Gould Street STE Wyoming" },
     ],
   },
   {
@@ -477,14 +470,26 @@ export const FOOTER_LINKS = [
   {
     heading: "Connect With Us",
     categories: [
-      { title: "Facebook", href: "", icon: "facebook" },
-      { title: "Twitter", href: "", icon: "twitter" },
+      {
+        title: "Facebook",
+        href: "/",
+        icon: FaFacebook,
+      },
+      {
+        title: "Twitter",
+        href: "/",
+        icon: FaTwitter,
+      },
       {
         title: "LinkedIn",
-        href: "https://www.linkedin.com/company/strateger-ai",
-        icon: "linkedin",
+        href: "https://www.linkedin.com/company/strateger-ai/",
+        icon: FaLinkedin,
       },
-      { title: "Instagram", href: "", icon: "instagram" },
+      // {
+      //   title: "Instagram",
+      //   href: "/",
+      //   icon: FaInstagram,
+      // },
     ],
   },
 ];
@@ -496,31 +501,34 @@ export const PORTFOLIO_SECTION = {
 
 export const PORTFOLIO_SECTION_PRODUCTION = [
   {
-    companyName: "Galaxy Quest",
-    image: "/main/portfolio/galaxy-quest.webp", // Placeholder path — update as needed
+    companyName: "Wool Mania",
+    image: "/main/portfolio/wool-mania-logo.webp", // Placeholder path — update as needed
     description:
-      "An interstellar adventure game built to deliver stunning graphics and immersive gameplay. Galaxy Quest allows players to explore dynamic galaxies, complete missions, and battle AI-driven enemies in a richly designed 3D universe.",
-    platform: "Unity 3D",
+      "Sort Puzzle 3D is a fun and relaxing sorting game where players untangle colorful wool threads and organize them by color.\n",
+    platform: "HTML 5",
     industry: "Gaming",
-    companyLogo: "/main/portfolio/galaxy-quest-logo.webp",
+    companyLogo: "/main/portfolio/woolmania.webp",
+    link: "https://www.crazygames.com/game/wool-mania---sort-puzzle-3d",
   },
   {
-    companyName: "VisionSpace AR",
-    image: "/main/portfolio/vision-space.webp",
+    companyName: "Sniper Hunting Adventure",
+    image: "/main/portfolio/sniper-hunting.webp",
     description:
-      "VisionSpace AR redefines visualization with augmented reality experiences for real estate and architecture. It enables users to explore 3D property models, visualize interiors, and interact with designs in real time.",
-    platform: "Unreal Engine",
-    industry: "Real Estate / Architecture",
-    companyLogo: "/main/portfolio/vision-space-logo.webp",
+      "Step into the role of an elite sniper, hunt down targets in stunning 3D environments, and complete thrilling missions that push your shooting skills to the limit.",
+    platform: "Unity",
+    industry: "Gaming",
+    companyLogo: "/main/portfolio/sniper-hunting-logo.webp",
+    link: "https://apps.apple.com/fm/developer/minor-bugs/id1560977130",
   },
   {
-    companyName: "SwiftCart",
-    image: "/main/portfolio/swiftcart.webp",
+    companyName: "Police Bus Simulator ",
+    image: "/main/portfolio/police-bus.webp",
     description:
-      "SwiftCart is a mobile shopping app designed to create a seamless retail experience. With real-time order tracking, secure payments, and smart product recommendations, it makes online shopping effortless and engaging for users.",
-    platform: "Custom Mobile",
-    industry: "Ecommerce",
-    companyLogo: "/main/portfolio/swiftcart-logo.webp",
+      "Police Bus Simulator lets you experience life as a police transport driver. Navigate realistic city roads, pick up and drop off officers safely, and complete challenging missions.",
+    platform: "Unity",
+    industry: "Gaming",
+    companyLogo: "/main/portfolio/police-bus-logo.webp",
+    link: "https://play.google.com/store/apps/dev?id=7763204046331663699&hl=en&gl=US",
   },
 ];
 

@@ -853,3 +853,192 @@
 // // };
 // //
 // // export default StickyNav;
+"use client";
+
+import { Menu } from "lucide-react";
+import Link from "next/link";
+import React, { useState } from "react";
+import Image from "next/image";
+// import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { NAV_ITEMS } from "@/data/main.data";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+const DemoStickyNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  // const pathname = usePathname();
+
+  return (
+    <nav className="bg-primary w-11/12  fixed top-0 z-50 ">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:px-10">
+        {/* Logo */}
+        <Link href="/" className="relative h-16 w-16 flex-shrink-0">
+          <Image
+            fill
+            src="/strateger_logo.png"
+            alt="logo"
+            className="object-contain p-2"
+          />
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden flex-1 items-center justify-center md:flex">
+          <NavigationMenu>
+            <NavigationMenuList className="gap-4 lg:gap-8 xl:gap-14">
+              {NAV_ITEMS.map((item, index) => (
+                <NavigationMenuItem key={index}>
+                  {item.categories ? (
+                    <>
+                      <NavigationMenuTrigger className="bg-transparent text-[0.8rem] font-medium text-white hover:bg-transparent hover:text-secondary data-[state=open]:bg-transparent data-[state=open]:text-secondary lg:text-[1rem]">
+                        {item.title}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent className={""}>
+                        <div className="flex gap-4 rounded-xl bg-white p-3 shadow-xl l">
+                          {/* Left sidebar - hidden on smaller screens */}
+                          <div className="from-primary to-primary hidden w-[30%] flex-col justify-end rounded-md bg-gradient-to-b px-6 py-8 text-start text-white xl:flex">
+                            <h1 className="text-4xl font-extrabold">
+                              {item.title}.
+                            </h1>
+                            <p className="text-xl">{item.heading}</p>
+                          </div>
+
+                          {/* Grid of categories */}
+                          <div className="grid w-full grid-cols-2 gap-4">
+                            {item.categories.map((category, idx) => {
+                              const Icon = category.icon;
+                              return (
+                                <Link
+                                  key={idx}
+                                  href={category.href ?? "#"}
+                                  className="hover:bg-secondary/20 group flex flex-col gap-4 rounded-md p-4 text-black lg:flex-row lg:items-center"
+                                >
+                                  <span className="bg-secondary/20 group-hover:bg-primary flex items-center justify-center rounded-xl p-4">
+                                    <Icon className="text-primary text-2xl group-hover:text-white" />
+                                  </span>
+                                  <div className="flex flex-col gap-1">
+                                    <span className="text-start text-lg font-semibold xl:text-lg">
+                                      {category.title}
+                                    </span>
+                                    <span className="text-start text-sm text-gray-500">
+                                      {category.desc}
+                                    </span>
+                                  </div>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </NavigationMenuContent>
+                    </>
+                  ) : (
+                    <Link href={item.href ?? "#"}>
+                      <NavigationMenuLink className="text-[0.8rem] font-medium text-white hover:text-secondary lg:text-[1rem]">
+                        {item.title}
+                      </NavigationMenuLink>
+                    </Link>
+                  )}
+                </NavigationMenuItem>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+
+        {/* CTA Button - Desktop */}
+        <Link href="/contact" className="hidden md:block">
+          <Button className="bg-white text-primary hover:bg-white/90">
+            Let&#39;s talk
+          </Button>
+        </Link>
+
+        {/* Mobile Menu */}
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
+          <SheetTrigger asChild className="md:hidden">
+            <Button variant="ghost" size="icon" className="text-white">
+              <Menu className="h-6 w-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right" className="w-[300px] overflow-y-auto">
+            <SheetHeader>
+              <SheetTitle>Menu</SheetTitle>
+            </SheetHeader>
+            <div className="mt-6 flex flex-col gap-4">
+              {NAV_ITEMS.map((item, index) => (
+                <div key={index}>
+                  {item.categories ? (
+                    <Accordion type="single" collapsible>
+                      <AccordionItem
+                        value={`item-${index}`}
+                        className="border-0"
+                      >
+                        <AccordionTrigger className="py-2 text-base font-medium hover:no-underline">
+                          {item.title}
+                        </AccordionTrigger>
+                        <AccordionContent>
+                          <div className="flex flex-col gap-2 pl-4">
+                            {item.categories.map((category, idx) => {
+                              const Icon = category.icon;
+                              return (
+                                <Link
+                                  key={idx}
+                                  href={category.href ?? "#"}
+                                  onClick={() => setIsOpen(false)}
+                                  className="hover:bg-secondary/20 flex items-center gap-3 rounded-md p-2"
+                                >
+                                  {Icon && (
+                                    <Icon className="text-primary h-5 w-5" />
+                                  )}
+                                  <span className="text-sm">
+                                    {category.title}
+                                  </span>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                  ) : (
+                    <Link
+                      href={item.href ?? "#"}
+                      onClick={() => setIsOpen(false)}
+                      className="block py-2 text-base font-medium hover:text-secondary"
+                    >
+                      {item.title}
+                    </Link>
+                  )}
+                </div>
+              ))}
+              <Link href="/contact" onClick={() => setIsOpen(false)}>
+                <Button className="bg-primary mt-4 w-full text-white">
+                  Let&#39;s talk
+                </Button>
+              </Link>
+            </div>
+          </SheetContent>
+        </Sheet>
+      </div>
+    </nav>
+  );
+};
+
+export default DemoStickyNav;

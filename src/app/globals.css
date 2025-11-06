@@ -164,6 +164,9 @@
 /*  --sidebar-ring: oklch(0.556 0 0);*/
 /*}*/
 /* Tailwind utilities */
+html,body {
+    scroll-behavior: smooth;
+}
 .perspective {
     perspective: 1000px;
 }
@@ -179,9 +182,6 @@
 .rotate-y-180 {
     transform: rotateY(180deg);
 }
-html {
-    scroll-behavior: smooth;
-}
 
 
 
@@ -193,3 +193,8 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+/*!* Prevent page scroll when the Navigation Menu is open *!*/
+/*body:has([data-state="open"]) {*/
+/*    overflow: hidden;*/
+/*}*/

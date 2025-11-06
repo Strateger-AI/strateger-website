@@ -3,7 +3,7 @@ export const INDUSTRIES_BANNER_SECTION = {
   description:
     "At Stratger.ai, we partner with businesses across diverse industries to drive innovation and digital transformation. Our team delivers tailored technology solutions that are scalable, secure, and built to perform in real-world scenarios. With a strong focus on quality and innovation, we help organizations reimagine their operations, enhance customer experiences, and stay ahead in today’s fast-evolving digital economy.",
   CTABtnText: "Explore Our Solutions",
-  CTABtnLink: "/solutions",
+  CTABtnLink: "/services",
   backgroundImg: "/contact.webp",
 };
 

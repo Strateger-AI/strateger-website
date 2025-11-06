@@ -10,13 +10,13 @@ import React from "react";
 
 export function PartnersSection() {
   return (
-    <div className="flex flex-col gap-10  py-5   ">
+    <div className="flex flex-col gap-8 md:gap-15  py-5 md:py-10   ">
       <h1 className="text-center text-xl sm:text-3xl font-extrabold md:text-5xl">
         Trusted <span className={"text-primary"}>Customers</span> and{" "}
         <span className={"text-primary"}>Technologies</span>
       </h1>
 
-      <div className={" flex flex-col  sm:gap-4  md:gap-8    "}>
+      <div className={" flex flex-col  sm:gap-4  md:gap-12    "}>
         <Marquee>
           <MarqueeFade side="left" />
           <MarqueeFade side="right" />
