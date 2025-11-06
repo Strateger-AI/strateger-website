@@ -60,7 +60,7 @@ export const HERO_SECTION = {
   clientSectionHeading:
     "Trusted by 1000+ Happy Clients, Including Enterprises & Fortune 500 Companies",
   clientsImages: [],
-  CTABtnLink: "#contact-form",
+  // CTABtnLink: "/contact#contact-form",
   CTABtnText: "Let’s Create Your Next Big App",
   bannerImg: "/services/mobile/mobile.png",
 };
@@ -84,7 +84,7 @@ export const TRANSFORMING_IDEA_SECTION = {
   content:
     "As a leading mobile application company, we specialize in creating innovative and scalable digital products tailored to your business needs. At Strateger.ai, our focus is on delivering mobile apps solutions that combine creativity, technology, and functionality. From startups to global enterprises, we help businesses build apps that perform flawlessly, engage users, and drive measurable growth.",
   CTAButtonText: "Get a free consultant",
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
   img: "/services/mobile/mobile-transformation.png",
 };
 

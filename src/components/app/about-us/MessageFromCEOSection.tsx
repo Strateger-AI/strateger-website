@@ -36,7 +36,7 @@ export function MessageFromCEOSection() {
               <div
                 className={cn(
                   "flex flex-col gap-4 md:gap-5 lg:gap-7 xl:gap-10 ",
-                  isEven ? "md:text-left" : "md:text-right",
+                  // isEven ? "md:text-left" : "md:text-right",
                 )}
               >
                 {/* Shared Heading */}

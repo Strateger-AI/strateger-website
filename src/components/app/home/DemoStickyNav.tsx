@@ -41,6 +41,15 @@ const DemoStickyNav = () => {
     };
   }, [isHamburgerOn]);
 
+  // Lock body scroll when hamburger or dropdown is open
+  useEffect(() => {
+    const shouldLock = isHamburgerOn || activeIndex !== null;
+    document.body.style.overflow = shouldLock ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isHamburgerOn, activeIndex]);
+
   return (
     <>
       {/* Invisible refs for scroll tracking */}

@@ -16,6 +16,7 @@ export default function Page() {
       <BannerSection />
       <MessageFromCEOSection />
       <WhatWeDo />
+
       <CTABusinessSection data={CTA_BUSINESS_SECTION_ABOUT_US} />
       <WhyStrategerSection />
       <CTASectionWithLogo data={CTA_SECTION_DATA} />

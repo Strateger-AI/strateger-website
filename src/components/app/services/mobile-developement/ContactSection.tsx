@@ -17,7 +17,7 @@ export function ContactSection() {
             src={CONTACTS_SECTION.img}
             alt="contact-img"
             fill
-            className="object-cover object-center"
+            className="object-cover rounded-md object-center"
             priority
           />
         </div>

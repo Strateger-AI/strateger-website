@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { LayoutWrapper } from "@/components/common/LayoutWrapper";
 import { Toaster } from "@/components/ui/sonner";
+import React from "react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +16,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const isProd = baseUrl === "https://strateger.ai";
 const siteTitle =
   "Innovative Software & App Development Company | Strateger.ai";
 const siteDescription =
@@ -23,6 +27,11 @@ export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
 
+  ...(isProd && {
+    verification: {
+      google: "XrFwLYnP7cYx1s2ymLi2uSMbk0Y7PYuNZzFFYLlQy2k",
+    },
+  }),
   keywords: [
     "mobile app development company",
     "mobile app development services",
@@ -71,10 +80,11 @@ export const metadata: Metadata = {
     description: siteDescription,
     url: "",
     siteName: "Strateger.ai",
-    images: ["/strateger_logo.png"],
+    images: "/strateger-open-graph.png",
     locale: "en_US",
     type: "website",
   },
+  icons: "/strateger-open-graph.png",
 };
 
 export default function RootLayout({
@@ -90,6 +100,7 @@ export default function RootLayout({
         <Toaster position={"top-center"} />
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
+      {isProd && <GoogleAnalytics gaId="G-ZKC7QPEWXL" />}
     </html>
   );
 }
