@@ -252,7 +252,7 @@ export const NAV_ITEMS = [
       {
         title: "Entertainment",
         href: "/industries/entertainment",
-        desc: "Were Fun Meets Innovation",
+        desc: "Where Fun Meets Innovation",
         icon: FaGamepad,
         subcategories: [],
       },
