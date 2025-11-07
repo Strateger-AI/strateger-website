@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
 
+  // GTM configuration
   ...(isProd && {
     verification: {
       google: "XrFwLYnP7cYx1s2ymLi2uSMbk0Y7PYuNZzFFYLlQy2k",

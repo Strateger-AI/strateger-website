@@ -183,6 +183,9 @@ html,body {
     transform: rotateY(180deg);
 }
 
+html {
+    font-size: 15px; /* or 93.75% of 16px */
+}
 
 
 @layer base {

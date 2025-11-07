@@ -50,7 +50,11 @@ export function CustomBannerSectionWithStats({
               </span>
             ))}
           </h1>
-          <p className={"text-center whitespace-pre-line md:text-start "}>
+          <p
+            className={
+              "text-center whitespace-pre-line lg:text-lg md:text-start "
+            }
+          >
             {data.content}
           </p>
           <div className=" hidden lg:block   w-full  xl:hidden ">

@@ -44,7 +44,7 @@ export function CustomBannerSection({
           {data.desc && (
             <p
               className={
-                "text-center whitespace-pre-line text-sm md:text-[1rem] md:text-start lg:text-lg"
+                "text-center whitespace-pre-line text-sm md:text-[1rem] md:text-start lg:text-xl"
               }
             >
               {data.desc}
