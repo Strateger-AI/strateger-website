@@ -150,7 +150,7 @@ export const MOBILE_DEV_CTA_DATA = {
 
   desc: "Explore our mobile app development agency’s portfolio to see how we’ve helped businesses \n thrive through innovative mobile apps developments. With over years of experience, we’ve delivered impactful solutions that drive growth, enhance user experiences, and create success stories across multiple industries.",
   CTABtnText: "Book A Demo",
-  CTABtnLink: "/",
+  // CTABtnLink: "/",
 };
 
 export const MOBILE_TECHNOLOGIES_DATA = {
@@ -168,7 +168,7 @@ export const MOBILE_TECHNOLOGIES_DATA = {
   desc: "As a leading provider of mobile app development USA, we combine agile practices with the latest technologies to deliver apps that are scalable, secure, and future-ready. From concept to launch and ongoing support, our team ensures every step is smooth and transparent. We leverage powerful tools like React Native, Flutter, Kotlin, and Swift to build innovative solutions that drive results. Along with robust development, we also specialize in mobile app integration, ensuring seamless connectivity with existing systems and platforms. Our focus is on delivering applications that are reliable, user-friendly, and built to generate real business growth.",
   CTAButtonText: "Connect with us",
   bannerImg: "/services/mobile/mobile-banner.png",
-  CTABtnLink: "/",
+  CTABtnLink: "/contact",
   technologies: [
     {
       technology: "Flutter",

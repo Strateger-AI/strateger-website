@@ -796,42 +796,49 @@ export const INDUSTRY_DATA = [
     description:
       "Strateger.ai empowers the education sector with AI-driven e-learning platforms, personalized learning paths, and immersive AR/VR classroom experiences, making education more engaging and accessible.",
     image: "/main/industries/education.webp",
+    link: "/industries/education-e-learning",
   },
   {
     industry: "Entertainment",
     description:
       "From AI-based game logic to real-time graphics and immersive AR/VR, Strateger.ai brings innovation to gaming and entertainment experiences across platforms.",
     image: "/main/industries/gaming.webp",
+    link: "/industries/entertainment",
   },
   {
     industry: "Healthcare & Life Sciences",
     description:
       "Strateger.ai supports healthcare providers with deep learning diagnostics, patient data analytics, and AR-assisted training or surgeries, transforming patient care and operations.",
     image: "/main/industries/healthcare.webp",
+    link: "/industries/healthcare-life-sciences",
   },
   {
     industry: "Retail & E-Commerce",
     description:
       "We help retail and e-commerce brands personalize customer journeys, predict buying behavior, and optimize operations through AI insights and real-time dashboards.",
     image: "/main/industries/ecom.webp",
+    link: "/industries/retail-ecommerce",
   },
   {
     industry: "Enterprise & Corporate",
     description:
       "Strateger.ai streamlines enterprise workflows with ERP integration, process automation, intelligent dashboards, and custom AI tools for better decision-making.",
     image: "/main/industries/enterprice.webp",
+    link: "/industries/enterprise-corporate",
   },
   {
     industry: "Fintech",
     description:
       "We enable banks and fintech companies with fraud detection, automated document processing, and smart risk analysis solutions powered by machine learning.",
     image: "/main/industries/fintech.webp",
+    link: "/industries/fintech",
   },
   {
     industry: "Real Estate & Construction",
     description:
       "From property analytics to AR-based virtual tours and project management automation, Strateger.ai transforms real estate and construction operations with tech.",
     image: "/main/industries/real-estate.webp",
+    link: "/industries/real-estate-construction",
   },
 ];
 
