@@ -25,6 +25,9 @@ jobs:
             echo "Building Next.js project..."
             npm run build
 
+            echo "Building dynamic sitemap + robots generation..."
+            npm run postBuild
+
             echo "Restarting production service..."
             sudo systemctl restart strateger-prod
 
