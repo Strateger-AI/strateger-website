@@ -20,11 +20,7 @@ jobs:
           script: |
             cd ~/strateger-website
             echo "Pulling latest code from main..."
-            git fetch origin main
-            git reset --hard origin/main
-
-            echo "Installing dependencies with pnpm..."
-            pnpm install --frozen-lockfile
+            git pull origin main
 
             echo "Building Next.js project..."
             pnpm run build
