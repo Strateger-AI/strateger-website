@@ -20,13 +20,17 @@ jobs:
           script: |
             cd ~/strateger-website
             echo "Pulling latest code from main..."
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
+
+            echo "Installing dependencies with pnpm..."
+            pnpm install --frozen-lockfile
 
             echo "Building Next.js project..."
-            npm run build
+            pnpm run build
 
-            echo "Building dynamic sitemap + robots generation..."
-            npm run postBuild
+            echo "Generating dynamic sitemap and robots.txt..."
+            pnpm run postBuild
 
             echo "Restarting production service..."
             sudo systemctl restart strateger-prod
