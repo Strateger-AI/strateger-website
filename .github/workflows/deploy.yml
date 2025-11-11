@@ -23,10 +23,10 @@ jobs:
             git pull origin main
 
             echo "Building Next.js project..."
-            npm run build
+            pnpm run build
 
-            echo "Building dynamic sitemap + robots generation..."
-            npm run postBuild
+            echo "Generating dynamic sitemap and robots.txt..."
+            pnpm run postBuild
 
             echo "Restarting production service..."
             sudo systemctl restart strateger-prod
