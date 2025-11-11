@@ -30,7 +30,7 @@ export function CustomBannerSectionWithStats({
   return (
     <div
       className={
-        "mt-20 flex min-h-screen flex-col items-center justify-center px-5 py-10 md:px-20  lg:gap-8"
+        " flex min-h-screen flex-col items-center justify-center px-5 py-10 md:px-20  lg:gap-8"
       }
     >
       <div

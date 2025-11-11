@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { BLOG_SECTION_DATA } from "@/data/blog/blog.data";
 import Image from "next/image";
+
+// Import your JSON data
+// import { blogs as BLOG_SECTION_DATA } from "../../../data/blog/blogs.json";
 import {
   Select,
   SelectContent,
@@ -9,18 +11,30 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
+import { slugify } from "@/lib/utils";
+import { BLOG_SECTION_DATA } from "@/data/blog/blog.data";
 
-const categories = [
-  "All",
-  ...Array.from(
-    new Set(
-      BLOG_SECTION_DATA.map((blog) => blog.type).filter((t) => t !== "All"),
+// Extract categories from your blog data
+
+const categories = Array.from(
+  new Set([
+    "All",
+    "General",
+    "App Development",
+    "Ecommerce",
+    "Game Development",
+    "News",
+    ...BLOG_SECTION_DATA.map((blog) => blog.type).filter(
+      (t) => t && t !== "All",
     ),
-  ),
-];
+  ]),
+);
 
 export function BlogsSection() {
   const [activeTab, setActiveTab] = useState("All");
+
   const filteredBlogs =
     activeTab === "All"
       ? BLOG_SECTION_DATA
@@ -33,7 +47,7 @@ export function BlogsSection() {
         <h1 className="text-center text-4xl font-extrabold text-primary">
           {activeTab} Blogs
         </h1>
-        <div className="flex items-center self-end  gap-2">
+        <div className="flex items-center self-end gap-2">
           <span className="text-nowrap text-sm font-medium">Sort By</span>
           <Select value={activeTab} onValueChange={setActiveTab}>
             <SelectTrigger className="w-[180px]">
@@ -69,29 +83,36 @@ export function BlogsSection() {
         </div>
       </div>
 
-      {/* Content */}
-      <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {filteredBlogs.map(({ img, title, desc, date }, idx) => (
-          <div
-            key={idx}
-            className="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-md transition-shadow hover:shadow-xl"
-          >
-            <div className="relative h-48 w-full">
-              <Image
-                src={img}
-                alt={title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 300px"
-              />
-            </div>
+      {/* Blog Cards */}
+      <div className="flex gap-4 flex-wrap my-8">
+        {filteredBlogs.map(({ bannerImg, title, blogCardDesc, date }, idx) => (
+          <Link key={idx} className={"group"} href={`/blog/${slugify(title)}`}>
+            <Card className={"p-0 "}>
+              <CardContent className="flex flex-col w-[450px]  overflow-hidden rounded-lg border  bg- shadow-md transition-shadow hover:shadow-xl">
+                {/* Blog Image */}
+                <div className="relative aspect-video  w-full">
+                  <Image
+                    src={bannerImg || "/images/placeholder.jpg"}
+                    alt={title}
+                    fill
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px)  100vw, (max-width: 1200px) 33vw, 300px"
+                  />
+                </div>
 
-            <div className="flex flex-1 flex-col p-6">
-              <h3 className="text-primary mb-3 text-xl font-bold">{title}</h3>
-              <p className="mb-6 flex-1 text-gray-700">{desc}</p>
-              <p className="text-primary text-sm font-medium">{date}</p>
-            </div>
-          </div>
+                {/* Blog Info */}
+                <div className="flex flex-1 gap-2 flex-col px-5 py-3">
+                  <h3 className="text-primary text-xl font-extrabold ">
+                    {title}
+                  </h3>
+                  <p className=" flex-1 ">{blogCardDesc || ""}</p>
+                  <p className="text-primary text-sm font-medium">
+                    {date || ""}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
         ))}
       </div>
     </section>

@@ -5,7 +5,7 @@ import { CTAButton2 } from "@/components/common/CTAButton2";
 export function IndustriesBanner() {
   return (
     <div
-      className="relative flex min-h-screen w-full items-center justify-center px-5 py-10 pt-30 text-white md:px-10 xl:px-20"
+      className="relative flex min-h-screen w-full items-center justify-center px-5 py-10 md:pt-30 text-white md:px-10 xl:px-20"
       style={{
         backgroundImage: `url(${INDUSTRIES_BANNER_SECTION.backgroundImg})`,
         backgroundSize: "cover",

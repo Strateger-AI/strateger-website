@@ -5,7 +5,7 @@ import Image from "next/image";
 export function BannerSection() {
   return (
     <div
-      className="relative flex pt-30 md:pt-0 sm:min-h-[90vh] flex-col-reverse items-center justify-center md:gap-10 px-5 text-white md:flex-row md:items-center md:justify-around md:pb-10 pb-5 md:px-20"
+      className="relative flex  md:pt-0 sm:min-h-[90vh] flex-col-reverse items-center justify-center md:gap-10 px-5 text-white md:flex-row md:items-center md:justify-around md:pb-10 pb-5 md:px-20"
       style={{
         backgroundImage: `url(${BANNER_SECTION.backgroundImg})`,
         backgroundSize: "cover",

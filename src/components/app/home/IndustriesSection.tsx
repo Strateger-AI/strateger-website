@@ -31,7 +31,7 @@ export function IndustriesSection() {
           {INDUSTRY_DATA.map((data, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
               <Card className="m-0 !border-none group !bg-transparent p-0 !shadow-none">
-                <Link href={data.link}>
+                <Link target="_blank" href={data.link}>
                   <CardContent className="group relative flex min-h-[550px] flex-col overflow-hidden rounded-xl">
                     {/* Image wrapper */}
                     <div className="relative flex-[0.8] items-center justify-center">

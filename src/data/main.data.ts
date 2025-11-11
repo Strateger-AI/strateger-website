@@ -307,10 +307,10 @@ export const NAV_ITEMS = [
   //   title: "Contact Us",
   //   href: "/contact",
   // },
-  // {
-  //   title: "Blog",
-  //   href: "/blog",
-  // },
+  {
+    title: "Blog",
+    href: "/blog",
+  },
 ];
 
 export const heroSection = {
@@ -465,6 +465,7 @@ export const FOOTER_LINKS = [
     categories: [
       { title: "Contact Us", href: "/contact" },
       { title: "Terms & Conditions", href: "/terms-and-conditions" },
+      { title: "Blogs", href: "/blog" },
     ],
   },
   {

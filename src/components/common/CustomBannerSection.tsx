@@ -21,7 +21,7 @@ export function CustomBannerSection({
   return (
     <div
       className={
-        " mt-20  lg:mt-10 relative   sm:min-h-screen flex flex-col items-center md:justify-center px-5 py-5   md:px-20 md:py-20 lg:gap-8"
+        "  lg:mt-10 relative   sm:min-h-screen flex flex-col items-center md:justify-center px-5 py-5   md:px-20 md:py-20 lg:gap-8"
       }
     >
       <div
