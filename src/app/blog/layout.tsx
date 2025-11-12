@@ -9,6 +9,7 @@ const siteDescription =
 export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
+
   openGraph: {
     title: siteTitle,
     description: siteDescription,

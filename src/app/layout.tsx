@@ -26,6 +26,7 @@ const siteDescription =
 export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
+  metadataBase: new URL("https://strateger.ai"),
 
   // GTM configuration
   ...(isProd && {

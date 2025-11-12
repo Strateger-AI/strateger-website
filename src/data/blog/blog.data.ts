@@ -18,6 +18,8 @@ export const BLOG_SECTION_DATA = [
   {
     id: 1,
     bannerImg: "/blogs/top-mobile-application.webp",
+    bannerImgTag:
+      "Futuristic smartphone interface showcasing data analytics and app UI elements, symbolizing the latest mobile application development trends.",
     title: "Top Mobile Application Development Trends to Follow in 2026",
     type: "App Development",
     date: "2025-11-12",
@@ -29,12 +31,12 @@ export const BLOG_SECTION_DATA = [
       {
         heading: "1. AI-Driven Personalization and Predictive Experiences",
         description:
-          "Artificial Intelligence (AI) continues to redefine the mobile app development landscape. By 2026, apps will not only respond to user commands but anticipate user intent through advanced predictive analytics.\n\nFrom e-commerce apps recommending products before users even search, to gaming apps adapting difficulty levels dynamically AI personalization will be central to success. Businesses adopting AI-driven mobile app technology trends can expect higher engagement, retention, and monetization rates.\n\nBusiness Value:\nAI enables companies to deliver smarter, data-driven customer experiences, improving satisfaction and reducing churn.",
+          "Artificial Intelligence (AI) continues to redefine the [Mobile App Development](https://strateger.ai/services/mobile-app-development) landscape. By 2026, apps will not only respond to user commands but anticipate user intent through advanced predictive analytics.\n\nFrom e-commerce apps recommending products before users even search, to gaming apps adapting difficulty levels dynamically AI personalization will be central to success. Businesses adopting AI-driven mobile app technology trends can expect higher engagement, retention, and monetization rates.\n\nBusiness Value:\nAI enables companies to deliver smarter, data-driven customer experiences, improving satisfaction and reducing churn.",
       },
       {
         heading: "2. The Rise of Super Apps",
         description:
-          "The concept of Super Apps, platforms offering multiple services within a single ecosystem, is transforming the app industry trends worldwide. By 2026, we’ll see an acceleration in this model across Western markets, inspired by the success of Asian giants like [WeChat](https://www.wechat.com) and [Grab](https://www.grab.com).\n\nImagine users managing payments, messaging, shopping, and entertainment within a single app. This trend is reshaping how brands build loyalty and streamline user journeys.\n\nBusiness Value:\nSuper apps reduce app fatigue, enhance engagement, and open multiple revenue channels under one digital ecosystem.",
+          "The concept of Super Apps, platforms offering multiple services within a single ecosystem, is transforming the app industry trends worldwide. By 2026, we’ll see an acceleration in this model across Western markets, inspired by the success of Asian giants like WeChat and Grab.\n\nImagine users managing payments, messaging, shopping, and entertainment within a single app. This trend is reshaping how brands build loyalty and streamline user journeys.\n\nBusiness Value:\nSuper apps reduce app fatigue, enhance engagement, and open multiple revenue channels under one digital ecosystem.",
       },
       {
         heading: "3. Extended Reality (XR) and Immersive Mobile Experiences",
@@ -73,24 +75,25 @@ export const BLOG_SECTION_DATA = [
           "Explore the Top Mobile App Development Trends and Transform Your Business Today!",
         CTABtnText: "Get started",
         ctaBtnLink: "/contact",
-        img: "/",
+        img: "/blogs/top-mobile-application-cta.webp",
       },
       {
         CTAText:
           "Ready to build the next-generation mobile app? Partner with Strateger.ai to transform your vision into an innovative, high-performing digital experience.",
         CTABtnText: "Book a consultancy",
         ctaBtnLink: "/contact",
-        img: "/",
+        img: "/blogs/cta-bg.webp",
       },
     ],
     ourServices: [
       {
         heading: "Adapting to the Future with Strateger.ai",
         description:
-          "At Strateger.ai, we empower businesses to harness the latest mobile app trends and transform ideas into next-generation digital products. Our expertise spans mobile app development technologies, game development, and emerging tech integrations like AR/VR, AI, and blockchain.\n\nWe collaborate with forward-thinking enterprises to design scalable, secure, and innovative mobile applications that deliver measurable results. Whether you're a tech startup or an established enterprise, we help you stay ahead of the app market trends shaping 2026 and beyond.",
+          "At Strateger.ai, we empower businesses to harness the latest mobile app trends and transform ideas into next-generation digital products. Our expertise spans mobile app development technologies, [Game Development](https://strateger.ai/services/game-development) , and emerging tech integrations like AR/VR, AI, and blockchain.\n\nWe collaborate with forward-thinking enterprises to design scalable, secure, and innovative mobile applications that deliver measurable results. Whether you're a tech startup or an established enterprise, we help you stay ahead of the app market trends shaping 2026 and beyond.",
       },
       {
-        heading: "How Can Strateger.ai Help You Stay Ahead with Mobile App",
+        heading:
+          "How Can [Strateger.ai](http://Strateger.ai) Help You Stay Ahead with Mobile App",
         description:
           "The mobile app development trends 2026 are more than just technological shifts — they’re strategic opportunities. Businesses that invest early in these application trends will shape the digital landscape, gaining competitive advantage in user experience, efficiency, and innovation.\n\nAs the future of application development unfolds, adaptability will define success. Now is the time to innovate boldly and partner with experts who can bring your mobile vision to life.\n\nAt Strateger.ai, we help businesses stay ahead of the curve by leveraging the latest mobile app development technologies and trends shaping the future of digital innovation. Our expert team specializes in building scalable, user-centric, and high-performance apps that align with evolving market demands. From AI-driven personalization and AR/VR integration to secure blockchain solutions, Strateger.ai transforms your ideas into powerful mobile experiences that drive engagement and growth. Whether you’re in tech, gaming, or enterprise solutions, we ensure your app not only meets today’s expectations but also thrives in tomorrow’s competitive digital landscape.",
       },

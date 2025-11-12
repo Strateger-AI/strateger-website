@@ -2,7 +2,7 @@ import { IoGameController } from "react-icons/io5";
 import { BsHeadsetVr } from "react-icons/bs";
 import { MdOutlineSecurity } from "react-icons/md";
 import { IoIosSettings } from "react-icons/io";
-import { FaBusinessTime, FaMobile } from "react-icons/fa6";
+import { FaBusinessTime, FaMobile, FaXTwitter } from "react-icons/fa6";
 import { Clock, Star, TrendingUp, Smartphone } from "lucide-react";
 import {
   FaMobileAlt,
@@ -478,8 +478,8 @@ export const FOOTER_LINKS = [
       },
       {
         title: "Twitter",
-        href: "/",
-        icon: FaTwitter,
+        href: "https://x.com/Strateger_AI",
+        icon: FaXTwitter,
       },
       {
         title: "LinkedIn",

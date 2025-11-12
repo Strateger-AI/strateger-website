@@ -1,6 +1,5 @@
 import { BlogPage } from "@/components/app/blog/BlogPage";
 import { unslugify } from "@/lib/utils";
-// import BLOG_SECTION_DATA from "../../../data/blog/blogs.json";
 import { BLOG_SECTION_DATA } from "@/data/blog/blog.data";
 
 interface BlogNameProps {
