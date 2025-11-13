@@ -45,7 +45,9 @@ export const HEALTHCARE_HERO_SECTION = {
   clientsImages: [],
   CTAButton: "Get Started",
   // CTAButton: "Get Started",
-  bannerImg: "/industries/healthcare/healthcare.png", // Same image as original
+  bannerImg: "/industries/healthcare/healthcare.png",
+  bannerImgAltText:
+    "Transform your healthcare vision into reality with advanced healthcare software and AI-powered digital solutions.",
 };
 
 import {

@@ -31,7 +31,7 @@ export function IndustriesDeepLearning() {
                   <div className="relative flex-[0.9] group-hover:scale-110 duration-300 transition-transform items-center justify-center">
                     <Image
                       src={data.img || "/img.webp"}
-                      alt="Industry-Image"
+                      alt={data.imgAltText || "Industry-Image"}
                       fill
                       objectFit="cover"
                       className="h-full w-auto rounded-lg object-contain"

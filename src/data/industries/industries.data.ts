@@ -29,36 +29,50 @@ export const INDUSTRIES_SECTION = {
       title: "Education & E-Learning",
       desc: "We design smart educational platforms that make learning interactive, accessible, and engaging. From virtual classrooms to AI-powered learning tools, we help institutions embrace the future of education.",
       img: "/main/industries/education.webp",
+      imgAltText:
+        "Education & E-Learning: Deep learning and technology solutions empowering education and e-learning platforms for smarter learning.",
     },
     {
       title: " Entertainment",
       desc: "Our team creates immersive gaming and entertainment experiences that captivate audiences. We blend creativity and technology to deliver high-performance, visually stunning, and interactive solutions.",
       img: "/main/industries/gaming.webp",
+      imgAltText:
+        "Entertainment App Development: Innovative app development solutions for entertainment, gaming, and interactive media experiences.",
     },
     {
       title: "Healthcare & Life Sciences",
       desc: "We develop secure, data-driven solutions that enhance patient care and streamline medical operations. Our technology helps healthcare providers deliver better outcomes with efficiency and accuracy.",
       img: "/main/industries/healthcare.webp",
+      imgAltText:
+        "Healthcare & Life Sciences: Advanced technology and AI solutions for healthcare and life sciences, improving patient care and research.",
     },
     {
       title: "Retail & E-Commerce",
       desc: "From online storefronts to digital payment systems, we build solutions that transform the shopping experience. Our e-commerce expertise helps brands connect with customers and scale effortlessly.",
       img: "/main/industries/ecom.webp",
+      imgAltText:
+        "E-Commerce: Tech-driven solutions for e-commerce platforms enhancing shopping experiences and operational efficiency.",
     },
     {
       title: "Enterprise & Corporate",
       desc: "We empower enterprises with tailored digital systems that improve collaboration, performance, and decision-making. Our enterprise solutions drive efficiency and support long-term business growth.",
       img: "/main/industries/enterprice.webp",
+      imgAltText:
+        "Enterprise & Corporate: Digital transformation and technology services optimizing enterprise and corporate operations and workflows.",
     },
     {
       title: "Fintech",
       desc: "We deliver secure fintech solutions that simplify complex financial operations. From mobile banking to blockchain integration, our technology ensures transparency, trust, and compliance.",
       img: "/main/industries/fintech.webp",
+      imgAltText:
+        "Fintech: Innovative fintech solutions leveraging AI and technology for secure and efficient financial services.",
     },
     {
       title: "Real Estate & Construction",
       desc: "We help real estate and construction firms digitize operations through smart apps and data-driven platforms. Our solutions enhance project management, sales, and client engagement.",
       img: "/main/industries/real-estate.webp",
+      imgAltText:
+        "Real Estate & Construction: Technology and AI solutions for real estate and construction, improving project management and visualization.",
     },
   ],
 };

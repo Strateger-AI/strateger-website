@@ -21,7 +21,7 @@ export function TopTierSection() {
             src={TOP_TIER_SECTION.img}
             height={200}
             width={500}
-            alt="hero-section-img"
+            alt={TOP_TIER_SECTION.imgAltText || "hero-section-img"}
             className="o h-full w-full   object-contain"
           />
         </div>

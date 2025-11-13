@@ -84,39 +84,33 @@ export function BlogsSection() {
       {/* Blog Cards */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 mx-10 lg:mx-20 xl:mx-30 my-8">
         {filteredBlogs.map(({ bannerImg, title, blogCardDesc, date }, idx) => (
-          <>
-            <Link
-              key={idx}
-              className={"group"}
-              href={`/blog/${slugify(title)}`}
-            >
-              <Card className={"p-0 "}>
-                <CardContent className="flex flex-col   overflow-hidden rounded-lg border  bg- shadow-md transition-shadow hover:shadow-xl">
-                  {/* Blog Image */}
-                  <div className="relative aspect-video  w-full">
-                    <Image
-                      src={bannerImg || "/images/placeholder.jpg"}
-                      alt={title}
-                      fill
-                      className="object-contain group-hover:scale-105 transition-transform duration-500"
-                      sizes="(max-width: 768px)  100vw, (max-width: 1200px) 33vw, 300px"
-                    />
-                  </div>
+          <Link key={idx} className={"group"} href={`/blog/${slugify(title)}`}>
+            <Card className={"p-0 "}>
+              <CardContent className="flex flex-col   overflow-hidden rounded-lg border  bg- shadow-md transition-shadow hover:shadow-xl">
+                {/* Blog Image */}
+                <div className="relative aspect-video  w-full">
+                  <Image
+                    src={bannerImg || "/images/placeholder.jpg"}
+                    alt={title}
+                    fill
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px)  100vw, (max-width: 1200px) 33vw, 300px"
+                  />
+                </div>
 
-                  {/* Blog Info */}
-                  <div className="flex flex-1 gap-2 flex-col px-5 py-3">
-                    <h3 className="text-primary text-xl font-extrabold ">
-                      {title}
-                    </h3>
-                    <p className=" flex-1 ">{blogCardDesc || ""}</p>
-                    <p className="text-primary text-sm font-medium">
-                      {date || ""}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          </>
+                {/* Blog Info */}
+                <div className="flex flex-1 gap-2 flex-col px-5 py-3">
+                  <h3 className="text-primary text-xl font-extrabold ">
+                    {title}
+                  </h3>
+                  <p className=" flex-1 ">{blogCardDesc || ""}</p>
+                  <p className="text-primary text-sm font-medium">
+                    {date || ""}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
         ))}
       </div>
     </section>

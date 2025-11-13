@@ -19,6 +19,7 @@ type CustomBannerSectionWithStatsProps = {
   }[];
   CTABtnLink?: string;
   bannerImg: string;
+  bannerImgAltText?: string;
 };
 
 export function CustomBannerSectionWithStats({
@@ -62,7 +63,7 @@ export function CustomBannerSectionWithStats({
               src={data.bannerImg}
               height={100}
               width={200}
-              alt="hero-section-img"
+              alt={data.bannerImgAltText || "hero-section-img"}
               className=" h-[500px] object-contain w-full   "
             />
           </div>
@@ -116,7 +117,7 @@ export function CustomBannerSectionWithStats({
             src={data.bannerImg}
             height={200}
             width={500}
-            alt="hero-section-img"
+            alt={data.bannerImgAltText || "hero-section-img"}
             className=" h-full w-full"
           />
         </div>
