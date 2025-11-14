@@ -42,6 +42,8 @@ export const ENTERTAINMENT_HERO_SECTION = {
   // CTABtnLink: "/",
   CTAButton: "Get a free consultancy",
   bannerImg: "/industries/entertainment/entertainment.webp", // Reused image as per original
+  bannerImgAltText:
+    "Leading entertainment app development company delivering innovative mobile and web applications for gaming and media.",
 };
 import { FaFilm, FaLaptopCode, FaPaintBrush } from "react-icons/fa";
 

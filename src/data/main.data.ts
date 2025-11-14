@@ -383,27 +383,35 @@ export const heroSection = {
   achievements: [
     {
       img: "/main/awards/best-game-dev.png",
+      imgAltText:
+        "A blue and gold circular award with a trophy icon and the text 'Best Game Development Award",
       title: "Best Mobile App",
       rating: 4.8,
     },
     {
       img: "/main/awards/bma.png",
       title: "Best Game development award",
+      imgAltText:
+        "A grayscale award badge with a laurel wreath, stars, and the text 'BMA 2025', suitable for a top mobile app development recognition.",
       rating: 4.9,
     },
     {
       img: "/main/awards/certificate-of-excellence.png",
+      imgAltText:
+        "A gold seal award with a crown, a ribbon displaying '2025', and the text 'Certificate of Excellence'.",
       title: "Top 20 ERP APP development award",
       rating: 4.7,
     },
     {
       img: "/main/awards/erp-dev-award.png",
+      imgAltText:
+        "A dark blue award badge with 'TOP 20 ERP 2025', a ribbon stating 'ERP App Development Award.",
       title: "Certificate of Excellence",
       rating: 4.9,
     },
   ],
 };
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export const FOOTER_LINKS = [
   {
@@ -504,6 +512,10 @@ export const PORTFOLIO_SECTION_PRODUCTION = [
   {
     companyName: "Wool Mania",
     image: "/main/portfolio/wool-mania-logo.webp", // Placeholder path — update as needed
+    ImgAltText:
+      "Wool Mania – a vibrant and fun puzzle game developed by our team, showcasing our creativity and expertise in mobile game development services.",
+    logoAltText:
+      "Experience the fun and creativity of Wool Mania, a colorful puzzle game crafted by our expert team.",
     description:
       "Sort Puzzle 3D is a fun and relaxing sorting game where players untangle colorful wool threads and organize them by color.\n",
     platform: "HTML 5",
@@ -514,6 +526,10 @@ export const PORTFOLIO_SECTION_PRODUCTION = [
   {
     companyName: "Sniper Hunting Adventure",
     image: "/main/portfolio/sniper-hunting.webp",
+    ImgAltText:
+      "Hunter Adventure – an action-packed shooting game developed by our team, highlighting our expertise in creating immersive and high-quality mobile gaming experiences.",
+    logoAltText:
+      "Dive into intense action with Sniper Hunter Adventure, designed to deliver thrilling mobile gameplay.",
     description:
       "Step into the role of an elite sniper, hunt down targets in stunning 3D environments, and complete thrilling missions that push your shooting skills to the limit.",
     platform: "Unity",
@@ -524,6 +540,10 @@ export const PORTFOLIO_SECTION_PRODUCTION = [
   {
     companyName: "Police Bus Simulator ",
     image: "/main/portfolio/police-bus.webp",
+    ImgAltText:
+      "Police Bus Simulator – a realistic driving game developed by our team, showcasing our skills in creating immersive simulation and mobile gaming experiences.",
+    logoAltText:
+      "Drive and control with realism in Police Bus Simulator, a simulation game developed by our skilled team.",
     description:
       "Police Bus Simulator lets you experience life as a police transport driver. Navigate realistic city roads, pick up and drop off officers safely, and complete challenging missions.",
     platform: "Unity",
@@ -797,6 +817,8 @@ export const INDUSTRY_DATA = [
     description:
       "Strateger.ai empowers the education sector with AI-driven e-learning platforms, personalized learning paths, and immersive AR/VR classroom experiences, making education more engaging and accessible.",
     image: "/main/industries/education.webp",
+    imgAltText: "",
+
     link: "/industries/education-e-learning",
   },
   {
@@ -804,6 +826,8 @@ export const INDUSTRY_DATA = [
     description:
       "From AI-based game logic to real-time graphics and immersive AR/VR, Strateger.ai brings innovation to gaming and entertainment experiences across platforms.",
     image: "/main/industries/gaming.webp",
+    imgAltText:
+      "Leading entertainment app development company delivering innovative mobile and web applications for gaming and media.",
     link: "/industries/entertainment",
   },
   {
@@ -811,6 +835,8 @@ export const INDUSTRY_DATA = [
     description:
       "Strateger.ai supports healthcare providers with deep learning diagnostics, patient data analytics, and AR-assisted training or surgeries, transforming patient care and operations.",
     image: "/main/industries/healthcare.webp",
+    imgAltText:
+      "Transform your healthcare vision into reality with advanced healthcare software and AI-powered digital solutions.",
     link: "/industries/healthcare-life-sciences",
   },
   {
@@ -818,6 +844,8 @@ export const INDUSTRY_DATA = [
     description:
       "We help retail and e-commerce brands personalize customer journeys, predict buying behavior, and optimize operations through AI insights and real-time dashboards.",
     image: "/main/industries/ecom.webp",
+    imgAltText:
+      "eCommerce app development solutions driving digital growth with seamless shopping experiences and robust mobile apps.",
     link: "/industries/retail-ecommerce",
   },
   {
@@ -825,6 +853,8 @@ export const INDUSTRY_DATA = [
     description:
       "Strateger.ai streamlines enterprise workflows with ERP integration, process automation, intelligent dashboards, and custom AI tools for better decision-making.",
     image: "/main/industries/enterprice.webp",
+    imgAltText:
+      "Top-tier enterprise app development company delivering scalable, secure, and innovative business applications.",
     link: "/industries/enterprise-corporate",
   },
   {
@@ -832,6 +862,8 @@ export const INDUSTRY_DATA = [
     description:
       "We enable banks and fintech companies with fraud detection, automated document processing, and smart risk analysis solutions powered by machine learning.",
     image: "/main/industries/fintech.webp",
+    imgAltText:
+      "Leading fintech app development company creating secure, innovative, and user-friendly financial applications.",
     link: "/industries/fintech",
   },
   {
@@ -839,6 +871,8 @@ export const INDUSTRY_DATA = [
     description:
       "From property analytics to AR-based virtual tours and project management automation, Strateger.ai transforms real estate and construction operations with tech.",
     image: "/main/industries/real-estate.webp",
+    imgAltText:
+      "Custom real estate app development transforming property experiences with innovative, user-friendly mobile solutions.",
     link: "/industries/real-estate-construction",
   },
 ];

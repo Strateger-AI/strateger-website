@@ -38,6 +38,8 @@ export const REAL_ESTATE_HERO_SECTION = {
   // CTABtnLink: "/",
   CTAButton: "Get Started",
   bannerImg: "/industries/realstate/realstate.png",
+  bannerImgAltText:
+    "Custom real estate app development transforming property experiences with innovative, user-friendly mobile solutions.",
 };
 
 import { FaUsers, FaChartLine, FaHandshake, FaBolt } from "react-icons/fa";

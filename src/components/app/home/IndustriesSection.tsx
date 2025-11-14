@@ -37,7 +37,7 @@ export function IndustriesSection() {
                     <div className="relative flex-[0.8] items-center justify-center">
                       <Image
                         src={data.image}
-                        alt="Industry-Image"
+                        alt={data.imgAltText || "Industry-Image"}
                         fill
                         objectFit="cover"
                         className="h-full w-auto rounded-lg group-hover:scale-110 transition-transform duration-500 object-contain"

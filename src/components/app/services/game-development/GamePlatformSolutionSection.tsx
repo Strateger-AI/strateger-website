@@ -102,7 +102,7 @@ export function GamePlatformSolutionSection() {
           <div className="relative w-full aspect-[4/5] max-w-md">
             <Image
               src={GAME_PLATFORM_SOLUTIONS.img}
-              alt="game-platform-image"
+              alt={GAME_PLATFORM_SOLUTIONS.imgAltText || "game-platform-image"}
               fill
               className="object-contain"
               priority

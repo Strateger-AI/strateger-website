@@ -16,7 +16,9 @@ export const BANNER_SECTION = {
   CTABtnText: "Get started",
 
   bannerImg: "/services/game/game-banner.png",
-  CTaBtnLink: "/c",
+  bannerImgAltText:
+    "Mobile app featuring Fortpug Gaming with 3D characters, highlighting advanced game development, immersive design, and interactive gaming experiences.",
+  CTaBtnLink: "/contact",
 };
 
 export const COMPANY_REVIEWS = [
@@ -35,6 +37,8 @@ export const TOP_TIER_SECTION = {
   ],
   desc: "We turn innovative game development ideas into captivating and high-quality mobile experiences. As a leading video game development company, we combine the creative vision of our clients with the technical expertise of our skilled developers to craft games that entertain, engage, and retain players.\n \n Our comprehensive game development agency covers every stage of the process from concept and design to development, testing, and launch. Our team of strategists, UI/UX designers, developers, and QA specialists collaborates seamlessly to deliver games with stunning visuals, smooth gameplay, and immersive storyline.\n \m Excellence is our standard. We build games that not only delight players but also create lasting impact in the competitive mobile gaming market.",
   img: "/services/game/game-banner-2.png",
+  imgAltText:
+    "Game development app interface displaying 3D animated characters, showcasing cutting-edge mobile gaming technology and interactive gameplay design.",
   CTABtnText: "Get started",
   CTABtnLink: "/",
 };
@@ -87,6 +91,8 @@ export const GAME_PLATFORM_SOLUTIONS = {
     { text: " for Every Platform", className: "" },
   ],
   img: "/services/game/inovative-gaming-solutions(1).png",
+  imgAltText:
+    "Colorful bubble game app interface showcasing engaging gameplay and creative design, representing fun and interactive mobile game development services.",
   desc: "Creating games that capture attention starts with a strong idea—and we bring the expertise to make that idea a reality. With a dedicated team specializing in Android and iOS, we deliver gaming solutions that combine creativity, performance, and seamless user experiences.",
   solutions: [
     {
@@ -121,12 +127,16 @@ export const GAME_DEV_TECHNOLOGIES = {
       name: "Unreal Engine",
       svg: UnrealIcon, // or your SVG component / path
       img: "/services/game/unreal.png",
+      imAltText:
+        "High-quality Unreal Engine game interface with cinematic visuals and immersive gameplay, highlighting next-gen game development technology.",
       desc: "We build games with Unreal Engine for clients with high-end graphic requirements and expansive enterprise-grade scopes. This game development framework empowers our team to deliver photoreal visuals and advanced rendering. Our clients include both B2C and B2B brands, and Unreal’s architecture scales as their needs grow. Moreover, Unreal underpins our NFT and VR game development services through its robust toolset and immersive capabilities.",
     },
     {
       name: "Unity Engine",
       svg: unityIcon,
       img: "/services/game/unity.png",
+      imAltText:
+        "3D mobile game interface built with Unity engine, showcasing realistic graphics, smooth performance, and advanced game development features.",
       desc: "We utilize the Unity game development engine for its native plus cross-platform flexibility. Unity covers Android, iOS, consoles, and PCs with just about two codebases. Its rich Asset Store of plugins, tools, and APIs accelerates development, making it cost-effective without compromising power. Unity’s versatility makes it ideal for both 2D and 3D games, offering budget-friendly, scalable solutions for our clients.",
     },
     // You can add more technologies similarly (e.g. Godot, Cocos, etc.)

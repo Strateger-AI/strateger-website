@@ -15,7 +15,6 @@ const config = {
         allow: "/",
         disallow: [
           "/_blog",
-          "/blogs",
           "/customers",
           "/demos",
           "/privacy-policy",

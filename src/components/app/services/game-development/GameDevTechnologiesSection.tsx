@@ -66,7 +66,7 @@ export function GameDevTechnologiesCustomTabs() {
                 <div className="relative h-56 w-full md:h-72 lg:h-80">
                   <Image
                     src={tech.img}
-                    alt={tech.name}
+                    alt={tech.imAltText}
                     fill
                     className="object-contain"
                   />

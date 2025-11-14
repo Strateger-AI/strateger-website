@@ -48,7 +48,7 @@ export function PortfolioSection() {
                       <div className="overflow-hidden h-full rounded-xl w-full">
                         <Image
                           src={product.image}
-                          alt="Portfolio image"
+                          alt={product.ImgAltText || "Portfolio-image"}
                           fill
                           className="h-full  !relative w-full object-cover lg:object-bottom group-hover:scale-110 transition-transform duration-500 rounded-xl"
                         />
@@ -63,7 +63,7 @@ export function PortfolioSection() {
                               <Image
                                 fill
                                 src={product.companyLogo}
-                                alt="company-icon"
+                                alt={product.logoAltText || "company-icon"}
                                 className="object-cover  object-center"
                               />
                             </div>

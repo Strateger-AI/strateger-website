@@ -26,6 +26,8 @@ export const BANNER_SECTION_ERP = {
   CTABtnText: "Let's Connect",
   // CTABtnLink: "/",
   bannerImg: "/services/erp/erp-banner-img.webp",
+  bannerImgAltText:
+    "ERP implementation solutions optimizing business operations for efficiency, productivity, and streamlined workflows",
   img: "",
 };
 

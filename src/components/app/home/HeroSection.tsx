@@ -61,7 +61,7 @@ export function HeroSection() {
           >
             <Image
               src={award.img}
-              alt={`Award ${index + 1}`}
+              alt={award.imgAltText || "award-img"}
               fill
               className="object-contain"
             />

@@ -11,6 +11,7 @@ type CustomBannerSectionProps = {
   CTABtnText: string;
   CTABtnLink?: string;
   bannerImg: string;
+  bannerImgAltText: string;
 };
 
 export function CustomBannerSection({
@@ -74,7 +75,7 @@ export function CustomBannerSection({
             src={data.bannerImg}
             height={200}
             width={500}
-            alt="hero-section-img"
+            alt={data.bannerImgAltText}
             className="o h-full w-full   object-contain"
           />
         </div>

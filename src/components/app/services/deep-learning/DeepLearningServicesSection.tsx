@@ -123,7 +123,7 @@ const DeepLearningServicesSection = () => {
               <div className="relative w-full">
                 <Image
                   src={service.img || "/mobile-app-UI.jpg"}
-                  alt={service.title}
+                  alt={service.imgAltText}
                   fill
                   className="rounded-xl object-cover
                    lg:object-contain transition duration-300 hover:scale-[1.02]"

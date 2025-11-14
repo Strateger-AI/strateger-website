@@ -10,6 +10,8 @@ export const BANNER_SECTION_AR = {
   CTABtnText: "Get started",
   // CTABtnLink: "/",
   bannerImg: "/services/ar-vr/ar-vr.webp",
+  bannerImgAltText:
+    "Interactive AR experience developed by experts in mobile AR application development.",
 };
 
 export const AR_VR_SERVICES_SECTION = {
@@ -99,36 +101,48 @@ export const AR_VR_SOLUTIONS_SECTION = {
       desc: "Our AR VR development services utilize photogrammetry to create highly realistic 3D models from real-world objects. This technology enables interactive and accurate representations that enhance user engagement.",
       icon: FaCube,
       img: "/services/ar-vr/photogrammetry.webp",
+      imgAltText:
+        "Photogrammetry: High-precision photogrammetry solutions capturing real-world objects for 3D modeling and AR/VR applications.",
     },
     {
       title: "100+ Integration Options",
       desc: "We offer seamless integrations with over 100 platforms and tools, ensuring your AR applications work flawlessly across devices. Our AR VR application development services make complex connectivity simple and efficient.",
       icon: FaNetworkWired,
       img: "/services/ar-vr/100+-integration-options.webp",
+      imgAltText:
+        "100+ Integration Options: Mobile and web apps with 100+ integration options, showcasing seamless connectivity and enhanced functionality.",
     },
     {
       title: "Metaverse Development",
       desc: "Strateger.ai specializes in custom AR VR development, building immersive metaverse environments that allow users to interact, explore, and engage like never before. Our expertise helps brands establish a strong presence in virtual worlds.",
       icon: FaGlobe,
       img: "/services/ar-vr/metaverse.webp",
+      imgAltText:
+        "Metaverse Development: Cutting-edge metaverse development services creating immersive virtual worlds and interactive experiences.",
     },
     {
       title: "Virtual Tours",
       desc: "Our AR VR development services enable virtual tours that transport users to any location without leaving their space. These interactive experiences enhance learning, sales, and engagement across industries.",
       icon: FaStreetView,
       img: "/services/ar-vr/virtual-tours.webp",
+      imgAltText:
+        "Virtual Tours: Interactive virtual tours designed to provide realistic, engaging, and fully navigable digital experiences.",
     },
     {
       title: "3D Mapping",
       desc: "We create precise and interactive 3D maps through our AR VR application development services, making spatial data accessible and visually engaging. This solution is perfect for urban planning, real estate, and immersive navigation.",
       icon: FaMapMarkedAlt,
       img: "/services/ar-vr/3d-mapping.webp",
+      imgAltText:
+        "3D Mapping: Advanced 3D mapping solutions for AR/VR applications, delivering accurate spatial visualization and modeling.",
     },
     {
       title: "Virtual Fitting Rooms",
       desc: "With our AR VR development services, users can try products virtually, from apparel to accessories, enhancing online shopping experiences. This immersive solution drives higher engagement and boosts conversion rates.",
       icon: FaTshirt,
       img: "/services/ar-vr/virtual-fitting-rooms.webp",
+      imgAltText:
+        "Virtual Fitting Rooms: Innovative virtual fitting rooms enabling realistic try-on experiences using AR technology in mobile apps.",
     },
   ],
 };

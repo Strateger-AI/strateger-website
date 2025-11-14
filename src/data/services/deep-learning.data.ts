@@ -10,6 +10,8 @@ export const DEEP_LEARNING_BANNER_SECTION = {
   desc: "Unlock growth with our cutting-edge deep learning solutions tailored to meet your unique business challenges. Our team of AI experts builds sophisticated neural networks that analyze massive data sets, generate precise predictions, and uncover actionable insights. \n From handling unstructured data to driving intelligent automation, our services are designed to enhance decision-making, optimize operations, and transform customer experiences. No matter your industry, we deliver scalable deep learning strategies that keep your business innovative and competitive in a digital-first world.\n Partner with us to stay ahead of the curve and harness the full potential of AI-powered intelligence.",
   CTABtnText: "Request a Demo",
   bannerImg: "/services/deep-learning/deep-learning-banner.webp",
+  bannerImgAltText:
+    "Advanced deep learning services empowering businesses with AI solutions for enhanced efficiency and innovation",
   img: "",
   // CTABtnLink: "/",
 };
@@ -33,7 +35,10 @@ export const DEEP_LEARNING_SERVICES = {
         "Facial Recognition and Identification",
         "Real-Time Video Monitoring",
       ],
-      img: "/services/deep-learning/video-analytics.png", // Add image path here
+
+      img: "/services/deep-learning/video-analytics.png",
+      imgAltText:
+        "Video analytics solutions using deep learning to extract insights and improve decision-making for businesses",
       CTABtnLink: "/",
     },
     {
@@ -47,6 +52,9 @@ export const DEEP_LEARNING_SERVICES = {
         "Object Recognition for Autonomous Systems",
       ],
       img: "/services/deep-learning/image-classification.png",
+      imgAltText:
+        "Deep learning-based image classification services for accurate recognition and intelligent automation.",
+
       CTABtnLink: "/",
     },
     {
@@ -61,6 +69,9 @@ export const DEEP_LEARNING_SERVICES = {
         "Automated Meeting Notes",
       ],
       img: "/services/deep-learning/speech-recognition.png",
+      imgAltText:
+        "AI-powered speech recognition solutions enabling accurate voice-to-text and conversational interfaces.",
+
       CTABtnLink: "/",
     },
     {
@@ -73,6 +84,9 @@ export const DEEP_LEARNING_SERVICES = {
         "Data Categorization",
       ],
       img: "/services/deep-learning/data-labelling.png",
+      imgAltText:
+        "Professional data labeling services for training AI and deep learning models with high-quality datasets.",
+
       CTABtnLink: "/",
     },
     {
@@ -84,6 +98,9 @@ export const DEEP_LEARNING_SERVICES = {
         "End-User Support and Training",
       ],
       img: "/services/deep-learning/model-deployment.png",
+      imgAltText:
+        "Deep learning model deployment and support services ensuring seamless AI integration and performance optimization.",
+
       CTABtnLink: "/",
     },
   ],
@@ -100,13 +117,17 @@ export const INDUSTRIES_DEEP_LEARNING_DATA = {
   industries: [
     {
       title: "Healthcare",
-      img: "/services/deep-learning/dl-healthcare.webp", // replace with actual path
+      img: "/services/deep-learning/dl-healthcare.webp",
+      imgAltText:
+        "Deep learning solutions for healthcare applications, including medical imaging, diagnostics, and AI-powered patient care.", // replace with actual path
       description:
         "We empower healthcare with AI-driven diagnostics, predictive analytics, and real-time video insights that reduce errors and improve patient outcomes. By minimizing background cancellation in medical imaging, our solutions detect subtle anomalies faster and with higher accuracy.",
     },
     {
       title: "Education",
       img: "/services/deep-learning/dl-education.webp",
+      imgAltText:
+        "AI and deep learning services for education, enabling smart learning tools, automated assessments, and personalized experiences.",
 
       description:
         "Our deep learning tools transform learning experiences with intelligent content recognition, adaptive assessments, and personalized learning paths. Through automated video tagging and activity recognition, we make online education more interactive and engaging.",
@@ -114,6 +135,8 @@ export const INDUSTRIES_DEEP_LEARNING_DATA = {
     {
       title: "Real Estate",
       img: "/services/deep-learning/dl-real-state.webp",
+      imgAltText:
+        "Deep learning applications for real estate, including property image analysis, valuation insights, and virtual tours",
 
       description:
         "We enhance real estate with AI-powered property image analysis, automated tagging, and intelligent market predictions. By minimizing background cancellation in property visuals, buyers see clearer insights and more authentic representations of spaces.",
@@ -121,6 +144,8 @@ export const INDUSTRIES_DEEP_LEARNING_DATA = {
     {
       title: "Fashion",
       img: "/services/deep-learning/dl-fashion.webp",
+      imgAltText:
+        "AI-powered deep learning solutions for fashion, including trend analysis, image classification, and virtual try-on experiences.",
       // replace with actual path
       description:
         "Our deep learning models empower fashion brands with trend forecasting, visual search, and intelligent product tagging. Through precise object recognition, we enable personalized recommendations while minimizing distractions in digital catalogues.",
