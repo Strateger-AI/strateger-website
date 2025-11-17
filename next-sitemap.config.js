@@ -22,7 +22,6 @@ const config = {
           "/web-rtc",
           "/author/developer",
           "/who-we-are",
-          "/blog",
         ],
       },
       // {
