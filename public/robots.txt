@@ -9,7 +9,6 @@ Disallow: /resources
 Disallow: /web-rtc
 Disallow: /author/developer
 Disallow: /who-we-are
-Disallow: /blog
 
 # Host
 Host: https://strateger.ai
