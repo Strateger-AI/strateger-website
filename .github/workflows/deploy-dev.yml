@@ -26,7 +26,7 @@ jobs:
             git pull origin dev
 
             echo "Installing dependencies with pnpm..."
-            pnpm ci
+            pnpm install
 
             echo "Building Next.js project..."
             pnpm run build
