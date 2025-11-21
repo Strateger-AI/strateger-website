@@ -7,6 +7,17 @@
     --font-geist-sans: ui-sans-serif, system-ui, sans-serif;
     --font-geist-mono: ui-monospace, monospace;
 }
+.bg-primary-gradient-amber {
+    @apply  bg-gradient-to-br from-primary-highlight to-amber-600 shadow-sm ;
+}
+
+.bg-primary-gradient {
+    @apply  bg-gradient-to-br from-primary to-accent;
+}
+.text-gradient-amber {
+    @apply  bg-gradient-to-r from-primary-highlight to-amber-600 bg-clip-text  text-transparent  ;
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -32,6 +43,7 @@
   --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
+    --color-primary-highlight : var(--primary-highlight);
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
@@ -66,8 +78,10 @@
 
     --primary: oklch(0.344 0.124 265.388);
     --secondary: oklch(0.504 0.152 269.217);
-    --accent: oklch(0.749 0.133 296.4);
+    /*--accent: oklch(0.749 0.133 296.4);*/
     --background: oklch(0.981 0.009 286.228);
+    --accent: oklch(0.608 0.297 312.11);
+    --primary-highlight: oklch(76.9% 0.188 70.08);
 
 
 

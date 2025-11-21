@@ -7,17 +7,21 @@ import {
 } from "@/components/ui/marquee";
 import Image from "next/image";
 import React from "react";
+import GradientTextHeading from "@/components/common/GradientTextHeading";
 
 export function PartnersSection() {
   return (
-    <div className="flex flex-col gap-8 md:gap-15  py-5 md:py-10   ">
-      <h1 className="text-center text-xl sm:text-3xl font-extrabold md:text-5xl">
-        Trusted <span className={"text-primary"}>Customers</span> and{" "}
-        <span className={"text-primary"}>Technologies</span>
-      </h1>
-
+    <div className="flex flex-col gap-8 md:gap-15   items  my-5 md:my-10   ">
+      {/*<h1 className="text-center text-xl sm:text-3xl font-extrabold md:text-5xl">*/}
+      {/*  Trusted <span className={"text-primary"}>Customers</span> and{" "}*/}
+      {/*  <span className={"text-primary"}>Technologies</span>*/}
+      {/*</h1>*/}
+      <GradientTextHeading
+        className={"text-center whitespace-pre-line"}
+        headingParts={PARTNERS_DATA.headingParts}
+      />
       <div className={" flex flex-col  sm:gap-4  md:gap-12    "}>
-        <Marquee>
+        <Marquee className={"bg-white py-2"}>
           <MarqueeFade side="left" />
           <MarqueeFade side="right" />
           <MarqueeContent pauseOnHover={false} direction="left">
@@ -34,7 +38,7 @@ export function PartnersSection() {
             ))}
           </MarqueeContent>
         </Marquee>
-        <Marquee>
+        <Marquee className={"bg-white py-2"}>
           <MarqueeFade side="left" />
           <MarqueeFade side="right" />
           <MarqueeContent pauseOnHover={false} direction="right">

@@ -13,22 +13,20 @@ import {
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 import Link from "next/link";
+import GradientTextHeading from "@/components/common/GradientTextHeading";
+import DescriptionText from "@/components/common/DescriptionText";
+import Container from "@/components/common/Container";
 
 export function PortfolioSection() {
   return (
-    <div className="space-y-5 px-5 py-5 md:space-y-10 md:px-20 md:py-5 ">
-      <div
-        className={
-          "flex flex-col items-center gap-2 md:flex-row md:justify-between"
-        }
-      >
-        <h1 className={" text-2xl sm:text-3xl font-bold md:text-5xl"}>
-          Our <span className={"text-primary"}>Portfolio</span>
-        </h1>
-      </div>
-      <h1 className={"text-center text-lg md:text-start"}>
+    <Container className="space-y-5 px-5 py-5 md:space-y-10 md:px-10 md:py-5 xl:px-0 ">
+      <GradientTextHeading
+        className={"text-center"}
+        headingParts={PORTFOLIO_SECTION.headingParts}
+      />
+      <DescriptionText className={"text-center"}>
         {PORTFOLIO_SECTION.portfolioHeading}
-      </h1>
+      </DescriptionText>
 
       <Carousel className="">
         <CarouselContent className="">
@@ -36,7 +34,7 @@ export function PortfolioSection() {
             <CarouselItem key={index} className="lg:basis-1/2 xl:basis-1/3">
               <div>
                 <Card className="m-0 !border-0 !bg-transparent py-2 !shadow-none sm:py-0">
-                  <CardContent className="relative flex h-[540px] cursor-pointer group flex-col !border-0 !p-0 py-2 md:min-h-[700px] md:p-0">
+                  <CardContent className="relative flex h-[500px] cursor-pointer group flex-col !border-0 !p-0 py-2 md:min-h-[600px] md:p-0">
                     {/* 🟢 Wrap entire card in Link */}
                     <Link
                       href={product.link || "#"}
@@ -101,6 +99,6 @@ export function PortfolioSection() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-    </div>
+    </Container>
   );
 }

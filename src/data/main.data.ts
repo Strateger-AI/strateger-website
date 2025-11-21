@@ -37,6 +37,10 @@ import KerasIcon from "@/assets/technologies/KerasIcon";
 import SapIcon from "@/assets/technologies/SapIcon";
 import OracelNetSuitIconIcon from "@/assets/technologies/OracelNetSuitIconIcon";
 import Appleicon from "@/data/mobile/icons/AppleIcon";
+// import { FaMobile, FaBusinessTime } from "react-icons/fa";       // FontAwesome
+// import { IoGameController, IoIosSettings } from "react-icons/io"; // Ionicons
+// import { BsHeadsetVr } from "react-icons/bs";                    // Bootstrap icons
+// import { MdOutlineSecurity } from "react-icons/md";
 
 // export const NAV_ITEMS = [
 //   {
@@ -303,10 +307,10 @@ export const NAV_ITEMS = [
     title: "About Us",
     href: "/about-us",
   },
-  // {
-  //   title: "Contact Us",
-  //   href: "/contact",
-  // },
+  {
+    title: "Porfolio",
+    href: "/porfolio",
+  },
   {
     title: "Blog",
     href: "/blog",
@@ -322,13 +326,132 @@ export const heroSection = {
     },
     {
       text: "Vision \n ",
-      className: "font-extrabold text-white",
+      gradient: true,
+      className: "font-extrabold ",
     },
     {
-      text: "Meets Innovation.",
+      text: "Meets ",
       className: "text-white font-extrabold ",
     },
+    {
+      text: "Innovation.",
+      gradient: true,
+
+      className: " font-extrabold ",
+    },
   ],
+
+  CTABtnText: "Explore Now ",
+  CTABtnLink: "/contact",
+  secondaryBtn: "Explore Our Services",
+  secondaryBtnLink: "/services",
+
+  // awards: [
+  //   "/main/awards/best-game-dev.png",
+  //   "/main/awards/bma.png",
+  //   "/main/awards/certificate-of-excellence.png",
+  //   "/main/awards/erp-dev-award.png",
+  // ],
+
+  // working: [
+  //   {
+  //     heading: "Mobile App Development",
+  //     desc:
+  //       "\n" +
+  //       "We are a mobile app development company dedicated to delivering end-to-end mobile application development services tailored to your digital needs. From concept to launch, we build apps that combine innovation, performance, and user centric design to help your business grow.\n",
+  //   },
+  //   {
+  //     heading: "Game Development Services\n",
+  //     desc:
+  //       "\n" +
+  //       "We provide game development services that blend creativity, technology, and storytelling turning your vision into engaging gameplay experiences players love.",
+  //   },
+  //   {
+  //     heading: "Custom AR VR Development\n",
+  //     desc:
+  //       "\n" +
+  //       "At Strateger.ai, we bring your vision to life through advanced AR VR development services and AI-powered solutions. By blending creativity with technology, we design immersive experiences that transform the way people interact with digital worlds.",
+  //   },
+  //   {
+  //     heading: "Cybersecurity Service\n",
+  //     desc:
+  //       "\n" +
+  //       "We are a trusted cyber security solutions provider, helping businesses safeguard their digital assets with innovative protection strategies. Our tailored cyber security solutions ensure resilience against evolving threats.",
+  //   },
+  //   {
+  //     heading: "Deep Learning Service\n",
+  //     desc:
+  //       "\n" +
+  //       "Through our deep learning development service, we harness the power of machine learning to solve real business challenges. From analyzing data to predicting outcomes, we deliver solutions that are practical, intelligent, and built for impact.",
+  //   },
+  //   {
+  //     heading: "ERP Implementation Services\n",
+  //     desc:
+  //       "\n" +
+  //       "Optimize your operations with our ERP implementation services. We make it easier to manage processes, reduce complexity, and drive business success.",
+  //   },
+  // ],
+  achievements: [
+    {
+      img: "/main/awards/best-game-dev.png",
+      imgAltText:
+        "A blue and gold circular award with a trophy icon and the text 'Best Game Development Award",
+      title: "Best Mobile App",
+      rating: 4.8,
+    },
+    {
+      img: "/main/awards/bma.png",
+      title: "Best Game development award",
+      imgAltText:
+        "A grayscale award badge with a laurel wreath, stars, and the text 'BMA 2025', suitable for a top mobile app development recognition.",
+      rating: 4.9,
+    },
+    {
+      img: "/main/awards/certificate-of-excellence.png",
+      imgAltText:
+        "A gold seal award with a crown, a ribbon displaying '2025', and the text 'Certificate of Excellence'.",
+      title: "Top 20 ERP APP development award",
+      rating: 4.7,
+    },
+    {
+      img: "/main/awards/erp-dev-award.png",
+      imgAltText:
+        "A dark blue award badge with 'TOP 20 ERP 2025', a ribbon stating 'ERP App Development Award.",
+      title: "Certificate of Excellence",
+      rating: 4.9,
+    },
+  ],
+};
+export const heroHeaderSection = {
+  // heroContent: "Where Vision \n  Meets Innovation.",
+  headingParts: [
+    {
+      text: "Powering \n ",
+      className: "text-white font-extrabold ",
+    },
+    {
+      text: "the ",
+      className: "text-white font-extrabold ",
+    },
+    {
+      text: "Future \n  ",
+      gradient: true,
+      className: "font-extrabold ",
+    },
+    {
+      text: "Through ",
+      className: "text-white font-extrabold ",
+    },
+    {
+      text: "Intelligence.",
+      gradient: true,
+
+      className: " font-extrabold ",
+    },
+  ],
+  tagline: "Innovation Elevated By AI",
+  description:
+    "Strateger.ai delivers future-ready innovations across Mobile Games, AR/VR, Cybersecurity, Deep Learning, ERP Solutions, AI Automations, and AI Agent Development. We fuse creativity with advanced engineering to help businesses scale, secure, and innovate faster. Our multidisciplinary teams turn bold ideas into powerful, high-performance digital products.",
 
   CTABtnText: "Explore Now ",
   CTABtnLink: "/contact",
@@ -504,6 +627,19 @@ export const FOOTER_LINKS = [
 ];
 
 export const PORTFOLIO_SECTION = {
+  headingParts: [
+    {
+      text: "Our ",
+      className: " font-extrabold ",
+    },
+
+    {
+      text: "Portfolio  ",
+      gradient: true,
+      className: "font-extrabold ",
+    },
+  ],
+
   portfolioHeading:
     "Strateger.ai partners with businesses to bring ideas to life, building digital products that are innovative, practical, and results-driven. Our focus is on creating solutions that make a real difference.",
 };
@@ -559,43 +695,56 @@ export const TESTIMONIAL_IMAGES = [
   "dummyTm.webp",
 ];
 
-export const TESTIMONIALS = [
-  {
-    name: "Gameverse Studios",
-    designation: "CTO",
-    testimonial:
-      "Partnering with Stratger.ai completely transformed our development cycle. Their AI-driven insights helped us optimize in-game experiences and reduce testing time by nearly 40%. Their expertise in generative technology has truly elevated our creative process.",
-    rating: 4.0,
-  },
-  {
-    name: "Infinity Games Studio",
-    designation: "Creative Director",
-    testimonial:
-      "Stratger.ai elevated our entire game design process. Their AI-powered tools streamlined character creation, improved storytelling depth, and cut production time in half. The team’s technical mastery and creative vision helped us deliver our best title yet.",
-    rating: 5.0,
-  },
-  {
-    name: "BrightPath Technologies",
-    designation: "Product Manager",
-    testimonial:
-      "Stratger.ai turned our app concept into a powerful business tool. Their team combined creativity with precision, delivering an intuitive and high-performing mobile app that exceeded our user engagement goals. A truly seamless experience from start to finish.",
-    rating: 4.5,
-  },
-  {
-    name: "SecureWave Systems",
-    designation: "IT Director",
-    testimonial:
-      "Partnering with Stratger.ai gave us peace of mind. Their proactive cybersecurity approach identified vulnerabilities before they became risks. Their continuous monitoring and smart automation tools strengthened our entire digital ecosystem.",
-    rating: 5.0,
-  },
-  {
-    name: "Axis Manufacturing",
-    designation: "COO",
-    testimonial:
-      "Implementing ERP with Stratger.ai was one of our smartest business moves. Their team handled complex integrations effortlessly, streamlining our operations and giving us real-time control over every department. Professional, transparent, and highly efficient.",
-    rating: 4.5,
-  },
-];
+export const TESTIMONIALS_SECTION_DATA = {
+  headingParts: [
+    {
+      text: "client  ",
+      className: "text-black font-extrabold ",
+    },
+    {
+      text: "voices",
+      gradient: true,
+      className: "font-extrabold ",
+    },
+  ],
+  testimonials: [
+    {
+      name: "Gameverse Studios",
+      designation: "CTO",
+      testimonial:
+        "Partnering with Stratger.ai completely transformed our development cycle. Their AI-driven insights helped us optimize in-game experiences and reduce testing time by nearly 40%. Their expertise in generative technology has truly elevated our creative process.",
+      rating: 4.0,
+    },
+    {
+      name: "Infinity Games Studio",
+      designation: "Creative Director",
+      testimonial:
+        "Stratger.ai elevated our entire game design process. Their AI-powered tools streamlined character creation, improved storytelling depth, and cut production time in half. The team’s technical mastery and creative vision helped us deliver our best title yet.",
+      rating: 5.0,
+    },
+    {
+      name: "BrightPath Technologies",
+      designation: "Product Manager",
+      testimonial:
+        "Stratger.ai turned our app concept into a powerful business tool. Their team combined creativity with precision, delivering an intuitive and high-performing mobile app that exceeded our user engagement goals. A truly seamless experience from start to finish.",
+      rating: 4.5,
+    },
+    {
+      name: "SecureWave Systems",
+      designation: "IT Director",
+      testimonial:
+        "Partnering with Stratger.ai gave us peace of mind. Their proactive cybersecurity approach identified vulnerabilities before they became risks. Their continuous monitoring and smart automation tools strengthened our entire digital ecosystem.",
+      rating: 5.0,
+    },
+    {
+      name: "Axis Manufacturing",
+      designation: "COO",
+      testimonial:
+        "Implementing ERP with Stratger.ai was one of our smartest business moves. Their team handled complex integrations effortlessly, streamlining our operations and giving us real-time control over every department. Professional, transparent, and highly efficient.",
+      rating: 4.5,
+    },
+  ],
+};
 
 export const WHAT_WE_DO_DATA = [
   {
@@ -811,7 +960,104 @@ export const WHAT_WE_DO_DATA = [
   },
 ];
 
-export const INDUSTRY_DATA = [
+export const DUMMY_SERVICES_DATA = {
+  headingParts: [
+    {
+      text: "what ",
+      className: "text-black font-extrabold ",
+    },
+    {
+      text: " we do \n ",
+      gradient: true,
+      className: "font-extrabold ",
+    },
+  ],
+  description:
+    "       We offer a wide range of services to help your business grow. Each solution is designed with performance, innovation, and user engagement in mind.",
+  services: [
+    {
+      type: "Mobile App Development",
+      typeIcon: FaMobile,
+      heading: "Build Innovative Mobile Applications",
+      description:
+        "We deliver end-to-end mobile app development services. Our solutions are performance-focused and UI/UX optimized. From concept to launch, we ensure seamless user engagement.",
+      technologies: [
+        { technology: "Flutter", icon: FlutterIcon },
+        { technology: "React Native", icon: ReactNativeIcon },
+        { technology: "Ionic", icon: IonicIcon },
+        { technology: "Android", icon: AndroidIcon },
+        { technology: "Apple", icon: Appleicon },
+      ],
+      btnLink: "/services/mobile-app-development",
+    },
+    {
+      type: "Game Development",
+      typeIcon: IoGameController,
+      heading: "Create Engaging Game Experiences",
+      description:
+        "We provide 2D and 3D game development services. Our team uses Unity and Unreal engines for high-quality results. Multi-platform deployment ensures maximum reach.",
+      technologies: [
+        { technology: "Unity Engine", icon: unityIcon },
+        { technology: "Unreal Engine", icon: UnrealIcon },
+      ],
+      btnLink: "/services/game-development",
+    },
+    {
+      type: "AR/VR Development",
+      typeIcon: BsHeadsetVr,
+      heading: "Immersive AR and VR Solutions",
+      description:
+        "We design immersive AR and VR experiences that transform interactions. Our solutions integrate mixed reality and real-time 3D modeling. Custom headset integration is supported.",
+      technologies: [
+        { technology: "Blender", icon: BlenderIcon },
+        { technology: "Autodesk", icon: AutodeskIcon },
+        { technology: "Zbrush", icon: ZbrushIcon },
+        { technology: "Cinema4D", icon: Cinema4dIcon },
+      ],
+      btnLink: "/services/ar-vr-development",
+    },
+    {
+      type: "Cybersecurity",
+      typeIcon: MdOutlineSecurity,
+      heading: "Protect Your Digital Assets",
+      description:
+        "We offer advanced cybersecurity solutions to safeguard your data. Threat assessment and real-time monitoring ensure business resilience. Compliance and security audits are included.",
+      technologies: [
+        { technology: "Crowdstrike", icon: CrowdstrikeIcon },
+        { technology: "Splunk", icon: splunkIcon },
+        { technology: "OpenSSL", icon: opensslIcon },
+      ],
+      btnLink: "/services/cybersecurity",
+    },
+    {
+      type: "Deep Learning",
+      typeIcon: IoIosSettings,
+      heading: "AI-Powered Deep Learning Services",
+      description:
+        "We build neural network models for prediction and classification. Our AI solutions integrate with real-time data. Training and deployment are supported on cloud platforms.",
+      technologies: [
+        { technology: "TensorFlow", icon: TensorflowIcon },
+        { technology: "PyTorch", icon: PytorchIcon },
+        { technology: "Keras", icon: KerasIcon },
+      ],
+      btnLink: "/services/deep-learning",
+    },
+    {
+      type: "ERP Implementation",
+      typeIcon: FaBusinessTime,
+      heading: "Optimize Business Processes with ERP",
+      description:
+        "We provide ERP implementation for seamless operations. Automation, data migration, and custom dashboards are included. Our solutions support SAP, Oracle, and Odoo.",
+      technologies: [
+        { technology: "SAP", icon: SapIcon },
+        { technology: "Oracle NetSuite", icon: OracelNetSuitIconIcon },
+      ],
+      btnLink: "/services/erp-implementation",
+    },
+  ],
+};
+
+const INDUSTRY_DATA = [
   {
     industry: "Education & E-Learning",
     description:
@@ -877,7 +1123,26 @@ export const INDUSTRY_DATA = [
   },
 ];
 
+export const INDUSTRY_SECTION_DATA = {
+  headingParts: [
+    {
+      text: "Industries We Transform ",
+      className: "text-white font-extrabold ",
+    },
+  ],
+  description:
+    "       We offer a wide range of services to help your business grow. Each solution is designed with performance, innovation, and user engagement in mind. We offer a wide range of services to help your business grow. Each solution is designed with performance, innovation, and user engagement in mind.",
+  industries: INDUSTRY_DATA,
+};
+
 export const PARTNERS_DATA = {
+  headingParts: [
+    {
+      text: "partners & tech",
+      gradient: true,
+      className: "font-extrabold ",
+    },
+  ],
   customers: [
     { name: "Airbnb", src: "/main/partners/Airbnb.png" },
     { name: "Aivora", src: "/main/partners/Aivora.png" },
@@ -938,7 +1203,17 @@ export const PARTNERS_DATA = {
 };
 
 export const BUSINESS_SECTION_DATA = {
-  heading: " Helping Business Grow Beyond Limits",
+  headingParts: [
+    {
+      text: "Helping Business Grow \n  ",
+      className: "text-black font-extrabold ",
+    },
+    {
+      text: "Beyond Limits ",
+      className: " font-extrabold ",
+      // gradient: true,
+    },
+  ],
   description:
     "Strateger AI helps businesses transform by taking their idea and nurturing it into a physical product that offers measurable and noticeable results.",
   stats: [
@@ -967,15 +1242,14 @@ export const BUSINESS_SECTION_DATA = {
       description: "Enterprise Level Apps & eCommerce Projects Delivered",
     },
   ],
-  CTABtnText: "Get Started",
+  CTABtnText: "Let's Connect",
   CTABtnLink: "/contact",
 };
 
 export const QUESTION_SECTION_DATA = {
   headingParts: [
-    { text: "Ask", className: "text-primary font-extrabold" },
-    { text: "Any", className: "" },
-    { text: "Questions", className: "" },
+    { text: "Need ", className: "text-black font-extrabold" },
+    { text: "Answers? ", className: "font-extrabold", gradient: true },
   ],
   faqs: [
     {
@@ -1016,7 +1290,7 @@ export const QUESTION_SECTION_DATA = {
 };
 
 export const CTA_SECTION_DATA = {
-  ctaText: " Partner With Us to Bring Your Vision to Reality.",
+  ctaText: "Create the Future You Imagine — With Us",
   ctaBtnText: "Lets Connect",
   CTABtnLink: "/contact",
 };
@@ -1027,3 +1301,47 @@ export const awards = [
   "/main/awards/certificate-of-excellence.png",
   "/main/awards/erp-dev-award.png",
 ];
+
+export const PORTFOLIO_CATEGORY_SECTION = {
+  headingParts: [
+    { text: "Proven  ", className: "text-black font-extrabold" },
+    { text: "Results", className: "font-extrabold", gradient: true },
+  ],
+  categories: [
+    {
+      category: "AR/VR Development)",
+      description:
+        "We craft immersive AR/VR experiences that merge creativity with cutting-edge technology. Each project is built to enhance interaction, engagement, and real-world usability.",
+      link: "/portfolio/",
+      img: "/main/portfolio/ar-portfolio-category.webp",
+    },
+    {
+      category: "Game App Development",
+      description:
+        "We build engaging and high-performance games designed for modern audiences. Our focus is on immersive visuals, smooth gameplay, and scalable architecture.",
+      link: "/portfolio/",
+      img: "/main/portfolio/gaming-portfolio-category.webp",
+    },
+    {
+      category: "AI Automation",
+      description:
+        "We streamline complex workflows with intelligent AI-powered automation. Our solutions boost efficiency, reduce manual effort, and support smarter decision-making.",
+      link: "/portfolio/",
+      img: "/main/portfolio/ai-portfolio-category.webp",
+    },
+    {
+      category: "Mobile App Development",
+      description:
+        "We create user-friendly mobile apps that turn your ideas into polished digital products. Every app is optimized for seamless performance across all devices.",
+      link: "/portfolio/",
+      img: "/main/portfolio/mobile-portfolio-category.webp",
+    },
+    {
+      category: "Cybersecurity",
+      description:
+        "We safeguard your digital environment with advanced protection and real-time monitoring. Our security solutions ensure your systems stay resilient against evolving threats.",
+      link: "/portfolio/",
+      img: "/main/portfolio/cyber-portfolio-category.webp",
+    },
+  ],
+};

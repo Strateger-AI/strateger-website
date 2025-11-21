@@ -26,13 +26,13 @@ jobs:
             git pull origin dev
 
             echo "Installing dependencies with pnpm..."
-            pnpm install
+            pnpm ci
 
             echo "Building Next.js project..."
             pnpm run build
 
-            echo "Generating dynamic sitemap and robots.txt..."
-            pnpm run postBuild || echo "No postBuild script found, skipping."
+#            echo "Generating dynamic sitemap and robots.txt..."
+#            pnpm run postBuild || echo "No postBuild script found, skipping."
 
             echo "Restarting development service..."
             sudo systemctl daemon-reload

@@ -66,14 +66,14 @@ export function WhatWeDoSection() {
   };
 
   return (
-    <div className="space-y-5  px-5 py-5 md:space-y-10 lg:px-20">
+    <div className="space-y-5  px-5 py-5 md:space-y-10 ">
       <h1 className="text-center text-4xl font-bold md:text-7xl">
         {" "}
         <span className={"text-primary"}>What</span> We Do
       </h1>
-      <div className="flex h-full flex-col lg:min-h-[60vh]  justify-evenly md:flex-row">
+      <div className="flex h-full flex-col lg:min-h-[60vh] items-center justify- md:flex-row">
         {/*Left Side*/}
-        <div className="flex h-full flex-col md:self-center  items-center justify-around gap-4 md:w-4/12">
+        <div className="flex h-full flex-col md:self-center  items-center justify-around gap-4 md:w-6/12">
           {WHAT_WE_DO_DATA.map((item, index) => {
             const IconComponent = item.serviceIcon;
             return (

@@ -97,7 +97,6 @@ import * as React from "react";
 import Link from "next/link";
 import { JSX, useState } from "react";
 import Image from "next/image";
-import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NAV_ITEMS } from "@/data/main.data";
 import { cn } from "@/lib/utils";
@@ -123,31 +122,36 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Container from "@/components/common/Container";
+import HamburgerMenuButton from "@/components/common/HamburgerMenuButton";
 
 export const StickyNavTest = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    // <nav className="bg-primary fixed top-0 z-50 w-full">
-    //   <div className=" flex h-20 items-center justify-between   px-5 md:px-20">
-    <nav className=" md:fixed  md:top-5 z-50 transition-transform duration-300 w-full">
-      <div className=" flex mx-auto h-20 items-center shadow-xl transition-transform duration-300   justify-between md:w-11/12 bg-primary md:rounded-full   px-5 md:px-10">
-        {/* Logo */}
-        <Link href="/" className="relative h-16 w-16 flex-shrink-0">
-          <Image
-            fill
-            src="/strateger_logo.png"
-            alt="logo"
-            className="object-contain p-2"
-          />
+    <nav className="bg-gradient-to-r  from-primary  to-accent fixed top-0 z-50 w-full">
+      <Container className=" flex h-20  !py-0 items-center justify-between  ">
+        {/* <nav className=" md:fixed  md:top-5 z-50 transition-transform duration-300 w-full">*/}
+        {/*  <div className=" flex mx-auto h-20 items-center shadow-xl transition-transform duration-300   justify-between md:w-11/12 bg-primary md:rounded-full   px-5 md:px-10">*/}
+        {/*//     /!* Logo *!/*/}
+        <Link href="/" className="flex items-center">
+          <div className="relative h-16 w-16 flex-shrink-0">
+            <Image
+              fill
+              src="/strateger_logo.png"
+              alt="logo"
+              className="object-contain p-2"
+            />
+          </div>
+          <h1 className="font-bold text-3xl text-white ml-2">Strateger.ai</h1>
         </Link>
 
         {/* Desktop Navigation */}
         <div
-          className={"flex-1 hidden  md:flex  justify-center items-center  "}
+          className={"flex-1 hidden  lg:flex  justify-center items-center  "}
         >
           <NavigationMenu className={"w-full flex-1 "}>
-            <NavigationMenuList className="gap-4 lg:gap-8 xl:gap-14 flex-1">
+            <NavigationMenuList className=" flex items-center justify-betweenflex-1">
               {NAV_ITEMS.map((item) => (
                 <NavigationMenuItem key={item.title}>
                   {item.categories && item.categories.length > 0 ? (
@@ -157,7 +161,7 @@ export const StickyNavTest = (): JSX.Element => {
                           asChild
                           className={cn(
                             navigationMenuTriggerStyle(),
-                            "bg-transparent text-[0.8rem] focus:text-white px-0   hover:bg-transparent hover:text-secondary !hover:text-secondary focus:bg-transparent font-medium text-white  lg:text-[1rem]",
+                            "bg-transparent text-sm focus:text-white  px-0 !uppercase  hover:bg-transparent hover:text-amber-500  !hover:text-secondary focus:bg-transparent font-bold text-white md:text-md  lg:text-lg",
                           )}
                         >
                           <Link href={item.href ?? "#"}>{item.title}</Link>
@@ -198,7 +202,7 @@ export const StickyNavTest = (): JSX.Element => {
                       asChild
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "bg-transparent text-[0.8rem] focus:bg-transparent focus:text-white font-medium text-white hover:text-secondary hover:bg-transparent   lg:text-[1rem]",
+                        "bg-transparent text-[0.8rem] hover:text-amber-500 uppercase lg:text-lg focus:bg-transparent focus:text-white font-bold text-white  hover:bg-transparent   ",
                       )}
                     >
                       <Link href={item.href ?? "#"}>{item.title}</Link>
@@ -211,36 +215,62 @@ export const StickyNavTest = (): JSX.Element => {
         </div>
 
         {/* CTA Button - Desktop */}
-        <Link href="/contact" className="hidden md:block">
-          <Button className="bg-white text-primary hover:bg-white/90">
-            Let&#39;s talk
+        <Link href="/contact" className="hidden lg:block">
+          <Button
+            size={"lg"}
+            className="bg-primary-gradient-amber text-white text-xl font-bold cursor-pointer  !py-2  hover:bg-amber-400"
+          >
+            Let&#39;s Talk
           </Button>
         </Link>
 
         {/* Mobile Menu */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
-          <SheetTrigger asChild className="md:hidden">
-            <Button className="bg-white text-primary hover:bg-white/90">
-              <Menu className="h-6 w-6" />
-            </Button>
+          <SheetTrigger asChild className="lg:hidden">
+            {/*<Button className="bg-white text-primary hover:bg-white/90">*/}
+            {/*  <Menu className="h-6 w-6" />*/}
+            {/*</Button>*/}
+            <HamburgerMenuButton isOpen={isOpen} />
           </SheetTrigger>
-          <SheetContent
-            side="right"
-            className="min-w-screen  p-10 overflow-y-auto"
-          >
-            <SheetHeader>
-              <SheetTitle></SheetTitle>
+          <SheetContent side="right" className="min-w-screen">
+            {/* Transparent Header */}
+            <SheetHeader className="  w-full  flex flex-row items-center justify-between h-20 bg-gradient-to-r  from-primary  to-accent    ">
+              {/* Logo */}
+              <Link href="/" className="flex items-center">
+                <div className="relative h-16 w-16 flex-shrink-0">
+                  <Image
+                    fill
+                    src="/strateger_logo.png"
+                    alt="logo"
+                    className="object-contain p-2"
+                  />
+                </div>
+                <h1 className="font-bold text-3xl text-white ml-2">
+                  Strateger.ai
+                </h1>
+              </Link>
+
+              {/* Hamburger Button */}
+              <HamburgerMenuButton
+                isOpen={isOpen}
+                onToggle={() => setIsOpen(false)}
+              />
+
+              {/* Optional SheetTitle (empty) */}
+              <SheetTitle className="hidden" />
             </SheetHeader>
-            <div className="mt-6 flex flex-col gap-4">
+
+            {/* Sheet Content */}
+            <div className="mt-6 flex px-10 flex-col gap-4">
               {NAV_ITEMS.map((item, index) => (
                 <div key={index}>
                   {item.categories ? (
-                    <Accordion type="single" className={""} collapsible>
+                    <Accordion type="single" collapsible>
                       <AccordionItem
                         value={`item-${index}`}
                         className="border-0"
                       >
-                        <AccordionTrigger className="py-2 text-base font-medium hover:no-underline">
+                        <AccordionTrigger className="py-2 text-xl font-medium hover:no-underline">
                           {item.title}
                         </AccordionTrigger>
                         <AccordionContent>
@@ -252,14 +282,12 @@ export const StickyNavTest = (): JSX.Element => {
                                   key={idx}
                                   href={category.href ?? "#"}
                                   onClick={() => setIsOpen(false)}
-                                  className="hover:bg-secondary/20 flex items-center gap-3 rounded-md p-2"
+                                  className="hover:bg-secondary/20 text-lg flex items-center gap-3 rounded-md p-2"
                                 >
                                   {Icon && (
                                     <Icon className="text-primary h-5 w-5" />
                                   )}
-                                  <span className="text-sm">
-                                    {category.title}
-                                  </span>
+                                  <span>{category.title}</span>
                                 </Link>
                               );
                             })}
@@ -271,13 +299,14 @@ export const StickyNavTest = (): JSX.Element => {
                     <Link
                       href={item.href ?? "#"}
                       onClick={() => setIsOpen(false)}
-                      className="block py-2 text-base font-medium hover:text-secondary"
+                      className="block py-2 text-xl font-medium hover:text-secondary"
                     >
                       {item.title}
                     </Link>
                   )}
                 </div>
               ))}
+
               <Link href="/contact" onClick={() => setIsOpen(false)}>
                 <Button className="bg-primary mt-4 w-full text-white">
                   Let&#39;s talk
@@ -286,7 +315,7 @@ export const StickyNavTest = (): JSX.Element => {
             </div>
           </SheetContent>
         </Sheet>
-      </div>
+      </Container>
     </nav>
   );
 };

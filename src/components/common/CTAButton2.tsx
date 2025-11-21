@@ -87,6 +87,7 @@ type PrimaryExploreButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   version?: 1 | 2;
   label?: string;
   href?: string;
+  textClassName?: string;
 };
 
 export function CTAButton2({
@@ -94,39 +95,41 @@ export function CTAButton2({
   label = "Explore",
   version = 1,
   href,
+  textClassName,
   ...rest
 }: PrimaryExploreButtonProps) {
   const isVersion2 = version === 2;
 
   const commonClasses = cn(
-    "group relative max-w-fit  hover:scale-[102%] duration-500 transition-transform  z-10 mx-auto flex w-fit cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full border-1 px-2 sm:px-4 py-2 pl-6 text-lg font-bold shadow-lg backdrop-blur-md transition-all",
+    "group bg-white relative max-w-fit  hover:scale-[102%] duration-500 transition-transform  z-10 mx-auto flex w-fit cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full border-1 px-2 sm:px-4 py-2 pl-6 text-lg font-bold shadow-lg backdrop-blur-md transition-all",
     isVersion2
-      ? "border-white bg-white text-white shadow-white/20"
-      : "border-primary text-primary shadow-primary/20 bg-gray-50",
+      ? "border-primary  bg-white text-white shadow-white/20"
+      : "border-primary hover:border-primary-highlight text-primary shadow-primary/20 shadow-sm ",
     className,
   );
 
   const textClasses = cn(
     "relative z-10 text-sm text-nowrap sm:text-lg transition-colors duration-300",
+    textClassName,
     isVersion2 ? "text-primary" : "text-primary group-hover:text-white",
   );
 
   const arrowClasses = cn(
     "h-8 w-8 rotate-45 transform rounded-full border p-2 transition-all duration-300 ease-linear",
     isVersion2
-      ? "group-hover:text-primary group-hover:bg-primary border-white text-white group-hover:rotate-90 group-hover:border-none"
-      : "border-primary text-primary group-hover:rotate-90 group-hover:border-none group-hover:bg-white",
+      ? "group-hover:text-primary group-hover:from-primary group-hover:to-accent bg-gradient-to-r border-primary  text-white group-hover:rotate-90 group-hover:border-none"
+      : " border-primary group-hover:rotate-90 group-hover:border-none group-hover:bg-white",
   );
 
   const pathClasses = cn(
     isVersion2
       ? "fill-primary group-hover:fill-white"
-      : "fill-primary group-hover:fill-primary",
+      : "fill-primary group-hover:fill-primary-highlight",
   );
 
   const overlayClasses = cn(
-    "absolute inset-0 top-0 left-0 -z-10 h-full w-0 bg-gradient-to-r transition-all duration-700 ease-in-out group-hover:w-full",
-    isVersion2 ? "from-white to-white" : "from-primary to-primary",
+    "absolute inset-0 top-0 left-0 -z-10 h-full w-0 bg-gradient-to-br transition-all duration-700 ease-in-out group-hover:w-full",
+    isVersion2 ? "from-white to-white" : "bg-primary-gradient-amber",
   );
 
   const content = (
