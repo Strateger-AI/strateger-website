@@ -8,6 +8,7 @@ import {
 import { INDUSTRY_DATA } from "@/data/main.data";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 export function IndustriesSection() {
   return (
@@ -30,35 +31,39 @@ export function IndustriesSection() {
           {INDUSTRY_DATA.map((data, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
               <Card className="m-0 !border-none group !bg-transparent p-0 !shadow-none">
-                <CardContent className="group relative flex min-h-[550px] flex-col overflow-hidden rounded-xl">
-                  {/* Image wrapper */}
-                  <div className="relative flex-[0.8] items-center justify-center">
-                    <Image
-                      src={data.image}
-                      alt="Industry-Image"
-                      fill
-                      objectFit="cover"
-                      className="h-full w-auto rounded-lg group-hover:scale-110 transition-transform duration-500 object-contain"
-                    />
-                  </div>
+                <Link target="_blank" href={data.link}>
+                  <CardContent className="group relative flex min-h-[550px] flex-col overflow-hidden rounded-xl">
+                    {/* Image wrapper */}
+                    <div className="relative flex-[0.8] items-center justify-center">
+                      <Image
+                        src={data.image}
+                        alt={data.imgAltText || "Industry-Image"}
+                        fill
+                        objectFit="cover"
+                        className="h-full w-auto rounded-lg group-hover:scale-110 transition-transform duration-500 object-contain"
+                      />
+                    </div>
 
-                  {/* Text wrapper */}
-                  <div className="flex flex-[0.2] items-center justify-center">
-                    <p className="text-primary text-center text-xl font-bold">
-                      {data.industry}
-                    </p>
-                  </div>
-                  <div
-                    className={
-                      "transform-transition bg-primary  flex flex-col items-center justify-center absolute top-0 left-0 h-full w-full space-y-5 p-10 text-white opacity-0 duration-500 group-hover:opacity-100"
-                    }
-                  >
-                    <h1 className={"text-3xl font-extrabold"}>
-                      {data.industry}
-                    </h1>
-                    <p className={"font-medium text-xl"}>{data.description}</p>
-                  </div>
-                </CardContent>
+                    {/* Text wrapper */}
+                    <div className="flex flex-[0.2] items-center justify-center">
+                      <p className="text-primary text-center text-xl font-bold">
+                        {data.industry}
+                      </p>
+                    </div>
+                    <div
+                      className={
+                        "transform-transition bg-primary  flex flex-col items-center justify-center absolute top-0 left-0 h-full w-full space-y-5 p-10 text-white opacity-0 duration-500 group-hover:opacity-100"
+                      }
+                    >
+                      <h1 className={"text-3xl font-extrabold"}>
+                        {data.industry}
+                      </h1>
+                      <p className={"font-medium text-xl"}>
+                        {data.description}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Link>
               </Card>
             </CarouselItem>
           ))}

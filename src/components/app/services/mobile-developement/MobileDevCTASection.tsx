@@ -1,5 +1,7 @@
+"use client";
 import { MOBILE_DEV_CTA_DATA } from "@/data/mobile/mobile-dev.data";
 import { CTAButton2 } from "@/components/common/CTAButton2";
+import { scrollToId } from "@/lib/utils";
 
 export function MobileDevCTASection() {
   return (
@@ -23,7 +25,7 @@ export function MobileDevCTASection() {
         <div>
           <CTAButton2
             version={2}
-            href={MOBILE_DEV_CTA_DATA.CTABtnLink}
+            onClick={() => scrollToId()}
             label={MOBILE_DEV_CTA_DATA.CTABtnText}
           />
         </div>

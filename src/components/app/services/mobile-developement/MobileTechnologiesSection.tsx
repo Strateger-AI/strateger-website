@@ -56,7 +56,9 @@ export function MobileTechnologiesSection() {
             src={MOBILE_TECHNOLOGIES_DATA.bannerImg}
             height={200}
             width={500}
-            alt="hero-section-img"
+            alt={
+              MOBILE_TECHNOLOGIES_DATA.bannerImgAltText || "hero-section-img"
+            }
             className="o h-full w-full"
           />
         </div>

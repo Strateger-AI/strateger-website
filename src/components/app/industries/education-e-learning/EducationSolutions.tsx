@@ -52,7 +52,7 @@ export function EducationSolutions() {
               <div className="relative w-full">
                 <Image
                   src={solution.img || "/mobile-app-UI.jpg"}
-                  alt={"solution-img"}
+                  alt={solution.imgAltText || "solution-img"}
                   fill
                   className="rounded-xl object-contain transition duration-300 hover:scale-[1.02] "
                 />

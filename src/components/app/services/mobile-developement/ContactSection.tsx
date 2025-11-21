@@ -15,7 +15,9 @@ export function ContactSection() {
         <div className="relative hidden lg:block w-full md:w-2/5 h-full">
           <Image
             src={CONTACTS_SECTION.img}
-            alt="contact-img"
+            alt={
+              "Two professionals collaborating on a tablet in a modern office, discussing app development services and AI technology solutions for innovative digital projects."
+            }
             fill
             className="object-cover rounded-md object-center"
             priority

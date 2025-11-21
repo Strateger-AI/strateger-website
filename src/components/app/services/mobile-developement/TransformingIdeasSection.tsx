@@ -35,7 +35,9 @@ export function TransformingIdeasSection() {
         <div className="w-full  h-[70vh] py-10 max-w-xs md:max-w-sm">
           <Image
             src={TRANSFORMING_IDEA_SECTION.img}
-            alt="Transforming ideas"
+            alt={
+              TRANSFORMING_IDEA_SECTION.imgAltText || "Transforming ideas img"
+            }
             fill
             className=" !relative w-full object-contain"
             priority

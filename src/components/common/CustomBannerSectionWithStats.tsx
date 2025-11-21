@@ -19,6 +19,7 @@ type CustomBannerSectionWithStatsProps = {
   }[];
   CTABtnLink?: string;
   bannerImg: string;
+  bannerImgAltText?: string;
 };
 
 export function CustomBannerSectionWithStats({
@@ -30,7 +31,7 @@ export function CustomBannerSectionWithStats({
   return (
     <div
       className={
-        "mt-20 flex min-h-screen flex-col items-center justify-center px-5 py-10 md:px-20  lg:gap-8"
+        " flex min-h-screen flex-col items-center justify-center px-5 py-10 md:px-20  lg:gap-8"
       }
     >
       <div
@@ -50,7 +51,11 @@ export function CustomBannerSectionWithStats({
               </span>
             ))}
           </h1>
-          <p className={"text-center whitespace-pre-line md:text-start "}>
+          <p
+            className={
+              "text-center whitespace-pre-line lg:text-lg md:text-start "
+            }
+          >
             {data.content}
           </p>
           <div className=" hidden lg:block   w-full  xl:hidden ">
@@ -58,7 +63,7 @@ export function CustomBannerSectionWithStats({
               src={data.bannerImg}
               height={100}
               width={200}
-              alt="hero-section-img"
+              alt={data.bannerImgAltText || "hero-section-img"}
               className=" h-[500px] object-contain w-full   "
             />
           </div>
@@ -112,7 +117,7 @@ export function CustomBannerSectionWithStats({
             src={data.bannerImg}
             height={200}
             width={500}
-            alt="hero-section-img"
+            alt={data.bannerImgAltText || "hero-section-img"}
             className=" h-full w-full"
           />
         </div>

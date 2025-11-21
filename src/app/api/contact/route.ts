@@ -118,9 +118,9 @@ export async function POST(req: Request) {
 <body>
   <div class="container">
     <div class="header">
-      <img src="/strateger_logo.png" alt="Strateger.ai Logo" />
+      <img src="https://strateger.ai/strateger_logo.png" alt="Strateger.ai Logo" />
       <h1>New Contact Submission</h1>
-    </div>
+    </div>https://strateger.ai/
 
     <div class="content">
       <h2>Contact Details</h2>

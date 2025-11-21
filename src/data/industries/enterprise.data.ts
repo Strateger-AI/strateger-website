@@ -44,7 +44,9 @@ export const ENTERPRISE_HERO_SECTION = {
 
   // CTABtnLink: "/",
   CTAButton: "Let’s Build Your Enterprise App",
-  bannerImg: "/industries/enterprise/enterprice.webp", // You can replace this with an enterprise-specific banner if needed
+  bannerImg: "/industries/enterprise/enterprice.webp",
+  bannerImgAltText:
+    "Top-tier enterprise app development company delivering scalable, secure, and innovative business applications.",
 };
 
 import {

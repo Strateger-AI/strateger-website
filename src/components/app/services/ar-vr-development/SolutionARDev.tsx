@@ -60,7 +60,7 @@ export function SolutionARDev() {
                   <div className="relative mt-4 h-[300px] w-full overflow-hidden rounded-lg">
                     <Image
                       src={solution.img}
-                      alt={solution.title}
+                      alt={solution.imgAltText}
                       fill
                       style={{ objectFit: "contain" }}
                       priority={activeIndex === i}

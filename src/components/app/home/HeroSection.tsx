@@ -57,11 +57,11 @@ export function HeroSection() {
         {heroSection.achievements.map((award, index) => (
           <div
             key={index}
-            className="relative w-36 h-20  hover:scale-120 sm:w-40 sm:h-24 md:w-40 md:h-40  xl:w-54 xl:h-54 transition-transform duration-300     "
+            className="relative w-36 h-20  hover:scale-120 sm:w-40 sm:h-24 md:w-40 md:h-40  xl:w-45 xl:h-45 transition-transform duration-300     "
           >
             <Image
               src={award.img}
-              alt={`Award ${index + 1}`}
+              alt={award.imgAltText || "award-img"}
               fill
               className="object-contain"
             />

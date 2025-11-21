@@ -21,6 +21,8 @@ export const CYBERSECURITY_BANNER_SECTION = {
   CTABtnText: "Let's Connect",
   // CTABtnLink: "/",
   bannerImg: "/services/cybersecurity/cybersecurity-banner.webp",
+  bannerImgAltText:
+    "Cybersecurity services eprotecting digital assets with advanced threat detction and secure IT solutions",
   img: "",
 };
 

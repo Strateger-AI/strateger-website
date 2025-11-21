@@ -130,7 +130,7 @@ export const StickyNavTest = (): JSX.Element => {
   return (
     // <nav className="bg-primary fixed top-0 z-50 w-full">
     //   <div className=" flex h-20 items-center justify-between   px-5 md:px-20">
-    <nav className=" fixed md:top-5 z-50 transition-transform duration-300 w-full">
+    <nav className=" md:fixed  md:top-5 z-50 transition-transform duration-300 w-full">
       <div className=" flex mx-auto h-20 items-center shadow-xl transition-transform duration-300   justify-between md:w-11/12 bg-primary md:rounded-full   px-5 md:px-10">
         {/* Logo */}
         <Link href="/" className="relative h-16 w-16 flex-shrink-0">

@@ -11,6 +11,7 @@ type CustomBannerSectionProps = {
   CTABtnText: string;
   CTABtnLink?: string;
   bannerImg: string;
+  bannerImgAltText: string;
 };
 
 export function CustomBannerSection({
@@ -21,7 +22,7 @@ export function CustomBannerSection({
   return (
     <div
       className={
-        " mt-20  lg:mt-10 relative   sm:min-h-screen flex flex-col items-center md:justify-center px-5 py-5   md:px-20 md:py-20 lg:gap-8"
+        "  lg:mt-10 relative   sm:min-h-screen flex flex-col items-center md:justify-center px-5 py-5   md:px-20 md:py-20 lg:gap-8"
       }
     >
       <div
@@ -44,7 +45,7 @@ export function CustomBannerSection({
           {data.desc && (
             <p
               className={
-                "text-center whitespace-pre-line text-sm md:text-[1rem] md:text-start lg:text-lg"
+                "text-center whitespace-pre-line text-sm md:text-[1rem] md:text-start lg:text-xl"
               }
             >
               {data.desc}
@@ -74,7 +75,7 @@ export function CustomBannerSection({
             src={data.bannerImg}
             height={200}
             width={500}
-            alt="hero-section-img"
+            alt={data.bannerImgAltText}
             className="o h-full w-full   object-contain"
           />
         </div>
