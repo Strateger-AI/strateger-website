@@ -31,9 +31,6 @@ jobs:
             echo "Building Next.js project..."
             pnpm run build
 
-#            echo "Generating dynamic sitemap and robots.txt..."
-#            pnpm run postBuild || echo "No postBuild script found, skipping."
-
             echo "Restarting development service..."
             sudo systemctl daemon-reload
             sudo systemctl restart strateger
